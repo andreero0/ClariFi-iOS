@@ -1,0 +1,1179 @@
+[
+  {
+    "typeName": "ClariFi_iOS.TransactionEntity",
+    "mangledTypeName": "11ClariFi_iOS17TransactionEntityV",
+    "kind": "struct",
+    "file": "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/ClariFi iOS/Services/ClariFiAppIntents.swift",
+    "line": 14,
+    "conformances": [
+      "AppIntents.AppEntity",
+      "AppIntents.IndexedEntity",
+      "AppIntents.AppValue",
+      "AppIntents.DisplayRepresentable",
+      "Swift.Identifiable",
+      "AppIntents.PersistentlyIdentifiable",
+      "AppIntents.TypeDisplayRepresentable",
+      "AppIntents._IntentValue",
+      "Swift.Sendable",
+      "AppIntents.InstanceDisplayRepresentable",
+      "Foundation.CustomLocalizedStringResourceConvertible"
+    ],
+    "allConformances": [
+      {
+        "protocolName": "AppIntents.AppEntity",
+        "conformanceDefiningModule": "ClariFi_iOS"
+      },
+      {
+        "protocolName": "AppIntents.IndexedEntity",
+        "conformanceDefiningModule": "ClariFi_iOS"
+      },
+      {
+        "protocolName": "AppIntents.AppValue",
+        "conformanceDefiningModule": "ClariFi_iOS"
+      },
+      {
+        "protocolName": "AppIntents.DisplayRepresentable",
+        "conformanceDefiningModule": "ClariFi_iOS"
+      },
+      {
+        "protocolName": "Swift.Identifiable",
+        "conformanceDefiningModule": "ClariFi_iOS"
+      },
+      {
+        "protocolName": "AppIntents.PersistentlyIdentifiable",
+        "conformanceDefiningModule": "ClariFi_iOS"
+      },
+      {
+        "protocolName": "AppIntents.TypeDisplayRepresentable",
+        "conformanceDefiningModule": "ClariFi_iOS"
+      },
+      {
+        "protocolName": "AppIntents._IntentValue",
+        "conformanceDefiningModule": "ClariFi_iOS"
+      },
+      {
+        "protocolName": "Swift.Sendable",
+        "conformanceDefiningModule": "ClariFi_iOS"
+      },
+      {
+        "protocolName": "AppIntents.InstanceDisplayRepresentable",
+        "conformanceDefiningModule": "ClariFi_iOS"
+      },
+      {
+        "protocolName": "Foundation.CustomLocalizedStringResourceConvertible",
+        "conformanceDefiningModule": "ClariFi_iOS"
+      }
+    ],
+    "associatedTypeAliases": [
+      {
+        "typeAliasName": "DefaultQuery",
+        "substitutedTypeName": "ClariFi_iOS.TransactionEntity.TransactionQuery",
+        "substitutedMangledTypeName": "11ClariFi_iOS17TransactionEntityV0D5QueryV"
+      },
+      {
+        "typeAliasName": "ID",
+        "substitutedTypeName": "Swift.String",
+        "substitutedMangledTypeName": "SS"
+      },
+      {
+        "typeAliasName": "ValueType",
+        "substitutedTypeName": "ClariFi_iOS.TransactionEntity",
+        "substitutedMangledTypeName": "11ClariFi_iOS17TransactionEntityV"
+      },
+      {
+        "typeAliasName": "UnwrappedType",
+        "substitutedTypeName": "ClariFi_iOS.TransactionEntity",
+        "substitutedMangledTypeName": "11ClariFi_iOS17TransactionEntityV"
+      },
+      {
+        "typeAliasName": "Specification",
+        "substitutedTypeName": "AppIntents.EmptyResolverSpecification<ClariFi_iOS.TransactionEntity>",
+        "substitutedMangledTypeName": "10AppIntents26EmptyResolverSpecificationVy11ClariFi_iOS17TransactionEntityVG"
+      }
+    ],
+    "properties": [
+      {
+        "label": "id",
+        "type": "Swift.String",
+        "mangledTypeName": "n/a - deprecated",
+        "isStatic": "false",
+        "isComputed": "false",
+        "file": "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/ClariFi iOS/Services/ClariFiAppIntents.swift",
+        "line": 19,
+        "valueKind": "Runtime"
+      },
+      {
+        "label": "amount",
+        "type": "Foundation.Decimal",
+        "mangledTypeName": "n/a - deprecated",
+        "isStatic": "false",
+        "isComputed": "false",
+        "file": "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/ClariFi iOS/Services/ClariFiAppIntents.swift",
+        "line": 20,
+        "valueKind": "Runtime"
+      },
+      {
+        "label": "merchant",
+        "type": "Swift.String",
+        "mangledTypeName": "n/a - deprecated",
+        "isStatic": "false",
+        "isComputed": "false",
+        "file": "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/ClariFi iOS/Services/ClariFiAppIntents.swift",
+        "line": 21,
+        "valueKind": "Runtime"
+      },
+      {
+        "label": "date",
+        "type": "Foundation.Date",
+        "mangledTypeName": "n/a - deprecated",
+        "isStatic": "false",
+        "isComputed": "false",
+        "file": "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/ClariFi iOS/Services/ClariFiAppIntents.swift",
+        "line": 22,
+        "valueKind": "Runtime"
+      },
+      {
+        "label": "category",
+        "type": "Swift.Optional<Swift.String>",
+        "mangledTypeName": "n/a - deprecated",
+        "isStatic": "false",
+        "isComputed": "false",
+        "file": "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/ClariFi iOS/Services/ClariFiAppIntents.swift",
+        "line": 23,
+        "valueKind": "RawLiteral",
+        "value": "nil"
+      },
+      {
+        "label": "typeDisplayRepresentation",
+        "type": "AppIntents.TypeDisplayRepresentation",
+        "mangledTypeName": "n/a - deprecated",
+        "isStatic": "true",
+        "isComputed": "false",
+        "file": "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/ClariFi iOS/Services/ClariFiAppIntents.swift",
+        "line": 15,
+        "valueKind": "InitCall",
+        "value": {
+          "type": "AppIntents.TypeDisplayRepresentation",
+          "arguments": [
+            {
+              "label": "name",
+              "type": "Foundation.LocalizedStringResource",
+              "valueKind": "RawLiteral",
+              "value": "Transaction"
+            },
+            {
+              "label": "numericFormat",
+              "type": "Swift.Optional<Foundation.LocalizedStringResource>",
+              "valueKind": "RawLiteral",
+              "value": "nil"
+            }
+          ]
+        }
+      },
+      {
+        "label": "displayRepresentation",
+        "type": "AppIntents.DisplayRepresentation",
+        "mangledTypeName": "n/a - deprecated",
+        "isStatic": "false",
+        "isComputed": "true",
+        "file": "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/ClariFi iOS/Services/ClariFiAppIntents.swift",
+        "line": 25,
+        "valueKind": "InitCall",
+        "value": {
+          "type": "AppIntents.DisplayRepresentation",
+          "arguments": [
+            {
+              "label": "title",
+              "type": "Foundation.LocalizedStringResource",
+              "valueKind": "InterpolatedStringLiteral",
+              "value": {
+                "segments": [
+                  {
+                    "valueKind": "RawLiteral",
+                    "value": ""
+                  },
+                  {
+                    "valueKind": "Runtime"
+                  },
+                  {
+                    "valueKind": "RawLiteral",
+                    "value": ""
+                  }
+                ]
+              }
+            },
+            {
+              "label": "subtitle",
+              "type": "Swift.Optional<Foundation.LocalizedStringResource>",
+              "valueKind": "InterpolatedStringLiteral",
+              "value": {
+                "segments": [
+                  {
+                    "valueKind": "RawLiteral",
+                    "value": ""
+                  },
+                  {
+                    "valueKind": "StaticFunctionCall",
+                    "value": {
+                      "type": "Swift.String",
+                      "memberLabel": "formatted",
+                      "arguments": [
+                        {
+                          "label": "",
+                          "type": "Foundation.Decimal.FormatStyle.Currency",
+                          "valueKind": "StaticFunctionCall",
+                          "value": {
+                            "type": "Foundation.Decimal.FormatStyle.Currency",
+                            "memberLabel": "currency",
+                            "arguments": [
+                              {
+                                "label": "code",
+                                "type": "Swift.String",
+                                "valueKind": "RawLiteral",
+                                "value": "USD"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "valueKind": "RawLiteral",
+                    "value": " • "
+                  },
+                  {
+                    "valueKind": "StaticFunctionCall",
+                    "value": {
+                      "type": "Swift.String",
+                      "memberLabel": "formatted",
+                      "arguments": [
+                        {
+                          "label": "date",
+                          "type": "Foundation.Date.FormatStyle.DateStyle",
+                          "valueKind": "MemberReference",
+                          "value": {
+                            "baseType": "Foundation.Date.FormatStyle.DateStyle",
+                            "memberLabel": "abbreviated"
+                          }
+                        },
+                        {
+                          "label": "time",
+                          "type": "Foundation.Date.FormatStyle.TimeStyle",
+                          "valueKind": "MemberReference",
+                          "value": {
+                            "baseType": "Foundation.Date.FormatStyle.TimeStyle",
+                            "memberLabel": "omitted"
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "valueKind": "RawLiteral",
+                    "value": ""
+                  }
+                ]
+              }
+            },
+            {
+              "label": "image",
+              "type": "Swift.Optional<AppIntents.DisplayRepresentation.Image>",
+              "valueKind": "InitCall",
+              "value": {
+                "type": "AppIntents.DisplayRepresentation.Image",
+                "arguments": [
+                  {
+                    "label": "systemName",
+                    "type": "Swift.String",
+                    "valueKind": "RawLiteral",
+                    "value": "creditcard"
+                  },
+                  {
+                    "label": "isTemplate",
+                    "type": "Swift.Optional<Swift.Bool>",
+                    "valueKind": "RawLiteral",
+                    "value": "nil"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "label": "defaultQuery",
+        "type": "ClariFi_iOS.TransactionEntity.TransactionQuery",
+        "mangledTypeName": "n/a - deprecated",
+        "isStatic": "true",
+        "isComputed": "false",
+        "file": "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/ClariFi iOS/Services/ClariFiAppIntents.swift",
+        "line": 33,
+        "valueKind": "InitCall",
+        "value": {
+          "type": "ClariFi_iOS.TransactionEntity.TransactionQuery",
+          "arguments": []
+        }
+      },
+      {
+        "label": "searchableAttributes",
+        "type": "CoreSpotlight.CSSearchableItemAttributeSet",
+        "mangledTypeName": "n/a - deprecated",
+        "isStatic": "false",
+        "isComputed": "true",
+        "file": "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/ClariFi iOS/Services/ClariFiAppIntents.swift",
+        "line": 35,
+        "valueKind": "Runtime"
+      }
+    ]
+  },
+  {
+    "typeName": "ClariFi_iOS.TransactionEntity.TransactionQuery",
+    "mangledTypeName": "11ClariFi_iOS17TransactionEntityV0D5QueryV",
+    "kind": "struct",
+    "file": "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/ClariFi iOS/Services/ClariFiAppIntents.swift",
+    "line": 44,
+    "conformances": [
+      "AppIntents.EntityQuery",
+      "AppIntents.DynamicOptionsProvider",
+      "AppIntents.PersistentlyIdentifiable",
+      "Swift.Sendable",
+      "AppIntents._SupportsAppDependencies",
+      "Swift.BitwiseCopyable"
+    ],
+    "allConformances": [
+      {
+        "protocolName": "AppIntents.EntityQuery",
+        "conformanceDefiningModule": "ClariFi_iOS"
+      },
+      {
+        "protocolName": "AppIntents.DynamicOptionsProvider",
+        "conformanceDefiningModule": "ClariFi_iOS"
+      },
+      {
+        "protocolName": "AppIntents.PersistentlyIdentifiable",
+        "conformanceDefiningModule": "ClariFi_iOS"
+      },
+      {
+        "protocolName": "Swift.Sendable",
+        "conformanceDefiningModule": "ClariFi_iOS"
+      },
+      {
+        "protocolName": "AppIntents._SupportsAppDependencies",
+        "conformanceDefiningModule": "ClariFi_iOS"
+      },
+      {
+        "protocolName": "Swift.BitwiseCopyable",
+        "conformanceDefiningModule": "ClariFi_iOS"
+      }
+    ],
+    "associatedTypeAliases": [
+      {
+        "typeAliasName": "Entity",
+        "substitutedTypeName": "ClariFi_iOS.TransactionEntity",
+        "substitutedMangledTypeName": "11ClariFi_iOS17TransactionEntityV"
+      },
+      {
+        "typeAliasName": "Result",
+        "substitutedTypeName": "Swift.Array<ClariFi_iOS.TransactionEntity>",
+        "substitutedMangledTypeName": "Say11ClariFi_iOS17TransactionEntityVG"
+      },
+      {
+        "typeAliasName": "Result",
+        "substitutedTypeName": "Swift.Array<ClariFi_iOS.TransactionEntity>",
+        "substitutedMangledTypeName": "Say11ClariFi_iOS17TransactionEntityVG"
+      },
+      {
+        "typeAliasName": "DefaultValue",
+        "substitutedTypeName": "ClariFi_iOS.TransactionEntity",
+        "substitutedMangledTypeName": "11ClariFi_iOS17TransactionEntityV"
+      }
+    ],
+    "properties": []
+  },
+  {
+    "typeName": "ClariFi_iOS.FindRecentTransactionsIntent",
+    "mangledTypeName": "11ClariFi_iOS28FindRecentTransactionsIntentV",
+    "kind": "struct",
+    "file": "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/ClariFi iOS/Services/ClariFiAppIntents.swift",
+    "line": 58,
+    "conformances": [
+      "AppIntents.AppIntent",
+      "AppIntents.PersistentlyIdentifiable",
+      "AppIntents._SupportsAppDependencies",
+      "Swift.Sendable"
+    ],
+    "allConformances": [
+      {
+        "protocolName": "AppIntents.AppIntent",
+        "conformanceDefiningModule": "ClariFi_iOS"
+      },
+      {
+        "protocolName": "AppIntents.PersistentlyIdentifiable",
+        "conformanceDefiningModule": "ClariFi_iOS"
+      },
+      {
+        "protocolName": "AppIntents._SupportsAppDependencies",
+        "conformanceDefiningModule": "ClariFi_iOS"
+      },
+      {
+        "protocolName": "Swift.Sendable",
+        "conformanceDefiningModule": "ClariFi_iOS"
+      }
+    ],
+    "associatedTypeAliases": [
+      {
+        "typeAliasName": "PerformResult",
+        "substitutedTypeName": "some AppIntents.ProvidesDialog & AppIntents.ReturnsValue<Swift.Array<ClariFi_iOS.TransactionEntity>>",
+        "substitutedMangledTypeName": "11ClariFi_iOS28FindRecentTransactionsIntentV7performQryYaKFQOy_Qo_",
+        "opaqueTypeProtocolRequirements": [
+          "AppIntents.ProvidesDialog",
+          "AppIntents.ReturnsValue"
+        ],
+        "opaqueTypeSameTypeRequirements": [
+          {
+            "typeAliasName": "AppIntents.IntentResult.Value",
+            "substitutedTypeName": "Swift.Array<ClariFi_iOS.TransactionEntity>",
+            "substitutedMangledTypeName": "Say11ClariFi_iOS17TransactionEntityVG"
+          }
+        ]
+      },
+      {
+        "typeAliasName": "SummaryContent",
+        "substitutedTypeName": "some AppIntents.ParameterSummary",
+        "substitutedMangledTypeName": "10AppIntents0A6IntentPAAE16parameterSummaryQrvpZQOy11ClariFi_iOS022FindRecentTransactionsC0V_Qo_",
+        "opaqueTypeProtocolRequirements": [
+          "AppIntents.ParameterSummary"
+        ],
+        "opaqueTypeSameTypeRequirements": []
+      }
+    ],
+    "properties": [
+      {
+        "label": "_days",
+        "type": "AppIntents.IntentParameter<Swift.Int>",
+        "mangledTypeName": "n/a - deprecated",
+        "isStatic": "false",
+        "isComputed": "false",
+        "file": "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/ClariFi iOS/Services/ClariFiAppIntents.swift",
+        "line": 63,
+        "valueKind": "InitCall",
+        "value": {
+          "type": "AppIntents.IntentParameter<Swift.Int>",
+          "arguments": [
+            {
+              "label": "title",
+              "type": "Foundation.LocalizedStringResource",
+              "valueKind": "RawLiteral",
+              "value": "Days"
+            },
+            {
+              "label": "description",
+              "type": "Swift.Optional<Foundation.LocalizedStringResource>",
+              "valueKind": "RawLiteral",
+              "value": "Number of days to look back"
+            },
+            {
+              "label": "default",
+              "type": "Swift.Optional<Swift.Int>",
+              "valueKind": "RawLiteral",
+              "value": "7"
+            },
+            {
+              "label": "controlStyle",
+              "type": "AppIntents.IntentParameter<Swift.Int>.IntControlStyle",
+              "valueKind": "Runtime"
+            },
+            {
+              "label": "inclusiveRange",
+              "type": "Swift.Optional<(lowerBound: Swift.Int, upperBound: Swift.Int)>",
+              "valueKind": "RawLiteral",
+              "value": "nil"
+            },
+            {
+              "label": "requestValueDialog",
+              "type": "Swift.Optional<AppIntents.IntentDialog>",
+              "valueKind": "RawLiteral",
+              "value": "nil"
+            },
+            {
+              "label": "inputConnectionBehavior",
+              "type": "AppIntents.InputConnectionBehavior",
+              "valueKind": "Runtime"
+            }
+          ]
+        }
+      },
+      {
+        "label": "title",
+        "type": "Foundation.LocalizedStringResource",
+        "mangledTypeName": "n/a - deprecated",
+        "isStatic": "true",
+        "isComputed": "false",
+        "file": "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/ClariFi iOS/Services/ClariFiAppIntents.swift",
+        "line": 59,
+        "valueKind": "RawLiteral",
+        "value": "Find Recent Transactions"
+      },
+      {
+        "label": "description",
+        "type": "AppIntents.IntentDescription",
+        "mangledTypeName": "n/a - deprecated",
+        "isStatic": "true",
+        "isComputed": "false",
+        "file": "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/ClariFi iOS/Services/ClariFiAppIntents.swift",
+        "line": 60,
+        "valueKind": "RawLiteral",
+        "value": "Find your recent financial transactions"
+      },
+      {
+        "label": "days",
+        "type": "Swift.Int",
+        "mangledTypeName": "n/a - deprecated",
+        "isStatic": "false",
+        "isComputed": "true",
+        "file": "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/ClariFi iOS/Services/ClariFiAppIntents.swift",
+        "line": 63,
+        "valueKind": "InitCall",
+        "value": {
+          "type": "AppIntents.IntentParameter<Swift.Int>",
+          "arguments": [
+            {
+              "label": "title",
+              "type": "Foundation.LocalizedStringResource",
+              "valueKind": "RawLiteral",
+              "value": "Days"
+            },
+            {
+              "label": "description",
+              "type": "Swift.Optional<Foundation.LocalizedStringResource>",
+              "valueKind": "RawLiteral",
+              "value": "Number of days to look back"
+            },
+            {
+              "label": "default",
+              "type": "Swift.Optional<Swift.Int>",
+              "valueKind": "RawLiteral",
+              "value": "7"
+            },
+            {
+              "label": "controlStyle",
+              "type": "AppIntents.IntentParameter<Swift.Int>.IntControlStyle",
+              "valueKind": "Runtime"
+            },
+            {
+              "label": "inclusiveRange",
+              "type": "Swift.Optional<(lowerBound: Swift.Int, upperBound: Swift.Int)>",
+              "valueKind": "RawLiteral",
+              "value": "nil"
+            },
+            {
+              "label": "requestValueDialog",
+              "type": "Swift.Optional<AppIntents.IntentDialog>",
+              "valueKind": "RawLiteral",
+              "value": "nil"
+            },
+            {
+              "label": "inputConnectionBehavior",
+              "type": "AppIntents.InputConnectionBehavior",
+              "valueKind": "Runtime"
+            }
+          ]
+        },
+        "propertyWrappers": [
+          {
+            "type": "AppIntents.IntentParameter",
+            "file": "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/ClariFi iOS/Services/ClariFiAppIntents.swift",
+            "line": 62,
+            "arguments": [
+              {
+                "label": "title",
+                "type": "Foundation.LocalizedStringResource",
+                "valueKind": "RawLiteral",
+                "value": "Days"
+              },
+              {
+                "label": "description",
+                "type": "Swift.Optional<Foundation.LocalizedStringResource>",
+                "valueKind": "RawLiteral",
+                "value": "Number of days to look back"
+              },
+              {
+                "label": "default",
+                "type": "Swift.Optional<Swift.Int>",
+                "valueKind": "RawLiteral",
+                "value": "7"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "$days",
+        "type": "AppIntents.IntentParameter<Swift.Int>",
+        "mangledTypeName": "n/a - deprecated",
+        "isStatic": "false",
+        "isComputed": "true",
+        "file": "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/ClariFi iOS/Services/ClariFiAppIntents.swift",
+        "line": 63,
+        "valueKind": "Runtime"
+      }
+    ]
+  },
+  {
+    "typeName": "ClariFi_iOS.AddTransactionIntent",
+    "mangledTypeName": "11ClariFi_iOS20AddTransactionIntentV",
+    "kind": "struct",
+    "file": "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/ClariFi iOS/Services/ClariFiAppIntents.swift",
+    "line": 93,
+    "conformances": [
+      "AppIntents.AppIntent",
+      "AppIntents.PersistentlyIdentifiable",
+      "AppIntents._SupportsAppDependencies",
+      "Swift.Sendable"
+    ],
+    "allConformances": [
+      {
+        "protocolName": "AppIntents.AppIntent",
+        "conformanceDefiningModule": "ClariFi_iOS"
+      },
+      {
+        "protocolName": "AppIntents.PersistentlyIdentifiable",
+        "conformanceDefiningModule": "ClariFi_iOS"
+      },
+      {
+        "protocolName": "AppIntents._SupportsAppDependencies",
+        "conformanceDefiningModule": "ClariFi_iOS"
+      },
+      {
+        "protocolName": "Swift.Sendable",
+        "conformanceDefiningModule": "ClariFi_iOS"
+      }
+    ],
+    "associatedTypeAliases": [
+      {
+        "typeAliasName": "PerformResult",
+        "substitutedTypeName": "some AppIntents.ProvidesDialog & AppIntents.ReturnsValue<ClariFi_iOS.TransactionEntity>",
+        "substitutedMangledTypeName": "11ClariFi_iOS20AddTransactionIntentV7performQryYaKFQOy_Qo_",
+        "opaqueTypeProtocolRequirements": [
+          "AppIntents.ProvidesDialog",
+          "AppIntents.ReturnsValue"
+        ],
+        "opaqueTypeSameTypeRequirements": [
+          {
+            "typeAliasName": "AppIntents.IntentResult.Value",
+            "substitutedTypeName": "ClariFi_iOS.TransactionEntity",
+            "substitutedMangledTypeName": "11ClariFi_iOS17TransactionEntityV"
+          }
+        ]
+      },
+      {
+        "typeAliasName": "SummaryContent",
+        "substitutedTypeName": "some AppIntents.ParameterSummary",
+        "substitutedMangledTypeName": "10AppIntents0A6IntentPAAE16parameterSummaryQrvpZQOy11ClariFi_iOS014AddTransactionC0V_Qo_",
+        "opaqueTypeProtocolRequirements": [
+          "AppIntents.ParameterSummary"
+        ],
+        "opaqueTypeSameTypeRequirements": []
+      }
+    ],
+    "properties": [
+      {
+        "label": "_amount",
+        "type": "AppIntents.IntentParameter<Swift.Double>",
+        "mangledTypeName": "n/a - deprecated",
+        "isStatic": "false",
+        "isComputed": "false",
+        "file": "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/ClariFi iOS/Services/ClariFiAppIntents.swift",
+        "line": 98,
+        "valueKind": "InitCall",
+        "value": {
+          "type": "AppIntents.IntentParameter<Swift.Double>",
+          "arguments": [
+            {
+              "label": "title",
+              "type": "Foundation.LocalizedStringResource",
+              "valueKind": "RawLiteral",
+              "value": "Amount"
+            },
+            {
+              "label": "description",
+              "type": "Swift.Optional<Foundation.LocalizedStringResource>",
+              "valueKind": "RawLiteral",
+              "value": "Transaction amount"
+            },
+            {
+              "label": "default",
+              "type": "Swift.Optional<Swift.Double>",
+              "valueKind": "RawLiteral",
+              "value": "nil"
+            },
+            {
+              "label": "controlStyle",
+              "type": "AppIntents.IntentParameter<Swift.Double>.DoubleControlStyle",
+              "valueKind": "Runtime"
+            },
+            {
+              "label": "inclusiveRange",
+              "type": "Swift.Optional<(lowerBound: Swift.Double, upperBound: Swift.Double)>",
+              "valueKind": "RawLiteral",
+              "value": "nil"
+            },
+            {
+              "label": "requestValueDialog",
+              "type": "Swift.Optional<AppIntents.IntentDialog>",
+              "valueKind": "RawLiteral",
+              "value": "nil"
+            },
+            {
+              "label": "inputConnectionBehavior",
+              "type": "AppIntents.InputConnectionBehavior",
+              "valueKind": "Runtime"
+            }
+          ]
+        }
+      },
+      {
+        "label": "_merchant",
+        "type": "AppIntents.IntentParameter<Swift.String>",
+        "mangledTypeName": "n/a - deprecated",
+        "isStatic": "false",
+        "isComputed": "false",
+        "file": "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/ClariFi iOS/Services/ClariFiAppIntents.swift",
+        "line": 101,
+        "valueKind": "InitCall",
+        "value": {
+          "type": "AppIntents.IntentParameter<Swift.String>",
+          "arguments": [
+            {
+              "label": "title",
+              "type": "Foundation.LocalizedStringResource",
+              "valueKind": "RawLiteral",
+              "value": "Merchant"
+            },
+            {
+              "label": "description",
+              "type": "Swift.Optional<Foundation.LocalizedStringResource>",
+              "valueKind": "RawLiteral",
+              "value": "Merchant name"
+            },
+            {
+              "label": "default",
+              "type": "Swift.Optional<Swift.String>",
+              "valueKind": "RawLiteral",
+              "value": "nil"
+            },
+            {
+              "label": "inputOptions",
+              "type": "Swift.Optional<Swift.String.IntentInputOptions>",
+              "valueKind": "RawLiteral",
+              "value": "nil"
+            },
+            {
+              "label": "requestValueDialog",
+              "type": "Swift.Optional<AppIntents.IntentDialog>",
+              "valueKind": "RawLiteral",
+              "value": "nil"
+            },
+            {
+              "label": "inputConnectionBehavior",
+              "type": "AppIntents.InputConnectionBehavior",
+              "valueKind": "Runtime"
+            }
+          ]
+        }
+      },
+      {
+        "label": "_category",
+        "type": "AppIntents.IntentParameter<Swift.Optional<Swift.String>>",
+        "mangledTypeName": "n/a - deprecated",
+        "isStatic": "false",
+        "isComputed": "false",
+        "file": "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/ClariFi iOS/Services/ClariFiAppIntents.swift",
+        "line": 104,
+        "valueKind": "InitCall",
+        "value": {
+          "type": "AppIntents.IntentParameter<Swift.Optional<Swift.String>>",
+          "arguments": [
+            {
+              "label": "title",
+              "type": "Foundation.LocalizedStringResource",
+              "valueKind": "RawLiteral",
+              "value": "Category"
+            },
+            {
+              "label": "description",
+              "type": "Swift.Optional<Foundation.LocalizedStringResource>",
+              "valueKind": "RawLiteral",
+              "value": "Transaction category"
+            },
+            {
+              "label": "default",
+              "type": "Swift.Optional<Swift.String>",
+              "valueKind": "RawLiteral",
+              "value": "nil"
+            },
+            {
+              "label": "inputOptions",
+              "type": "Swift.Optional<Swift.String.IntentInputOptions>",
+              "valueKind": "RawLiteral",
+              "value": "nil"
+            },
+            {
+              "label": "requestValueDialog",
+              "type": "Swift.Optional<AppIntents.IntentDialog>",
+              "valueKind": "RawLiteral",
+              "value": "nil"
+            },
+            {
+              "label": "inputConnectionBehavior",
+              "type": "AppIntents.InputConnectionBehavior",
+              "valueKind": "Runtime"
+            }
+          ]
+        }
+      },
+      {
+        "label": "title",
+        "type": "Foundation.LocalizedStringResource",
+        "mangledTypeName": "n/a - deprecated",
+        "isStatic": "true",
+        "isComputed": "false",
+        "file": "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/ClariFi iOS/Services/ClariFiAppIntents.swift",
+        "line": 94,
+        "valueKind": "RawLiteral",
+        "value": "Add Transaction"
+      },
+      {
+        "label": "description",
+        "type": "AppIntents.IntentDescription",
+        "mangledTypeName": "n/a - deprecated",
+        "isStatic": "true",
+        "isComputed": "false",
+        "file": "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/ClariFi iOS/Services/ClariFiAppIntents.swift",
+        "line": 95,
+        "valueKind": "RawLiteral",
+        "value": "Add a new financial transaction"
+      },
+      {
+        "label": "amount",
+        "type": "Swift.Double",
+        "mangledTypeName": "n/a - deprecated",
+        "isStatic": "false",
+        "isComputed": "true",
+        "file": "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/ClariFi iOS/Services/ClariFiAppIntents.swift",
+        "line": 98,
+        "valueKind": "InitCall",
+        "value": {
+          "type": "AppIntents.IntentParameter<Swift.Double>",
+          "arguments": [
+            {
+              "label": "title",
+              "type": "Foundation.LocalizedStringResource",
+              "valueKind": "RawLiteral",
+              "value": "Amount"
+            },
+            {
+              "label": "description",
+              "type": "Swift.Optional<Foundation.LocalizedStringResource>",
+              "valueKind": "RawLiteral",
+              "value": "Transaction amount"
+            },
+            {
+              "label": "default",
+              "type": "Swift.Optional<Swift.Double>",
+              "valueKind": "RawLiteral",
+              "value": "nil"
+            },
+            {
+              "label": "controlStyle",
+              "type": "AppIntents.IntentParameter<Swift.Double>.DoubleControlStyle",
+              "valueKind": "Runtime"
+            },
+            {
+              "label": "inclusiveRange",
+              "type": "Swift.Optional<(lowerBound: Swift.Double, upperBound: Swift.Double)>",
+              "valueKind": "RawLiteral",
+              "value": "nil"
+            },
+            {
+              "label": "requestValueDialog",
+              "type": "Swift.Optional<AppIntents.IntentDialog>",
+              "valueKind": "RawLiteral",
+              "value": "nil"
+            },
+            {
+              "label": "inputConnectionBehavior",
+              "type": "AppIntents.InputConnectionBehavior",
+              "valueKind": "Runtime"
+            }
+          ]
+        },
+        "propertyWrappers": [
+          {
+            "type": "AppIntents.IntentParameter",
+            "file": "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/ClariFi iOS/Services/ClariFiAppIntents.swift",
+            "line": 97,
+            "arguments": [
+              {
+                "label": "title",
+                "type": "Foundation.LocalizedStringResource",
+                "valueKind": "RawLiteral",
+                "value": "Amount"
+              },
+              {
+                "label": "description",
+                "type": "Swift.Optional<Foundation.LocalizedStringResource>",
+                "valueKind": "RawLiteral",
+                "value": "Transaction amount"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "$amount",
+        "type": "AppIntents.IntentParameter<Swift.Double>",
+        "mangledTypeName": "n/a - deprecated",
+        "isStatic": "false",
+        "isComputed": "true",
+        "file": "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/ClariFi iOS/Services/ClariFiAppIntents.swift",
+        "line": 98,
+        "valueKind": "Runtime"
+      },
+      {
+        "label": "merchant",
+        "type": "Swift.String",
+        "mangledTypeName": "n/a - deprecated",
+        "isStatic": "false",
+        "isComputed": "true",
+        "file": "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/ClariFi iOS/Services/ClariFiAppIntents.swift",
+        "line": 101,
+        "valueKind": "InitCall",
+        "value": {
+          "type": "AppIntents.IntentParameter<Swift.String>",
+          "arguments": [
+            {
+              "label": "title",
+              "type": "Foundation.LocalizedStringResource",
+              "valueKind": "RawLiteral",
+              "value": "Merchant"
+            },
+            {
+              "label": "description",
+              "type": "Swift.Optional<Foundation.LocalizedStringResource>",
+              "valueKind": "RawLiteral",
+              "value": "Merchant name"
+            },
+            {
+              "label": "default",
+              "type": "Swift.Optional<Swift.String>",
+              "valueKind": "RawLiteral",
+              "value": "nil"
+            },
+            {
+              "label": "inputOptions",
+              "type": "Swift.Optional<Swift.String.IntentInputOptions>",
+              "valueKind": "RawLiteral",
+              "value": "nil"
+            },
+            {
+              "label": "requestValueDialog",
+              "type": "Swift.Optional<AppIntents.IntentDialog>",
+              "valueKind": "RawLiteral",
+              "value": "nil"
+            },
+            {
+              "label": "inputConnectionBehavior",
+              "type": "AppIntents.InputConnectionBehavior",
+              "valueKind": "Runtime"
+            }
+          ]
+        },
+        "propertyWrappers": [
+          {
+            "type": "AppIntents.IntentParameter",
+            "file": "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/ClariFi iOS/Services/ClariFiAppIntents.swift",
+            "line": 100,
+            "arguments": [
+              {
+                "label": "title",
+                "type": "Foundation.LocalizedStringResource",
+                "valueKind": "RawLiteral",
+                "value": "Merchant"
+              },
+              {
+                "label": "description",
+                "type": "Swift.Optional<Foundation.LocalizedStringResource>",
+                "valueKind": "RawLiteral",
+                "value": "Merchant name"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "$merchant",
+        "type": "AppIntents.IntentParameter<Swift.String>",
+        "mangledTypeName": "n/a - deprecated",
+        "isStatic": "false",
+        "isComputed": "true",
+        "file": "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/ClariFi iOS/Services/ClariFiAppIntents.swift",
+        "line": 101,
+        "valueKind": "Runtime"
+      },
+      {
+        "label": "category",
+        "type": "Swift.Optional<Swift.String>",
+        "mangledTypeName": "n/a - deprecated",
+        "isStatic": "false",
+        "isComputed": "true",
+        "file": "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/ClariFi iOS/Services/ClariFiAppIntents.swift",
+        "line": 104,
+        "valueKind": "InitCall",
+        "value": {
+          "type": "AppIntents.IntentParameter<Swift.Optional<Swift.String>>",
+          "arguments": [
+            {
+              "label": "title",
+              "type": "Foundation.LocalizedStringResource",
+              "valueKind": "RawLiteral",
+              "value": "Category"
+            },
+            {
+              "label": "description",
+              "type": "Swift.Optional<Foundation.LocalizedStringResource>",
+              "valueKind": "RawLiteral",
+              "value": "Transaction category"
+            },
+            {
+              "label": "default",
+              "type": "Swift.Optional<Swift.String>",
+              "valueKind": "RawLiteral",
+              "value": "nil"
+            },
+            {
+              "label": "inputOptions",
+              "type": "Swift.Optional<Swift.String.IntentInputOptions>",
+              "valueKind": "RawLiteral",
+              "value": "nil"
+            },
+            {
+              "label": "requestValueDialog",
+              "type": "Swift.Optional<AppIntents.IntentDialog>",
+              "valueKind": "RawLiteral",
+              "value": "nil"
+            },
+            {
+              "label": "inputConnectionBehavior",
+              "type": "AppIntents.InputConnectionBehavior",
+              "valueKind": "Runtime"
+            }
+          ]
+        },
+        "propertyWrappers": [
+          {
+            "type": "AppIntents.IntentParameter",
+            "file": "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/ClariFi iOS/Services/ClariFiAppIntents.swift",
+            "line": 103,
+            "arguments": [
+              {
+                "label": "title",
+                "type": "Foundation.LocalizedStringResource",
+                "valueKind": "RawLiteral",
+                "value": "Category"
+              },
+              {
+                "label": "description",
+                "type": "Swift.Optional<Foundation.LocalizedStringResource>",
+                "valueKind": "RawLiteral",
+                "value": "Transaction category"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "$category",
+        "type": "AppIntents.IntentParameter<Swift.Optional<Swift.String>>",
+        "mangledTypeName": "n/a - deprecated",
+        "isStatic": "false",
+        "isComputed": "true",
+        "file": "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/ClariFi iOS/Services/ClariFiAppIntents.swift",
+        "line": 104,
+        "valueKind": "Runtime"
+      }
+    ]
+  },
+  {
+    "typeName": "ClariFi_iOS.ClariFiAppShortcuts",
+    "mangledTypeName": "11ClariFi_iOS0aB12AppShortcutsV",
+    "kind": "struct",
+    "file": "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/ClariFi iOS/Services/ClariFiAppIntents.swift",
+    "line": 126,
+    "conformances": [
+      "AppIntents.AppShortcutsProvider",
+      "Swift.Sendable",
+      "Swift.BitwiseCopyable"
+    ],
+    "allConformances": [
+      {
+        "protocolName": "AppIntents.AppShortcutsProvider",
+        "conformanceDefiningModule": "ClariFi_iOS"
+      },
+      {
+        "protocolName": "Swift.Sendable",
+        "conformanceDefiningModule": "ClariFi_iOS"
+      },
+      {
+        "protocolName": "Swift.BitwiseCopyable",
+        "conformanceDefiningModule": "ClariFi_iOS"
+      }
+    ],
+    "associatedTypeAliases": [],
+    "properties": [
+      {
+        "label": "appShortcuts",
+        "type": "Swift.Array<AppIntents.AppShortcut>",
+        "mangledTypeName": "n/a - deprecated",
+        "isStatic": "true",
+        "isComputed": "true",
+        "file": "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/ClariFi iOS/Services/ClariFiAppIntents.swift",
+        "line": 127,
+        "valueKind": "Builder",
+        "value": {
+          "type": "AppIntents.AppShortcutsBuilder",
+          "members": []
+        }
+      }
+    ]
+  },
+  {
+    "typeName": "ClariFi_iOS.ClariFiAppIntentsPackage",
+    "mangledTypeName": "11ClariFi_iOS0aB17AppIntentsPackageV",
+    "kind": "struct",
+    "file": "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/ClariFi iOS/Services/ClariFiAppIntents.swift",
+    "line": 153,
+    "conformances": [
+      "AppIntents.AppIntentsPackage",
+      "Swift.Sendable",
+      "Swift.BitwiseCopyable"
+    ],
+    "allConformances": [
+      {
+        "protocolName": "AppIntents.AppIntentsPackage",
+        "conformanceDefiningModule": "ClariFi_iOS"
+      },
+      {
+        "protocolName": "Swift.Sendable",
+        "conformanceDefiningModule": "ClariFi_iOS"
+      },
+      {
+        "protocolName": "Swift.BitwiseCopyable",
+        "conformanceDefiningModule": "ClariFi_iOS"
+      }
+    ],
+    "associatedTypeAliases": [],
+    "properties": []
+  }
+]

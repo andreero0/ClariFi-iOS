@@ -1,0 +1,128 @@
+{
+  "source": "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/ClariFi iOS/Services/ClariFiAppIntents.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Transaction",
+        "location": {
+          "startingColumn": 15,
+          "startingLine": 16
+        }
+      },
+      {
+        "comment": "",
+        "key": "%@",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 27
+        }
+      },
+      {
+        "comment": "",
+        "key": "%@ • %@",
+        "location": {
+          "startingColumn": 23,
+          "startingLine": 28
+        }
+      },
+      {
+        "comment": "",
+        "key": "Find Recent Transactions",
+        "location": {
+          "startingColumn": 49,
+          "startingLine": 59
+        }
+      },
+      {
+        "comment": "",
+        "key": "Find your recent financial transactions",
+        "location": {
+          "startingColumn": 48,
+          "startingLine": 60
+        }
+      },
+      {
+        "comment": "",
+        "key": "Found %lld transactions from the last %lld days",
+        "location": {
+          "startingColumn": 21,
+          "startingLine": 87
+        }
+      },
+      {
+        "comment": "",
+        "key": "Days"
+      },
+      {
+        "comment": "",
+        "key": "Number of days to look back"
+      },
+      {
+        "comment": "",
+        "key": "Add Transaction",
+        "location": {
+          "startingColumn": 49,
+          "startingLine": 94
+        }
+      },
+      {
+        "comment": "",
+        "key": "Add a new financial transaction",
+        "location": {
+          "startingColumn": 48,
+          "startingLine": 95
+        }
+      },
+      {
+        "comment": "",
+        "key": "Added transaction: %@ - %@",
+        "location": {
+          "startingColumn": 21,
+          "startingLine": 120
+        }
+      },
+      {
+        "comment": "",
+        "key": "Amount"
+      },
+      {
+        "comment": "",
+        "key": "Transaction amount"
+      },
+      {
+        "comment": "",
+        "key": "Merchant"
+      },
+      {
+        "comment": "",
+        "key": "Merchant name"
+      },
+      {
+        "comment": "",
+        "key": "Category"
+      },
+      {
+        "comment": "",
+        "key": "Transaction category"
+      },
+      {
+        "comment": "",
+        "key": "Show Transactions",
+        "location": {
+          "startingColumn": 29,
+          "startingLine": 135
+        }
+      },
+      {
+        "comment": "",
+        "key": "Add Transaction",
+        "location": {
+          "startingColumn": 29,
+          "startingLine": 145
+        }
+      }
+    ]
+  },
+  "version": 1
+}

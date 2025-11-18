@@ -1,0 +1,192 @@
+{
+  "source": "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/ClariFi iOS/Views/SecurityAuditView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Security Audit",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 198
+        }
+      },
+      {
+        "comment": "",
+        "key": "Integrity Check Complete",
+        "location": {
+          "startingColumn": 16,
+          "startingLine": 203
+        }
+      },
+      {
+        "comment": "",
+        "key": "Last activity: %@ ago",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 39
+        }
+      },
+      {
+        "comment": "",
+        "key": "Security Activity",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 24
+        }
+      },
+      {
+        "comment": "",
+        "key": "Last 7 Days",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 47
+        }
+      },
+      {
+        "comment": "",
+        "key": "Period",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 52
+        }
+      },
+      {
+        "comment": "",
+        "key": "Last Week",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 53
+        }
+      },
+      {
+        "comment": "",
+        "key": "Last Month",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 54
+        }
+      },
+      {
+        "comment": "",
+        "key": "Last 3 Months",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 55
+        }
+      },
+      {
+        "comment": "",
+        "key": "Audit Report",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 104
+        }
+      },
+      {
+        "comment": "",
+        "key": "Recent Critical Events",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 132
+        }
+      },
+      {
+        "comment": "",
+        "key": "Run Integrity Check",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 146
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld checks performed",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 164
+        }
+      },
+      {
+        "comment": "",
+        "key": "All checks passed",
+        "location": {
+          "startingColumn": 50,
+          "startingLine": 160
+        }
+      },
+      {
+        "comment": "",
+        "key": "Issues detected",
+        "location": {
+          "startingColumn": 72,
+          "startingLine": 160
+        }
+      },
+      {
+        "comment": "",
+        "key": "• %@",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 170
+        }
+      },
+      {
+        "comment": "",
+        "key": "Data Integrity",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 179
+        }
+      },
+      {
+        "comment": "",
+        "key": "Clear All Logs",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 189
+        }
+      },
+      {
+        "comment": "",
+        "key": "Actions",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 193
+        }
+      },
+      {
+        "comment": "",
+        "key": "Audit logs are automatically cleaned up after 90 days. Clearing logs will remove all security event history.",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 195
+        }
+      },
+      {
+        "comment": "",
+        "key": "OK",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 204
+        }
+      },
+      {
+        "comment": "",
+        "key": "All integrity checks passed successfully.",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 207
+        }
+      },
+      {
+        "comment": "",
+        "key": "Found %lld issue(s). Please review the details.",
+        "location": {
+          "startingColumn": 84,
+          "startingLine": 207
+        }
+      }
+    ]
+  },
+  "version": 1
+}

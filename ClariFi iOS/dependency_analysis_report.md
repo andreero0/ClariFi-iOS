@@ -1,0 +1,128 @@
+# ClariFi iOS Dependency Analysis Report
+
+**Generated:** 2025-10-21 06:16:37
+
+## Overview
+
+This report analyzes import statements, file dependencies, and potential circular dependencies across all Swift files in the ClariFi iOS codebase.
+
+## Import Statement Analysis
+
+### Import Statistics:
+- **Total Import Statements:** 209
+- **Unique Imports:** 23
+
+### Most Common Imports:
+- import SwiftUI: 69 files
+- import Foundation: 63 files
+- import CoreData: 42 files
+- import Combine: 7 files
+- import UIKit: 3 files
+- import UniformTypeIdentifiers: 2 files
+- import StoreKit: 2 files
+- import RegexBuilder: 2 files
+- import PDFKit: 2 files
+- import CryptoKit: 2 files
+- import Charts: 2 files
+- import AppIntents: 2 files
+- import os.log: 1 files
+- import WidgetKit: 1 files
+- import Vision: 1 files
+
+## File Dependency Mapping
+
+### Dependencies by Directory:
+
+- **Core/**: 10 import statements
+- **Services/**: 56 import statements
+- **ViewModels/**: 36 import statements
+- **Views/**: 64 import statements
+- **Models/**: 15 import statements
+- **Repositories/**: 6 import statements
+
+## Circular Dependency Analysis
+
+### ✅ No Obvious Circular Dependencies Detected
+
+## Import Optimization Opportunities
+
+### Files with Most Imports:
+- ./ViewModels/StatementUploadViewModel.swift: 5 imports
+- ./ViewModels/TransactionEntryViewModel.swift: 4 imports
+- ./Services/VisionOCRService.swift: 4 imports
+- ./Services/OCRService.swift: 4 imports
+- ./Services/ClariFiAppIntents.swift: 4 imports
+- ./Widgets/ClariFiWidget.swift: 3 imports
+- ./Views/StatementUploadView.swift: 3 imports
+- ./Views/ScenarioPlanningView.swift: 3 imports
+- ./Views/CashflowForecastView.swift: 3 imports
+- ./ViewModels/PrivacyDashboardViewModel.swift: 3 imports
+
+### Potential Unused Imports:
+
+- ./ClariFi_iOSApp.swift: potentially unused import 'AppIntents'
+- ./ClariFi_iOSApp.swift: potentially unused import 'OSLog'
+- ./ViewModels/StatementUploadViewModel.swift: potentially unused import 'UniformTypeIdentifiers'
+- ./ViewModels/StatementUploadViewModel.swift: potentially unused import 'CryptoKit'
+- ./Utilities/LLMPerformanceMonitor.swift: potentially unused import 'os.log'
+- ./Views/StatementUploadView.swift: potentially unused import 'PhotosUI'
+- ./Views/StatementUploadView.swift: potentially unused import 'UniformTypeIdentifiers'
+- ./Views/PaywallView.swift: potentially unused import 'StoreKit'
+- ./Views/ScenarioPlanningView.swift: potentially unused import 'Charts'
+- ./Views/CashflowForecastView.swift: potentially unused import 'Charts'
+- ./Services/StatementPatterns.swift: potentially unused import 'RegexBuilder'
+- ./Services/LLM/AppleFoundationModelManager.swift: potentially unused import 'CoreML'
+- ./Services/SubscriptionService.swift: potentially unused import 'StoreKit'
+- ./Services/InsightNotificationService.swift: potentially unused import 'UserNotifications'
+- ./Services/OCRService.swift: potentially unused import 'Vision'
+- ./Services/OCRService.swift: potentially unused import 'PDFKit'
+- ./Services/ClariFiAppIntents.swift: potentially unused import 'AppIntents'
+- ./Services/ClariFiAppIntents.swift: potentially unused import 'CoreSpotlight'
+- ./Services/BiometricAuthService.swift: potentially unused import 'LocalAuthentication'
+- ./Services/TransactionParserService.swift: potentially unused import 'RegexBuilder'
+- ./Services/VisionOCRService.swift: potentially unused import 'PDFKit'
+- ./Services/VisionOCRService.swift: potentially unused import 'CoreImage'
+- ./Services/EncryptionService.swift: potentially unused import 'Security'
+- ./Services/EncryptionService.swift: potentially unused import 'CryptoKit'
+- ./Widgets/ClariFiWidget.swift: potentially unused import 'WidgetKit'
+
+## Dependency Statistics
+
+- **Average imports per file:** 1.7
+
+### Most Imported External Modules:
+- import SwiftUI: 69 files
+- import Foundation: 63 files
+- import CoreData: 42 files
+- import Combine: 7 files
+- import UIKit: 3 files
+
+### Internal Module Dependencies:
+- import UniformTypeIdentifiers: 2 files
+- import StoreKit: 2 files
+- import RegexBuilder: 2 files
+- import PDFKit: 2 files
+- import CryptoKit: 2 files
+- import Charts: 2 files
+- import AppIntents: 2 files
+- import os.log: 1 files
+- import WidgetKit: 1 files
+- import Vision: 1 files
+
+## Recommendations
+
+### Optimization Opportunities:
+1. **Review files with high import counts** (>10 imports may indicate tight coupling)
+2. **Investigate potential circular dependencies** for architectural improvements
+3. **Remove unused imports** to reduce compilation time and improve clarity
+4. **Consider dependency injection** to reduce direct import dependencies
+5. **Group related imports** and organize them consistently
+
+### Next Steps:
+1. Review the dependency graph (dependency_graph.dot) with a graph visualization tool
+2. Address any circular dependencies found
+3. Optimize imports in files with high import counts
+4. Standardize import organization across all files
+
+---
+*Report generated by dependency_mapping.sh on 2025-10-21 06:16:37*

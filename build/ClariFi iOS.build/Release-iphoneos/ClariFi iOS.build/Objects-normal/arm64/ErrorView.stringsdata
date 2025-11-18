@@ -1,0 +1,72 @@
+{
+  "source": "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/ClariFi iOS/Views/ErrorView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Try again",
+        "location": {
+          "startingColumn": 41,
+          "startingLine": 55
+        }
+      },
+      {
+        "comment": "",
+        "key": "Retry the failed operation",
+        "location": {
+          "startingColumn": 40,
+          "startingLine": 56
+        }
+      },
+      {
+        "comment": "",
+        "key": "OK",
+        "location": {
+          "startingColumn": 54,
+          "startingLine": 71
+        }
+      },
+      {
+        "comment": "",
+        "key": "Dismiss",
+        "location": {
+          "startingColumn": 61,
+          "startingLine": 71
+        }
+      },
+      {
+        "comment": "",
+        "key": "Close this error message",
+        "location": {
+          "startingColumn": 36,
+          "startingLine": 72
+        }
+      },
+      {
+        "comment": "",
+        "key": "Try Again",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 47
+        }
+      },
+      {
+        "comment": "",
+        "key": "OK",
+        "location": {
+          "startingColumn": 43,
+          "startingLine": 63
+        }
+      },
+      {
+        "comment": "",
+        "key": "Dismiss",
+        "location": {
+          "startingColumn": 50,
+          "startingLine": 63
+        }
+      }
+    ]
+  },
+  "version": 1
+}

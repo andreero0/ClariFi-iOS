@@ -1,0 +1,4 @@
+Target dependency graph (2 targets)
+Target 'ClariFi iOSTests' in project 'ClariFi iOS'
+➜ Explicit dependency on target 'ClariFi iOS' in project 'ClariFi iOS'
+Target 'ClariFi iOS' in project 'ClariFi iOS' (no dependencies)

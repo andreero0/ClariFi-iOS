@@ -1,0 +1,152 @@
+{
+  "source": "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/ClariFi iOS/Views/ScenarioPlanningView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Scenario Planning",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 21
+        }
+      },
+      {
+        "comment": "",
+        "key": "Loading scenarios...",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 31
+        }
+      },
+      {
+        "comment": "",
+        "key": "What-If Scenarios",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 49
+        }
+      },
+      {
+        "comment": "",
+        "key": "Explore how different spending changes could impact your finances",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 52
+        }
+      },
+      {
+        "comment": "",
+        "key": "Create Custom Scenario",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 97
+        }
+      },
+      {
+        "comment": "",
+        "key": "Projected Impact",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 127
+        }
+      },
+      {
+        "comment": "",
+        "key": "Total Savings",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 132
+        }
+      },
+      {
+        "comment": "",
+        "key": "Monthly Savings",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 144
+        }
+      },
+      {
+        "comment": "",
+        "key": "Baseline vs. Scenario",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 161
+        }
+      },
+      {
+        "comment": "",
+        "key": "Month",
+        "location": {
+          "startingColumn": 35,
+          "startingLine": 167
+        }
+      },
+      {
+        "comment": "",
+        "key": "Balance",
+        "location": {
+          "startingColumn": 35,
+          "startingLine": 168
+        }
+      },
+      {
+        "comment": "",
+        "key": "Month",
+        "location": {
+          "startingColumn": 35,
+          "startingLine": 176
+        }
+      },
+      {
+        "comment": "",
+        "key": "Balance",
+        "location": {
+          "startingColumn": 35,
+          "startingLine": 177
+        }
+      },
+      {
+        "comment": "",
+        "key": "Baseline",
+        "location": {
+          "startingColumn": 23,
+          "startingLine": 189
+        }
+      },
+      {
+        "comment": "",
+        "key": "With Changes",
+        "location": {
+          "startingColumn": 23,
+          "startingLine": 193
+        }
+      },
+      {
+        "comment": "",
+        "key": "Category Changes",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 206
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld%%",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 237
+        }
+      },
+      {
+        "comment": "",
+        "key": "Recommendations",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 254
+        }
+      }
+    ]
+  },
+  "version": 1
+}

@@ -1,0 +1,16 @@
+{
+  "source": "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/ClariFi iOS/ViewModels/SubscriptionViewModel.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Upgrade to Premium",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 116
+        }
+      }
+    ]
+  },
+  "version": 1
+}

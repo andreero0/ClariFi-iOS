@@ -1,0 +1,32 @@
+{
+  "source": "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/ClariFi iOS/Views/SuccessView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Done",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 38
+        }
+      },
+      {
+        "comment": "",
+        "key": "Done",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 49
+        }
+      },
+      {
+        "comment": "",
+        "key": "Close this success message",
+        "location": {
+          "startingColumn": 32,
+          "startingLine": 50
+        }
+      }
+    ]
+  },
+  "version": 1
+}

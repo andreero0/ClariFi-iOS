@@ -1,0 +1,304 @@
+{
+  "source": "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/ClariFi iOS/Views/TransactionReviewView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Review Transactions",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 37
+        }
+      },
+      {
+        "comment": "",
+        "key": "Select All",
+        "location": {
+          "startingColumn": 55,
+          "startingLine": 41
+        }
+      },
+      {
+        "comment": "",
+        "key": "Deselect All",
+        "location": {
+          "startingColumn": 70,
+          "startingLine": 41
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld Transactions Found",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 74
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld need review",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 79
+        }
+      },
+      {
+        "comment": "",
+        "key": "Total Amount",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 93
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld selected",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 101
+        }
+      },
+      {
+        "comment": "",
+        "key": "Batch Edit",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 107
+        }
+      },
+      {
+        "comment": "",
+        "key": "Review and correct any transactions before saving",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 143
+        }
+      },
+      {
+        "comment": "",
+        "key": "Cancel",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 122
+        }
+      },
+      {
+        "comment": "",
+        "key": "Confirm & Save",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 132
+        }
+      },
+      {
+        "comment": "",
+        "key": "Raw: %@",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 230
+        }
+      },
+      {
+        "comment": "",
+        "key": "Overall: %lld%%",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 274
+        }
+      },
+      {
+        "comment": "",
+        "key": "Edit Transaction",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 383
+        }
+      },
+      {
+        "comment": "",
+        "key": "Transaction Details",
+        "location": {
+          "startingColumn": 25,
+          "startingLine": 343
+        }
+      },
+      {
+        "comment": "",
+        "key": "Original Text",
+        "location": {
+          "startingColumn": 25,
+          "startingLine": 354
+        }
+      },
+      {
+        "comment": "",
+        "key": "Confidence Scores",
+        "location": {
+          "startingColumn": 25,
+          "startingLine": 360
+        }
+      },
+      {
+        "comment": "",
+        "key": "Date",
+        "location": {
+          "startingColumn": 32,
+          "startingLine": 344
+        }
+      },
+      {
+        "comment": "",
+        "key": "Merchant",
+        "location": {
+          "startingColumn": 31,
+          "startingLine": 346
+        }
+      },
+      {
+        "comment": "",
+        "key": "Amount",
+        "location": {
+          "startingColumn": 31,
+          "startingLine": 348
+        }
+      },
+      {
+        "comment": "",
+        "key": "Category",
+        "location": {
+          "startingColumn": 31,
+          "startingLine": 351
+        }
+      },
+      {
+        "comment": "",
+        "key": "Date",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 362
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld%%",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 364
+        }
+      },
+      {
+        "comment": "",
+        "key": "Merchant",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 369
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld%%",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 371
+        }
+      },
+      {
+        "comment": "",
+        "key": "Amount",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 376
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld%%",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 378
+        }
+      },
+      {
+        "comment": "",
+        "key": "Cancel",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 387
+        }
+      },
+      {
+        "comment": "",
+        "key": "Save",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 393
+        }
+      },
+      {
+        "comment": "",
+        "key": "Batch Edit",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 453
+        }
+      },
+      {
+        "comment": "",
+        "key": "Category",
+        "location": {
+          "startingColumn": 25,
+          "startingLine": 445
+        }
+      },
+      {
+        "comment": "",
+        "key": "Editing %lld transactions",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 439
+        }
+      },
+      {
+        "comment": "",
+        "key": "Batch Edit",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 442
+        }
+      },
+      {
+        "comment": "",
+        "key": "Change Category",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 446
+        }
+      },
+      {
+        "comment": "",
+        "key": "New Category",
+        "location": {
+          "startingColumn": 35,
+          "startingLine": 449
+        }
+      },
+      {
+        "comment": "",
+        "key": "Cancel",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 457
+        }
+      },
+      {
+        "comment": "",
+        "key": "Apply",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 463
+        }
+      }
+    ]
+  },
+  "version": 1
+}

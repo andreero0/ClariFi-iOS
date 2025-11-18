@@ -1,0 +1,256 @@
+{
+  "source": "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/ClariFi iOS/Views/CategorizationRulesView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Categorization Rules",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 47
+        }
+      },
+      {
+        "comment": "",
+        "key": "Error",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 93
+        }
+      },
+      {
+        "comment": "",
+        "key": "OK",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 94
+        }
+      },
+      {
+        "comment": "",
+        "key": "No Rules Yet",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 114
+        }
+      },
+      {
+        "comment": "",
+        "key": "Create rules to automatically categorize transactions based on merchant names",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 118
+        }
+      },
+      {
+        "comment": "",
+        "key": "Create First Rule",
+        "location": {
+          "startingColumn": 23,
+          "startingLine": 125
+        }
+      },
+      {
+        "comment": "",
+        "key": "Delete",
+        "location": {
+          "startingColumn": 35,
+          "startingLine": 147
+        }
+      },
+      {
+        "comment": "",
+        "key": "Disable",
+        "location": {
+          "startingColumn": 49,
+          "startingLine": 156
+        }
+      },
+      {
+        "comment": "",
+        "key": "Enable",
+        "location": {
+          "startingColumn": 61,
+          "startingLine": 156
+        }
+      },
+      {
+        "comment": "",
+        "key": "Disabled",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 187
+        }
+      },
+      {
+        "comment": "",
+        "key": "•",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 217
+        }
+      },
+      {
+        "comment": "",
+        "key": "%d applied",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 220
+        }
+      },
+      {
+        "comment": "",
+        "key": "Priority: %d",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 227
+        }
+      },
+      {
+        "comment": "",
+        "key": "New Rule",
+        "location": {
+          "startingColumn": 44,
+          "startingLine": 339
+        }
+      },
+      {
+        "comment": "",
+        "key": "Edit Rule",
+        "location": {
+          "startingColumn": 57,
+          "startingLine": 339
+        }
+      },
+      {
+        "comment": "",
+        "key": "Rule Details",
+        "location": {
+          "startingColumn": 25,
+          "startingLine": 289
+        }
+      },
+      {
+        "comment": "",
+        "key": "Category",
+        "location": {
+          "startingColumn": 25,
+          "startingLine": 306
+        }
+      },
+      {
+        "comment": "",
+        "key": "Amount Constraints",
+        "location": {
+          "startingColumn": 25,
+          "startingLine": 315
+        }
+      },
+      {
+        "comment": "",
+        "key": "Priority",
+        "location": {
+          "startingColumn": 25,
+          "startingLine": 331
+        }
+      },
+      {
+        "comment": "",
+        "key": "Rule Name",
+        "location": {
+          "startingColumn": 31,
+          "startingLine": 290
+        }
+      },
+      {
+        "comment": "",
+        "key": "Merchant Pattern",
+        "location": {
+          "startingColumn": 31,
+          "startingLine": 292
+        }
+      },
+      {
+        "comment": "",
+        "key": "Match Type",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 295
+        }
+      },
+      {
+        "comment": "",
+        "key": "Category",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 307
+        }
+      },
+      {
+        "comment": "",
+        "key": "Minimum Amount",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 316
+        }
+      },
+      {
+        "comment": "",
+        "key": "Min Amount",
+        "location": {
+          "startingColumn": 35,
+          "startingLine": 319
+        }
+      },
+      {
+        "comment": "",
+        "key": "Maximum Amount",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 323
+        }
+      },
+      {
+        "comment": "",
+        "key": "Max Amount",
+        "location": {
+          "startingColumn": 35,
+          "startingLine": 326
+        }
+      },
+      {
+        "comment": "",
+        "key": "Higher priority rules are applied first",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 334
+        }
+      },
+      {
+        "comment": "",
+        "key": "Priority: %d",
+        "location": {
+          "startingColumn": 29,
+          "startingLine": 332
+        }
+      },
+      {
+        "comment": "",
+        "key": "Cancel",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 343
+        }
+      },
+      {
+        "comment": "",
+        "key": "Save",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 349
+        }
+      }
+    ]
+  },
+  "version": 1
+}

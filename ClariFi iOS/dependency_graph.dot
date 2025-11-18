@@ -1,0 +1,30 @@
+digraph Dependencies {
+  rankdir=TB;
+  node [shape=box, style=rounded];
+
+  "ClariFi_iOSApp" -> "AppIntents";
+  "ClariFi_iOSApp" -> "OSLog";
+  "StatementUploadViewModel" -> "UniformTypeIdentifiers";
+  "StatementUploadViewModel" -> "CryptoKit";
+  "LLMPerformanceMonitor" -> "os.log";
+  "StatementUploadView" -> "PhotosUI";
+  "StatementUploadView" -> "UniformTypeIdentifiers";
+  "PaywallView" -> "StoreKit";
+  "ScenarioPlanningView" -> "Charts";
+  "CashflowForecastView" -> "Charts";
+  "StatementPatterns" -> "RegexBuilder";
+  "AppleFoundationModelManager" -> "CoreML";
+  "SubscriptionService" -> "StoreKit";
+  "InsightNotificationService" -> "UserNotifications";
+  "OCRService" -> "Vision";
+  "OCRService" -> "PDFKit";
+  "ClariFiAppIntents" -> "AppIntents";
+  "ClariFiAppIntents" -> "CoreSpotlight";
+  "BiometricAuthService" -> "LocalAuthentication";
+  "TransactionParserService" -> "RegexBuilder";
+  "VisionOCRService" -> "PDFKit";
+  "VisionOCRService" -> "CoreImage";
+  "EncryptionService" -> "Security";
+  "EncryptionService" -> "CryptoKit";
+  "ClariFiWidget" -> "WidgetKit";
+}

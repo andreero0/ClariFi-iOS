@@ -1,9 +1,237 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="false" userDefinedModelVersionIdentifier="">
-    <entity name="Item" representedClassName="Item" syncable="YES" codeGenerationType="class">
-        <attribute name="timestamp" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+
+    <!-- User Entity (NEW) -->
+    <entity name="User" representedClassName="User" syncable="YES" codeGenerationType="class">
+        <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="email" attributeType="String"/>
+        <attribute name="displayName" optional="YES" attributeType="String"/>
+        <attribute name="firstName" optional="YES" attributeType="String"/>
+        <attribute name="lastName" optional="YES" attributeType="String"/>
+        <attribute name="phoneNumber" optional="YES" attributeType="String"/>
+        <attribute name="profileImageURL" optional="YES" attributeType="String"/>
+
+        <!-- Authentication -->
+        <attribute name="supabaseUserId" optional="YES" attributeType="String"/>
+        <attribute name="isEmailVerified" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="lastLoginAt" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+
+        <!-- Preferences -->
+        <attribute name="preferredCurrency" optional="YES" attributeType="String" defaultValueString="USD"/>
+        <attribute name="timezone" optional="YES" attributeType="String"/>
+        <attribute name="locale" optional="YES" attributeType="String"/>
+
+        <!-- Privacy Settings -->
+        <attribute name="biometricEnabled" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="processingMode" optional="YES" attributeType="String" defaultValueString="on-device"/>
+
+        <!-- Subscription -->
+        <attribute name="subscriptionTier" optional="YES" attributeType="String" defaultValueString="free"/>
+        <attribute name="subscriptionExpiresAt" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+
+        <!-- Timestamps -->
+        <attribute name="createdAt" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="updatedAt" attributeType="Date" usesScalarValueType="NO"/>
+
+        <!-- Relationships -->
+        <relationship name="accounts" toMany="YES" deletionRule="Cascade" destinationEntity="Account" inverseName="user" inverseEntity="Account"/>
+        <relationship name="transactions" toMany="YES" deletionRule="Cascade" destinationEntity="Transaction" inverseName="user" inverseEntity="Transaction"/>
+        <relationship name="budgets" toMany="YES" deletionRule="Cascade" destinationEntity="Budget" inverseName="user" inverseEntity="Budget"/>
+        <relationship name="statements" toMany="YES" deletionRule="Cascade" destinationEntity="Statement" inverseName="user" inverseEntity="Statement"/>
+        <relationship name="recurringTransactions" toMany="YES" deletionRule="Cascade" destinationEntity="RecurringTransaction" inverseName="user" inverseEntity="RecurringTransaction"/>
+        <relationship name="categorizationRules" toMany="YES" deletionRule="Cascade" destinationEntity="CategorizationRule" inverseName="user" inverseEntity="CategorizationRule"/>
+        <relationship name="merchantPatterns" toMany="YES" deletionRule="Cascade" destinationEntity="MerchantPattern" inverseName="user" inverseEntity="MerchantPattern"/>
+
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="id"/>
+            </uniquenessConstraint>
+            <uniquenessConstraint>
+                <constraint value="email"/>
+            </uniquenessConstraint>
+            <uniquenessConstraint>
+                <constraint value="supabaseUserId"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
     </entity>
+
+    <!-- Transaction Entity (UPDATED - Added user relationship) -->
+    <entity name="Transaction" representedClassName="Transaction" syncable="YES" codeGenerationType="class">
+        <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="date" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="merchant" attributeType="String"/>
+        <attribute name="amount" attributeType="Decimal" defaultValueString="0"/>
+        <attribute name="currency" attributeType="String" defaultValueString="USD"/>
+        <attribute name="category" attributeType="String"/>
+        <attribute name="normalizedMerchant" optional="YES" attributeType="String"/>
+        <attribute name="categorizationMethod" optional="YES" attributeType="String"/>
+        <attribute name="confidence" attributeType="Float" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="isManual" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="notes" optional="YES" attributeType="String"/>
+        <attribute name="tags" optional="YES" attributeType="String"/>
+        <attribute name="createdAt" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="updatedAt" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="account" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Account" inverseName="transactions" inverseEntity="Account"/>
+        <relationship name="statement" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Statement" inverseName="transactions" inverseEntity="Statement"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="transactions" inverseEntity="User"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="id"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+
+    <!-- Account Entity (UPDATED - Added user relationship) -->
+    <entity name="Account" representedClassName="Account" syncable="YES" codeGenerationType="class">
+        <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="name" attributeType="String"/>
+        <attribute name="type" attributeType="String"/>
+        <attribute name="lastFourDigits" optional="YES" attributeType="String"/>
+        <attribute name="isActive" attributeType="Boolean" defaultValueString="YES" usesScalarValueType="YES"/>
+        <attribute name="isDefault" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="createdAt" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="updatedAt" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="transactions" toMany="YES" deletionRule="Cascade" destinationEntity="Transaction" inverseName="account" inverseEntity="Transaction"/>
+        <relationship name="recurringTransactions" toMany="YES" deletionRule="Cascade" destinationEntity="RecurringTransaction" inverseName="account" inverseEntity="RecurringTransaction"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="accounts" inverseEntity="User"/>
+    </entity>
+
+    <!-- Budget Entity (UPDATED - Added user relationship) -->
+    <entity name="Budget" representedClassName="Budget" syncable="YES" codeGenerationType="class">
+        <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="name" attributeType="String"/>
+        <attribute name="period" attributeType="String"/>
+        <attribute name="startDate" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="templateId" optional="YES" attributeType="String"/>
+        <attribute name="isActive" attributeType="Boolean" defaultValueString="YES" usesScalarValueType="YES"/>
+        <attribute name="rolloverEnabled" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="createdAt" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="updatedAt" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="categories" toMany="YES" deletionRule="Cascade" destinationEntity="BudgetCategory" inverseName="budget" inverseEntity="BudgetCategory"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="budgets" inverseEntity="User"/>
+    </entity>
+
+    <!-- BudgetCategory Entity -->
+    <entity name="BudgetCategory" representedClassName="BudgetCategory" syncable="YES" codeGenerationType="class">
+        <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="name" attributeType="String"/>
+        <attribute name="displayName" optional="YES" attributeType="String"/>
+        <attribute name="budgetedAmount" attributeType="Decimal" defaultValueString="0"/>
+        <attribute name="spentAmount" attributeType="Decimal" defaultValueString="0"/>
+        <attribute name="rolloverEnabled" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="alertThreshold" attributeType="Float" defaultValueString="0.8" usesScalarValueType="YES"/>
+        <attribute name="color" optional="YES" attributeType="String"/>
+        <attribute name="createdAt" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="updatedAt" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="budget" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Budget" inverseName="categories" inverseEntity="Budget"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="id"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+
+    <!-- Statement Entity (UPDATED - Added user relationship) -->
+    <entity name="Statement" representedClassName="Statement" syncable="YES" codeGenerationType="class">
+        <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="fileName" attributeType="String"/>
+        <attribute name="uploadDate" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="fileHash" attributeType="String"/>
+        <attribute name="processingStatus" attributeType="String"/>
+        <attribute name="fileSize" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="documentType" attributeType="String"/>
+        <attribute name="uploadHash" optional="YES" attributeType="String"/>
+        <attribute name="uploadedAt" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="uploadSource" optional="YES" attributeType="String"/>
+        <attribute name="createdAt" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="updatedAt" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="transactions" toMany="YES" deletionRule="Cascade" destinationEntity="Transaction" inverseName="statement" inverseEntity="Transaction"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="statements" inverseEntity="User"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="id"/>
+            </uniquenessConstraint>
+            <uniquenessConstraint>
+                <constraint value="fileHash"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+
+    <!-- RecurringTransaction Entity (UPDATED - Added user relationship) -->
+    <entity name="RecurringTransaction" representedClassName="RecurringTransaction" syncable="YES" codeGenerationType="class">
+        <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="merchant" attributeType="String"/>
+        <attribute name="amount" attributeType="Decimal" defaultValueString="0"/>
+        <attribute name="currency" attributeType="String" defaultValueString="USD"/>
+        <attribute name="category" attributeType="String"/>
+        <attribute name="notes" optional="YES" attributeType="String"/>
+        <attribute name="frequency" attributeType="String"/>
+        <attribute name="startDate" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="endDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="nextOccurrence" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="isActive" attributeType="Boolean" defaultValueString="YES" usesScalarValueType="YES"/>
+        <attribute name="createdAt" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="updatedAt" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="account" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Account" inverseName="recurringTransactions" inverseEntity="Account"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="recurringTransactions" inverseEntity="User"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="id"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+
+    <!-- CategorizationRule Entity (UPDATED - Added user relationship) -->
+    <entity name="CategorizationRule" representedClassName="CategorizationRule" syncable="YES" codeGenerationType="class">
+        <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="name" attributeType="String"/>
+        <attribute name="merchantPattern" attributeType="String"/>
+        <attribute name="category" attributeType="String"/>
+        <attribute name="priority" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="isActive" attributeType="Boolean" defaultValueString="YES" usesScalarValueType="YES"/>
+        <attribute name="matchType" attributeType="String"/>
+        <attribute name="minAmount" optional="YES" attributeType="Decimal"/>
+        <attribute name="maxAmount" optional="YES" attributeType="Decimal"/>
+        <attribute name="isUserCreated" attributeType="Boolean" defaultValueString="YES" usesScalarValueType="YES"/>
+        <attribute name="applicationCount" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="createdAt" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="updatedAt" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="categorizationRules" inverseEntity="User"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="id"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+
+    <!-- MerchantPattern Entity (UPDATED - Added user relationship) -->
+    <entity name="MerchantPattern" representedClassName="MerchantPattern" syncable="YES" codeGenerationType="class">
+        <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="merchantName" attributeType="String"/>
+        <attribute name="normalizedName" attributeType="String"/>
+        <attribute name="category" attributeType="String"/>
+        <attribute name="confidence" attributeType="Float" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="occurrenceCount" attributeType="Integer 32" defaultValueString="1" usesScalarValueType="YES"/>
+        <attribute name="lastUsed" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="createdAt" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="updatedAt" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="merchantPatterns" inverseEntity="User"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="id"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+
     <elements>
-        <element name="Item" positionX="-63" positionY="-18" width="128" height="44"/>
+        <element name="User" positionX="-450" positionY="-18" width="128" height="314"/>
+        <element name="Transaction" positionX="-63" positionY="-18" width="128" height="284"/>
+        <element name="Account" positionX="-252" positionY="-18" width="128" height="164"/>
+        <element name="Budget" positionX="135" positionY="-18" width="128" height="194"/>
+        <element name="BudgetCategory" positionX="324" positionY="-18" width="128" height="194"/>
+        <element name="Statement" positionX="-63" positionY="251" width="128" height="194"/>
+        <element name="RecurringTransaction" positionX="-63" positionY="450" width="128" height="269"/>
+        <element name="CategorizationRule" positionX="-252" positionY="450" width="128" height="254"/>
+        <element name="MerchantPattern" positionX="135" positionY="450" width="128" height="194"/>
     </elements>
 </model>

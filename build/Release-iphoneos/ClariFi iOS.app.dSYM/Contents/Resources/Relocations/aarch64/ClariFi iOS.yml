@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/build/Release-iphoneos/ClariFi iOS.app/ClariFi iOS'
+relocations:     []
+...

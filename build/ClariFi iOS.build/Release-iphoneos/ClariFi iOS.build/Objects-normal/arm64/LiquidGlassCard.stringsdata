@@ -1,0 +1,32 @@
+{
+  "source": "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/ClariFi iOS/Views/LiquidGlassCard.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Account Balance",
+        "location": {
+          "startingColumn": 1,
+          "startingLine": 140
+        }
+      },
+      {
+        "comment": "",
+        "key": "$2,847.32",
+        "location": {
+          "startingColumn": 1,
+          "startingLine": 140
+        }
+      },
+      {
+        "comment": "",
+        "key": "+2.4% from last month",
+        "location": {
+          "startingColumn": 1,
+          "startingLine": 140
+        }
+      }
+    ]
+  },
+  "version": 1
+}

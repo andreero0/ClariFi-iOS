@@ -1,0 +1,320 @@
+{
+  "source": "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/ClariFi iOS/Views/AnalyticsSettingsView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Analytics",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 123
+        }
+      },
+      {
+        "comment": "",
+        "key": "We respect your privacy. All analytics are optional and anonymous. Your financial data is never shared.",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 36
+        }
+      },
+      {
+        "comment": "",
+        "key": "Analytics & Insights",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 28
+        }
+      },
+      {
+        "comment": "",
+        "key": "Help us improve ClariFi",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 30
+        }
+      },
+      {
+        "comment": "",
+        "key": "Usage Analytics",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 47
+        }
+      },
+      {
+        "comment": "",
+        "key": "Track app usage to improve features",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 49
+        }
+      },
+      {
+        "comment": "",
+        "key": "Crash Reporting",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 60
+        }
+      },
+      {
+        "comment": "",
+        "key": "Send crash reports to help fix bugs",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 62
+        }
+      },
+      {
+        "comment": "",
+        "key": "Data Collection",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 70
+        }
+      },
+      {
+        "comment": "",
+        "key": "Analytics help us understand how you use ClariFi so we can make it better. You can change these settings anytime.",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 72
+        }
+      },
+      {
+        "comment": "",
+        "key": "What Data is Collected?",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 79
+        }
+      },
+      {
+        "comment": "",
+        "key": "Reset Analytics Data",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 92
+        }
+      },
+      {
+        "comment": "",
+        "key": "Information",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 98
+        }
+      },
+      {
+        "comment": "",
+        "key": "Privacy Protected",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 107
+        }
+      },
+      {
+        "comment": "",
+        "key": "Privacy Guarantees",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 119
+        }
+      },
+      {
+        "comment": "",
+        "key": "Data Collection",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 218
+        }
+      },
+      {
+        "comment": "",
+        "key": "What We Collect",
+        "location": {
+          "startingColumn": 25,
+          "startingLine": 190
+        }
+      },
+      {
+        "comment": "",
+        "key": "What We DON'T Collect",
+        "location": {
+          "startingColumn": 25,
+          "startingLine": 197
+        }
+      },
+      {
+        "comment": "",
+        "key": "How We Use It",
+        "location": {
+          "startingColumn": 25,
+          "startingLine": 204
+        }
+      },
+      {
+        "comment": "",
+        "key": "Your Control",
+        "location": {
+          "startingColumn": 25,
+          "startingLine": 212
+        }
+      },
+      {
+        "comment": "",
+        "key": "ClariFi collects anonymous usage data to improve the app experience. We take your privacy seriously.",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 185
+        }
+      },
+      {
+        "comment": "",
+        "key": "• Understand which features are most valuable",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 205
+        }
+      },
+      {
+        "comment": "",
+        "key": "• Identify and fix bugs quickly",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 206
+        }
+      },
+      {
+        "comment": "",
+        "key": "• Improve app performance",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 207
+        }
+      },
+      {
+        "comment": "",
+        "key": "• Make data-driven product decisions",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 208
+        }
+      },
+      {
+        "comment": "",
+        "key": "You can disable analytics at any time from Settings. When disabled, no data is collected or sent.",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 213
+        }
+      },
+      {
+        "comment": "",
+        "key": "Done",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 222
+        }
+      },
+      {
+        "comment": "",
+        "key": "Help Improve ClariFi",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 264
+        }
+      },
+      {
+        "comment": "",
+        "key": "Share anonymous usage data to help us make ClariFi better for everyone",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 268
+        }
+      },
+      {
+        "comment": "",
+        "key": "Enable Analytics",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 297
+        }
+      },
+      {
+        "comment": "",
+        "key": "No Thanks",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 311
+        }
+      },
+      {
+        "comment": "",
+        "key": "Days",
+        "location": {
+          "startingColumn": 23,
+          "startingLine": 62
+        }
+      },
+      {
+        "comment": "",
+        "key": "Number of days to look back",
+        "location": {
+          "startingColumn": 44,
+          "startingLine": 62
+        }
+      },
+      {
+        "comment": "",
+        "key": "Amount",
+        "location": {
+          "startingColumn": 23,
+          "startingLine": 97
+        }
+      },
+      {
+        "comment": "",
+        "key": "Transaction amount",
+        "location": {
+          "startingColumn": 46,
+          "startingLine": 97
+        }
+      },
+      {
+        "comment": "",
+        "key": "Merchant",
+        "location": {
+          "startingColumn": 23,
+          "startingLine": 100
+        }
+      },
+      {
+        "comment": "",
+        "key": "Merchant name",
+        "location": {
+          "startingColumn": 48,
+          "startingLine": 100
+        }
+      },
+      {
+        "comment": "",
+        "key": "Category",
+        "location": {
+          "startingColumn": 23,
+          "startingLine": 103
+        }
+      },
+      {
+        "comment": "",
+        "key": "Transaction category",
+        "location": {
+          "startingColumn": 48,
+          "startingLine": 103
+        }
+      }
+    ]
+  },
+  "version": 1
+}

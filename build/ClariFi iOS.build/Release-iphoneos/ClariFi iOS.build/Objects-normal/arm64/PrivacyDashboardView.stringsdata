@@ -1,0 +1,184 @@
+{
+  "source": "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/ClariFi iOS/Views/PrivacyDashboardView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Privacy",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 47
+        }
+      },
+      {
+        "comment": "",
+        "key": "Error",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 54
+        }
+      },
+      {
+        "comment": "",
+        "key": "OK",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 55
+        }
+      },
+      {
+        "comment": "",
+        "key": "Processing Mode",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 85
+        }
+      },
+      {
+        "comment": "",
+        "key": "All data stays on your device",
+        "location": {
+          "startingColumn": 71,
+          "startingLine": 111
+        }
+      },
+      {
+        "comment": "",
+        "key": "Enhanced features with encryption",
+        "location": {
+          "startingColumn": 105,
+          "startingLine": 111
+        }
+      },
+      {
+        "comment": "",
+        "key": "Data Summary",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 132
+        }
+      },
+      {
+        "comment": "",
+        "key": "Feature Permissions",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 160
+        }
+      },
+      {
+        "comment": "",
+        "key": "Data Management",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 215
+        }
+      },
+      {
+        "comment": "",
+        "key": "Delete All Data",
+        "location": {
+          "startingColumn": 17,
+          "startingLine": 244
+        }
+      },
+      {
+        "comment": "",
+        "key": "Delete All Data",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 248
+        }
+      },
+      {
+        "comment": "",
+        "key": "Cancel",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 253
+        }
+      },
+      {
+        "comment": "",
+        "key": "This will permanently delete all your transactions, budgets, and settings. This action cannot be undone.",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 255
+        }
+      },
+      {
+        "comment": "",
+        "key": "Security",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 262
+        }
+      },
+      {
+        "comment": "",
+        "key": "Biometric Authentication",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 272
+        }
+      },
+      {
+        "comment": "",
+        "key": "Security Audit",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 288
+        }
+      },
+      {
+        "comment": "",
+        "key": "ClariFi is designed with privacy at its core. By default, all your financial data is processed and stored locally on your device. You have complete control over your data and can export or delete it at any time.",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 310
+        }
+      },
+      {
+        "comment": "",
+        "key": "Your Privacy Matters",
+        "location": {
+          "startingColumn": 19,
+          "startingLine": 305
+        }
+      },
+      {
+        "comment": "",
+        "key": "Processing Mode",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 404
+        }
+      },
+      {
+        "comment": "",
+        "key": "Processing Mode: %@",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 393
+        }
+      },
+      {
+        "comment": "",
+        "key": "Done",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 408
+        }
+      },
+      {
+        "comment": "",
+        "key": "",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 436
+        }
+      }
+    ]
+  },
+  "version": 1
+}

@@ -1,0 +1,120 @@
+{
+  "" : {
+    "const-values" : "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/build/ClariFi iOS.build/Release-iphoneos/ClariFi iOSTests.build/Objects-normal/arm64/ClariFi iOSTests-master.swiftconstvalues",
+    "dependencies" : "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/build/ClariFi iOS.build/Release-iphoneos/ClariFi iOSTests.build/Objects-normal/arm64/ClariFi iOSTests-master.d",
+    "diagnostics" : "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/build/ClariFi iOS.build/Release-iphoneos/ClariFi iOSTests.build/Objects-normal/arm64/ClariFi iOSTests-master.dia",
+    "emit-module-dependencies" : "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/build/ClariFi iOS.build/Release-iphoneos/ClariFi iOSTests.build/Objects-normal/arm64/ClariFi iOSTests-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/build/ClariFi iOS.build/Release-iphoneos/ClariFi iOSTests.build/Objects-normal/arm64/ClariFi iOSTests-master-emit-module.dia",
+    "swift-dependencies" : "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/build/ClariFi iOS.build/Release-iphoneos/ClariFi iOSTests.build/Objects-normal/arm64/ClariFi iOSTests-master.swiftdeps"
+  },
+  "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/ClariFi iOS/Tests/BiometricAuthServiceTests.swift" : {
+    "index-unit-output-path" : "/ClariFi iOS.build/Release-iphoneos/ClariFi iOSTests.build/Objects-normal/arm64/BiometricAuthServiceTests.o",
+    "llvm-bc" : "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/build/ClariFi iOS.build/Release-iphoneos/ClariFi iOSTests.build/Objects-normal/arm64/BiometricAuthServiceTests.bc",
+    "object" : "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/build/ClariFi iOS.build/Release-iphoneos/ClariFi iOSTests.build/Objects-normal/arm64/BiometricAuthServiceTests.o"
+  },
+  "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/ClariFi iOS/Tests/EncryptionServiceTests.swift" : {
+    "index-unit-output-path" : "/ClariFi iOS.build/Release-iphoneos/ClariFi iOSTests.build/Objects-normal/arm64/EncryptionServiceTests.o",
+    "llvm-bc" : "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/build/ClariFi iOS.build/Release-iphoneos/ClariFi iOSTests.build/Objects-normal/arm64/EncryptionServiceTests.bc",
+    "object" : "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/build/ClariFi iOS.build/Release-iphoneos/ClariFi iOSTests.build/Objects-normal/arm64/EncryptionServiceTests.o"
+  },
+  "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/ClariFi iOS/Tests/IntegrationTests.swift" : {
+    "index-unit-output-path" : "/ClariFi iOS.build/Release-iphoneos/ClariFi iOSTests.build/Objects-normal/arm64/IntegrationTests.o",
+    "llvm-bc" : "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/build/ClariFi iOS.build/Release-iphoneos/ClariFi iOSTests.build/Objects-normal/arm64/IntegrationTests.bc",
+    "object" : "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/build/ClariFi iOS.build/Release-iphoneos/ClariFi iOSTests.build/Objects-normal/arm64/IntegrationTests.o"
+  },
+  "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/ClariFi iOS/Tests/SecureFileManagerTests.swift" : {
+    "index-unit-output-path" : "/ClariFi iOS.build/Release-iphoneos/ClariFi iOSTests.build/Objects-normal/arm64/SecureFileManagerTests.o",
+    "llvm-bc" : "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/build/ClariFi iOS.build/Release-iphoneos/ClariFi iOSTests.build/Objects-normal/arm64/SecureFileManagerTests.bc",
+    "object" : "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/build/ClariFi iOS.build/Release-iphoneos/ClariFi iOSTests.build/Objects-normal/arm64/SecureFileManagerTests.o"
+  },
+  "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/ClariFi iOS/Tests/UIIntegrationTests.swift" : {
+    "index-unit-output-path" : "/ClariFi iOS.build/Release-iphoneos/ClariFi iOSTests.build/Objects-normal/arm64/UIIntegrationTests.o",
+    "llvm-bc" : "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/build/ClariFi iOS.build/Release-iphoneos/ClariFi iOSTests.build/Objects-normal/arm64/UIIntegrationTests.bc",
+    "object" : "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/build/ClariFi iOS.build/Release-iphoneos/ClariFi iOSTests.build/Objects-normal/arm64/UIIntegrationTests.o"
+  },
+  "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/ClariFi iOSTests/BudgetSystemTests.swift" : {
+    "index-unit-output-path" : "/ClariFi iOS.build/Release-iphoneos/ClariFi iOSTests.build/Objects-normal/arm64/BudgetSystemTests.o",
+    "llvm-bc" : "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/build/ClariFi iOS.build/Release-iphoneos/ClariFi iOSTests.build/Objects-normal/arm64/BudgetSystemTests.bc",
+    "object" : "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/build/ClariFi iOS.build/Release-iphoneos/ClariFi iOSTests.build/Objects-normal/arm64/BudgetSystemTests.o"
+  },
+  "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/ClariFi iOSTests/CategorizationTests.swift" : {
+    "index-unit-output-path" : "/ClariFi iOS.build/Release-iphoneos/ClariFi iOSTests.build/Objects-normal/arm64/CategorizationTests.o",
+    "llvm-bc" : "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/build/ClariFi iOS.build/Release-iphoneos/ClariFi iOSTests.build/Objects-normal/arm64/CategorizationTests.bc",
+    "object" : "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/build/ClariFi iOS.build/Release-iphoneos/ClariFi iOSTests.build/Objects-normal/arm64/CategorizationTests.o"
+  },
+  "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/ClariFi iOSTests/ClariFi_iOSTests.swift" : {
+    "index-unit-output-path" : "/ClariFi iOS.build/Release-iphoneos/ClariFi iOSTests.build/Objects-normal/arm64/ClariFi_iOSTests.o",
+    "llvm-bc" : "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/build/ClariFi iOS.build/Release-iphoneos/ClariFi iOSTests.build/Objects-normal/arm64/ClariFi_iOSTests.bc",
+    "object" : "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/build/ClariFi iOS.build/Release-iphoneos/ClariFi iOSTests.build/Objects-normal/arm64/ClariFi_iOSTests.o"
+  },
+  "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/ClariFi iOSTests/CoreDataModelTests.swift" : {
+    "index-unit-output-path" : "/ClariFi iOS.build/Release-iphoneos/ClariFi iOSTests.build/Objects-normal/arm64/CoreDataModelTests.o",
+    "llvm-bc" : "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/build/ClariFi iOS.build/Release-iphoneos/ClariFi iOSTests.build/Objects-normal/arm64/CoreDataModelTests.bc",
+    "object" : "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/build/ClariFi iOS.build/Release-iphoneos/ClariFi iOSTests.build/Objects-normal/arm64/CoreDataModelTests.o"
+  },
+  "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/ClariFi iOSTests/DataEncryptionTests.swift" : {
+    "index-unit-output-path" : "/ClariFi iOS.build/Release-iphoneos/ClariFi iOSTests.build/Objects-normal/arm64/DataEncryptionTests.o",
+    "llvm-bc" : "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/build/ClariFi iOS.build/Release-iphoneos/ClariFi iOSTests.build/Objects-normal/arm64/DataEncryptionTests.bc",
+    "object" : "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/build/ClariFi iOS.build/Release-iphoneos/ClariFi iOSTests.build/Objects-normal/arm64/DataEncryptionTests.o"
+  },
+  "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/ClariFi iOSTests/DataValidationTests.swift" : {
+    "index-unit-output-path" : "/ClariFi iOS.build/Release-iphoneos/ClariFi iOSTests.build/Objects-normal/arm64/DataValidationTests.o",
+    "llvm-bc" : "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/build/ClariFi iOS.build/Release-iphoneos/ClariFi iOSTests.build/Objects-normal/arm64/DataValidationTests.bc",
+    "object" : "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/build/ClariFi iOS.build/Release-iphoneos/ClariFi iOSTests.build/Objects-normal/arm64/DataValidationTests.o"
+  },
+  "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/ClariFi iOSTests/ManualEntryTests.swift" : {
+    "index-unit-output-path" : "/ClariFi iOS.build/Release-iphoneos/ClariFi iOSTests.build/Objects-normal/arm64/ManualEntryTests.o",
+    "llvm-bc" : "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/build/ClariFi iOS.build/Release-iphoneos/ClariFi iOSTests.build/Objects-normal/arm64/ManualEntryTests.bc",
+    "object" : "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/build/ClariFi iOS.build/Release-iphoneos/ClariFi iOSTests.build/Objects-normal/arm64/ManualEntryTests.o"
+  },
+  "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/ClariFi iOSTests/OCRParsingIntegrationTests.swift" : {
+    "index-unit-output-path" : "/ClariFi iOS.build/Release-iphoneos/ClariFi iOSTests.build/Objects-normal/arm64/OCRParsingIntegrationTests.o",
+    "llvm-bc" : "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/build/ClariFi iOS.build/Release-iphoneos/ClariFi iOSTests.build/Objects-normal/arm64/OCRParsingIntegrationTests.bc",
+    "object" : "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/build/ClariFi iOS.build/Release-iphoneos/ClariFi iOSTests.build/Objects-normal/arm64/OCRParsingIntegrationTests.o"
+  },
+  "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/ClariFi iOSTests/OCRServiceTests.swift" : {
+    "index-unit-output-path" : "/ClariFi iOS.build/Release-iphoneos/ClariFi iOSTests.build/Objects-normal/arm64/OCRServiceTests.o",
+    "llvm-bc" : "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/build/ClariFi iOS.build/Release-iphoneos/ClariFi iOSTests.build/Objects-normal/arm64/OCRServiceTests.bc",
+    "object" : "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/build/ClariFi iOS.build/Release-iphoneos/ClariFi iOSTests.build/Objects-normal/arm64/OCRServiceTests.o"
+  },
+  "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/ClariFi iOSTests/PrivacyControlsTests.swift" : {
+    "index-unit-output-path" : "/ClariFi iOS.build/Release-iphoneos/ClariFi iOSTests.build/Objects-normal/arm64/PrivacyControlsTests.o",
+    "llvm-bc" : "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/build/ClariFi iOS.build/Release-iphoneos/ClariFi iOSTests.build/Objects-normal/arm64/PrivacyControlsTests.bc",
+    "object" : "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/build/ClariFi iOS.build/Release-iphoneos/ClariFi iOSTests.build/Objects-normal/arm64/PrivacyControlsTests.o"
+  },
+  "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/ClariFi iOSTests/PrivacyManagerTests.swift" : {
+    "index-unit-output-path" : "/ClariFi iOS.build/Release-iphoneos/ClariFi iOSTests.build/Objects-normal/arm64/PrivacyManagerTests.o",
+    "llvm-bc" : "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/build/ClariFi iOS.build/Release-iphoneos/ClariFi iOSTests.build/Objects-normal/arm64/PrivacyManagerTests.bc",
+    "object" : "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/build/ClariFi iOS.build/Release-iphoneos/ClariFi iOSTests.build/Objects-normal/arm64/PrivacyManagerTests.o"
+  },
+  "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/ClariFi iOSTests/RepositoryEdgeCaseTests.swift" : {
+    "index-unit-output-path" : "/ClariFi iOS.build/Release-iphoneos/ClariFi iOSTests.build/Objects-normal/arm64/RepositoryEdgeCaseTests.o",
+    "llvm-bc" : "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/build/ClariFi iOS.build/Release-iphoneos/ClariFi iOSTests.build/Objects-normal/arm64/RepositoryEdgeCaseTests.bc",
+    "object" : "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/build/ClariFi iOS.build/Release-iphoneos/ClariFi iOSTests.build/Objects-normal/arm64/RepositoryEdgeCaseTests.o"
+  },
+  "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/ClariFi iOSTests/RepositoryTests.swift" : {
+    "index-unit-output-path" : "/ClariFi iOS.build/Release-iphoneos/ClariFi iOSTests.build/Objects-normal/arm64/RepositoryTests.o",
+    "llvm-bc" : "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/build/ClariFi iOS.build/Release-iphoneos/ClariFi iOSTests.build/Objects-normal/arm64/RepositoryTests.bc",
+    "object" : "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/build/ClariFi iOS.build/Release-iphoneos/ClariFi iOSTests.build/Objects-normal/arm64/RepositoryTests.o"
+  },
+  "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/ClariFi iOSTests/StatementUploadFlowTests.swift" : {
+    "index-unit-output-path" : "/ClariFi iOS.build/Release-iphoneos/ClariFi iOSTests.build/Objects-normal/arm64/StatementUploadFlowTests.o",
+    "llvm-bc" : "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/build/ClariFi iOS.build/Release-iphoneos/ClariFi iOSTests.build/Objects-normal/arm64/StatementUploadFlowTests.bc",
+    "object" : "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/build/ClariFi iOS.build/Release-iphoneos/ClariFi iOSTests.build/Objects-normal/arm64/StatementUploadFlowTests.o"
+  },
+  "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/ClariFi iOSTests/TransactionParserTests.swift" : {
+    "index-unit-output-path" : "/ClariFi iOS.build/Release-iphoneos/ClariFi iOSTests.build/Objects-normal/arm64/TransactionParserTests.o",
+    "llvm-bc" : "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/build/ClariFi iOS.build/Release-iphoneos/ClariFi iOSTests.build/Objects-normal/arm64/TransactionParserTests.bc",
+    "object" : "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/build/ClariFi iOS.build/Release-iphoneos/ClariFi iOSTests.build/Objects-normal/arm64/TransactionParserTests.o"
+  },
+  "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/ClariFi iOSTests/TransactionReviewFlowTests.swift" : {
+    "index-unit-output-path" : "/ClariFi iOS.build/Release-iphoneos/ClariFi iOSTests.build/Objects-normal/arm64/TransactionReviewFlowTests.o",
+    "llvm-bc" : "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/build/ClariFi iOS.build/Release-iphoneos/ClariFi iOSTests.build/Objects-normal/arm64/TransactionReviewFlowTests.bc",
+    "object" : "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/build/ClariFi iOS.build/Release-iphoneos/ClariFi iOSTests.build/Objects-normal/arm64/TransactionReviewFlowTests.o"
+  },
+  "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/ClariFi iOSTests/UploadErrorRecoveryTests.swift" : {
+    "index-unit-output-path" : "/ClariFi iOS.build/Release-iphoneos/ClariFi iOSTests.build/Objects-normal/arm64/UploadErrorRecoveryTests.o",
+    "llvm-bc" : "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/build/ClariFi iOS.build/Release-iphoneos/ClariFi iOSTests.build/Objects-normal/arm64/UploadErrorRecoveryTests.bc",
+    "object" : "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/build/ClariFi iOS.build/Release-iphoneos/ClariFi iOSTests.build/Objects-normal/arm64/UploadErrorRecoveryTests.o"
+  }
+}

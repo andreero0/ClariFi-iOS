@@ -1,0 +1,861 @@
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild test -project "../ClariFi iOS.xcodeproj" -scheme "ClariFi iOS" -destination "platform=iOS Simulator,name=iPhone 16,arch=arm64"
+
+ComputePackagePrebuildTargetDependencyGraph
+
+Prepare packages
+
+CreateBuildRequest
+
+SendProjectDescription
+
+CreateBuildOperation
+
+ComputeTargetDependencyGraph
+note: Building targets in dependency order
+note: Target dependency graph (3 targets)
+    Target 'ClariFi iOSTests' in project 'ClariFi iOS'
+        ➜ Explicit dependency on target 'ClariFi iOS' in project 'ClariFi iOS'
+    Target 'ClariFi iOSUITests' in project 'ClariFi iOS'
+        ➜ Explicit dependency on target 'ClariFi iOS' in project 'ClariFi iOS'
+    Target 'ClariFi iOS' in project 'ClariFi iOS' (no dependencies)
+
+GatherProvisioningInputs
+
+CreateBuildDescription
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc --version
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator18.5.sdk -x c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/usr/bin/momc --dry-run --action generate --swift-version 5.0 --sdkroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator18.5.sdk --iphonesimulator-deployment-target 18.5 --module ClariFi_iOS /Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/ClariFi iOS/ClariFi_iOS.xcdatamodeld /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi iOS.build/Debug-iphonesimulator/ClariFi iOS.build/DerivedSources/CoreDataGenerated/ClariFi_iOS
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/usr/bin/actool --print-asset-tag-combinations --output-format xml1 /Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/ClariFi iOS/Assets.xcassets
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/usr/bin/actool --version --output-format xml1
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld -version_details
+
+Build description signature: de6ca61f5d661c1db56c04d53a8a0806
+Build description path: /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/XCBuildData/de6ca61f5d661c1db56c04d53a8a0806.xcbuilddata
+ClangStatCache /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator18.5.sdk /Users/aero/Library/Developer/Xcode/DerivedData/SDKStatCaches.noindex/iphonesimulator18.5-22F76-d5fc8ad4295d2ef488fb7d0f804ce0c4.sdkstatcache
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS.xcodeproj
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator18.5.sdk -o /Users/aero/Library/Developer/Xcode/DerivedData/SDKStatCaches.noindex/iphonesimulator18.5-22F76-d5fc8ad4295d2ef488fb7d0f804ce0c4.sdkstatcache
+
+CreateBuildDirectory /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Products
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS.xcodeproj
+    builtin-create-build-directory /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Products
+
+CreateBuildDirectory /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS.xcodeproj
+    builtin-create-build-directory /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex
+
+CreateBuildDirectory /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Products/Debug-iphonesimulator
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS.xcodeproj
+    builtin-create-build-directory /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Products/Debug-iphonesimulator
+
+CreateBuildDirectory /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS.xcodeproj
+    builtin-create-build-directory /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator
+
+WriteAuxiliaryFile /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS-73d971fc02cd0c099b48ec6e4c7f6243-VFS-iphonesimulator/all-product-headers.yaml
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS.xcodeproj
+    write-file /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS-73d971fc02cd0c099b48ec6e4c7f6243-VFS-iphonesimulator/all-product-headers.yaml
+
+WriteAuxiliaryFile /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOSTests.build/ClariFi\ iOSTests.hmap (in target 'ClariFi iOSTests' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    write-file /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOSTests.build/ClariFi\ iOSTests.hmap
+
+WriteAuxiliaryFile /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOSTests.build/ClariFi\ iOSTests-project-headers.hmap (in target 'ClariFi iOSTests' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    write-file /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOSTests.build/ClariFi\ iOSTests-project-headers.hmap
+
+WriteAuxiliaryFile /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOSTests.build/empty-ClariFi\ iOSTests.plist (in target 'ClariFi iOSTests' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    write-file /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOSTests.build/empty-ClariFi\ iOSTests.plist
+
+WriteAuxiliaryFile /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOSUITests.build/empty-ClariFi\ iOSUITests.plist (in target 'ClariFi iOSUITests' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    write-file /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOSUITests.build/empty-ClariFi\ iOSUITests.plist
+
+WriteAuxiliaryFile /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOSUITests.build/Objects-normal/arm64/ClariFi\ iOSUITests.SwiftFileList (in target 'ClariFi iOSUITests' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    write-file /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOSUITests.build/Objects-normal/arm64/ClariFi\ iOSUITests.SwiftFileList
+
+WriteAuxiliaryFile /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOSUITests.build/Objects-normal/arm64/ClariFi\ iOSUITests_const_extract_protocols.json (in target 'ClariFi iOSUITests' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    write-file /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOSUITests.build/Objects-normal/arm64/ClariFi\ iOSUITests_const_extract_protocols.json
+
+WriteAuxiliaryFile /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOSUITests.build/ProductTypeInfoPlistAdditions.plist (in target 'ClariFi iOSUITests' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    write-file /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOSUITests.build/ProductTypeInfoPlistAdditions.plist
+
+WriteAuxiliaryFile /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOSUITests.build/Objects-normal/arm64/ClariFi\ iOSUITests.SwiftConstValuesFileList (in target 'ClariFi iOSUITests' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    write-file /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOSUITests.build/Objects-normal/arm64/ClariFi\ iOSUITests.SwiftConstValuesFileList
+
+WriteAuxiliaryFile /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOSUITests.build/Objects-normal/arm64/ClariFi\ iOSUITests.LinkFileList (in target 'ClariFi iOSUITests' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    write-file /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOSUITests.build/Objects-normal/arm64/ClariFi\ iOSUITests.LinkFileList
+
+WriteAuxiliaryFile /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOSUITests.build/Objects-normal/arm64/ClariFi\ iOSUITests-OutputFileMap.json (in target 'ClariFi iOSUITests' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    write-file /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOSUITests.build/Objects-normal/arm64/ClariFi\ iOSUITests-OutputFileMap.json
+
+WriteAuxiliaryFile /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOSUITests.build/DerivedSources/Entitlements-Simulated.plist (in target 'ClariFi iOSUITests' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    write-file /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOSUITests.build/DerivedSources/Entitlements-Simulated.plist
+
+WriteAuxiliaryFile /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOSUITests.build/ClariFi\ iOSUITests.hmap (in target 'ClariFi iOSUITests' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    write-file /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOSUITests.build/ClariFi\ iOSUITests.hmap
+
+WriteAuxiliaryFile /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOSUITests.build/ClariFi\ iOSUITests.DependencyStaticMetadataFileList (in target 'ClariFi iOSUITests' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    write-file /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOSUITests.build/ClariFi\ iOSUITests.DependencyStaticMetadataFileList
+
+WriteAuxiliaryFile /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOSUITests.build/ClariFi\ iOSUITests.DependencyMetadataFileList (in target 'ClariFi iOSUITests' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    write-file /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOSUITests.build/ClariFi\ iOSUITests.DependencyMetadataFileList
+
+WriteAuxiliaryFile /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOSUITests.build/ClariFi\ iOSUITests-project-headers.hmap (in target 'ClariFi iOSUITests' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    write-file /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOSUITests.build/ClariFi\ iOSUITests-project-headers.hmap
+
+WriteAuxiliaryFile /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOSUITests.build/ClariFi\ iOSUITests-own-target-headers.hmap (in target 'ClariFi iOSUITests' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    write-file /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOSUITests.build/ClariFi\ iOSUITests-own-target-headers.hmap
+
+WriteAuxiliaryFile /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOSUITests.build/ClariFi\ iOSUITests-generated-files.hmap (in target 'ClariFi iOSUITests' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    write-file /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOSUITests.build/ClariFi\ iOSUITests-generated-files.hmap
+
+WriteAuxiliaryFile /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOSUITests.build/ClariFi\ iOSUITests-all-target-headers.hmap (in target 'ClariFi iOSUITests' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    write-file /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOSUITests.build/ClariFi\ iOSUITests-all-target-headers.hmap
+
+WriteAuxiliaryFile /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOSUITests.build/ClariFi\ iOSUITests-all-non-framework-target-headers.hmap (in target 'ClariFi iOSUITests' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    write-file /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOSUITests.build/ClariFi\ iOSUITests-all-non-framework-target-headers.hmap
+
+WriteAuxiliaryFile /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOSTests.build/Objects-normal/arm64/ClariFi\ iOSTests_const_extract_protocols.json (in target 'ClariFi iOSTests' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    write-file /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOSTests.build/Objects-normal/arm64/ClariFi\ iOSTests_const_extract_protocols.json
+
+WriteAuxiliaryFile /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOSTests.build/Objects-normal/arm64/ClariFi\ iOSTests.SwiftFileList (in target 'ClariFi iOSTests' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    write-file /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOSTests.build/Objects-normal/arm64/ClariFi\ iOSTests.SwiftFileList
+
+WriteAuxiliaryFile /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOSTests.build/Objects-normal/arm64/ClariFi\ iOSTests.SwiftConstValuesFileList (in target 'ClariFi iOSTests' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    write-file /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOSTests.build/Objects-normal/arm64/ClariFi\ iOSTests.SwiftConstValuesFileList
+
+WriteAuxiliaryFile /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOSTests.build/Objects-normal/arm64/ClariFi\ iOSTests.LinkFileList (in target 'ClariFi iOSTests' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    write-file /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOSTests.build/Objects-normal/arm64/ClariFi\ iOSTests.LinkFileList
+
+WriteAuxiliaryFile /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOSTests.build/Objects-normal/arm64/ClariFi\ iOSTests-OutputFileMap.json (in target 'ClariFi iOSTests' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    write-file /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOSTests.build/Objects-normal/arm64/ClariFi\ iOSTests-OutputFileMap.json
+
+WriteAuxiliaryFile /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOSTests.build/ClariFi\ iOSTests.DependencyStaticMetadataFileList (in target 'ClariFi iOSTests' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    write-file /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOSTests.build/ClariFi\ iOSTests.DependencyStaticMetadataFileList
+
+WriteAuxiliaryFile /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOSTests.build/ClariFi\ iOSTests.DependencyMetadataFileList (in target 'ClariFi iOSTests' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    write-file /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOSTests.build/ClariFi\ iOSTests.DependencyMetadataFileList
+
+WriteAuxiliaryFile /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOSTests.build/ClariFi\ iOSTests-own-target-headers.hmap (in target 'ClariFi iOSTests' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    write-file /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOSTests.build/ClariFi\ iOSTests-own-target-headers.hmap
+
+WriteAuxiliaryFile /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOSTests.build/ClariFi\ iOSTests-generated-files.hmap (in target 'ClariFi iOSTests' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    write-file /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOSTests.build/ClariFi\ iOSTests-generated-files.hmap
+
+WriteAuxiliaryFile /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOSTests.build/ClariFi\ iOSTests-all-target-headers.hmap (in target 'ClariFi iOSTests' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    write-file /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOSTests.build/ClariFi\ iOSTests-all-target-headers.hmap
+
+WriteAuxiliaryFile /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOSTests.build/ClariFi\ iOSTests-all-non-framework-target-headers.hmap (in target 'ClariFi iOSTests' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    write-file /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOSTests.build/ClariFi\ iOSTests-all-non-framework-target-headers.hmap
+
+WriteAuxiliaryFile /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/empty-ClariFi\ iOS.plist (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    write-file /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/empty-ClariFi\ iOS.plist
+
+WriteAuxiliaryFile /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/Objects-normal/arm64/ClariFi\ iOS_const_extract_protocols.json (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    write-file /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/Objects-normal/arm64/ClariFi\ iOS_const_extract_protocols.json
+
+WriteAuxiliaryFile /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/Objects-normal/arm64/ClariFi\ iOS.SwiftFileList (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    write-file /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/Objects-normal/arm64/ClariFi\ iOS.SwiftFileList
+
+WriteAuxiliaryFile /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/Objects-normal/arm64/ClariFi\ iOS.SwiftConstValuesFileList (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    write-file /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/Objects-normal/arm64/ClariFi\ iOS.SwiftConstValuesFileList
+
+WriteAuxiliaryFile /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/Objects-normal/arm64/ClariFi\ iOS.LinkFileList (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    write-file /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/Objects-normal/arm64/ClariFi\ iOS.LinkFileList
+
+WriteAuxiliaryFile /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/Objects-normal/arm64/ClariFi\ iOS-OutputFileMap.json (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    write-file /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/Objects-normal/arm64/ClariFi\ iOS-OutputFileMap.json
+
+WriteAuxiliaryFile /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/DerivedSources/Entitlements-Simulated.plist (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    write-file /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/DerivedSources/Entitlements-Simulated.plist
+
+WriteAuxiliaryFile /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/ClariFi\ iOS.hmap (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    write-file /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/ClariFi\ iOS.hmap
+
+WriteAuxiliaryFile /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/ClariFi\ iOS.DependencyStaticMetadataFileList (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    write-file /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/ClariFi\ iOS.DependencyStaticMetadataFileList
+
+WriteAuxiliaryFile /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/ClariFi\ iOS.DependencyMetadataFileList (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    write-file /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/ClariFi\ iOS.DependencyMetadataFileList
+
+WriteAuxiliaryFile /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/ClariFi\ iOS-project-headers.hmap (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    write-file /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/ClariFi\ iOS-project-headers.hmap
+
+WriteAuxiliaryFile /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/ClariFi\ iOS-own-target-headers.hmap (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    write-file /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/ClariFi\ iOS-own-target-headers.hmap
+
+WriteAuxiliaryFile /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/ClariFi\ iOS-generated-files.hmap (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    write-file /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/ClariFi\ iOS-generated-files.hmap
+
+WriteAuxiliaryFile /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/ClariFi\ iOS-all-target-headers.hmap (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    write-file /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/ClariFi\ iOS-all-target-headers.hmap
+
+WriteAuxiliaryFile /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/ClariFi\ iOS-all-non-framework-target-headers.hmap (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    write-file /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/ClariFi\ iOS-all-non-framework-target-headers.hmap
+
+WriteAuxiliaryFile /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/ClariFi\ iOS-DebugDylibPath-normal-arm64.txt (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    write-file /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/ClariFi\ iOS-DebugDylibPath-normal-arm64.txt
+
+WriteAuxiliaryFile /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/ClariFi\ iOS-DebugDylibInstallName-normal-arm64.txt (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    write-file /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/ClariFi\ iOS-DebugDylibInstallName-normal-arm64.txt
+
+MkDir /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Products/Debug-iphonesimulator/ClariFi\ iOSUITests-Runner.app/PlugIns/ClariFi\ iOSUITests.xctest (in target 'ClariFi iOSUITests' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    /bin/mkdir -p /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Products/Debug-iphonesimulator/ClariFi\ iOSUITests-Runner.app/PlugIns/ClariFi\ iOSUITests.xctest
+
+MkDir /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Products/Debug-iphonesimulator/ClariFi\ iOS.app/PlugIns (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    /bin/mkdir -p /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Products/Debug-iphonesimulator/ClariFi\ iOS.app/PlugIns
+
+MkDir /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Products/Debug-iphonesimulator/ClariFi\ iOS.app/PlugIns/ClariFi\ iOSTests.xctest (in target 'ClariFi iOSTests' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    /bin/mkdir -p /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Products/Debug-iphonesimulator/ClariFi\ iOS.app/PlugIns/ClariFi\ iOSTests.xctest
+
+MkDir /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Products/Debug-iphonesimulator/ClariFi\ iOS.app/Frameworks (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    /bin/mkdir -p /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Products/Debug-iphonesimulator/ClariFi\ iOS.app/Frameworks
+
+MkDir /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Products/Debug-iphonesimulator/ClariFi\ iOS.app (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    /bin/mkdir -p /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Products/Debug-iphonesimulator/ClariFi\ iOS.app
+
+ProcessProductPackaging "" /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/ClariFi\ iOS.app-Simulated.xcent (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    
+    Entitlements:
+    
+    {
+    "application-identifier" = "32BGC2XP5W.com.kentrologia.ClariFi-iOS";
+}
+    
+    builtin-productPackagingUtility -entitlements -format xml -o /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/ClariFi\ iOS.app-Simulated.xcent
+
+ProcessProductPackagingDER /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/ClariFi\ iOS.app-Simulated.xcent /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/ClariFi\ iOS.app-Simulated.xcent.der (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    /usr/bin/derq query -f xml -i /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/ClariFi\ iOS.app-Simulated.xcent -o /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/ClariFi\ iOS.app-Simulated.xcent.der --raw
+
+Ld /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Products/Debug-iphonesimulator/ClariFi\ iOS.app/__preview.dylib normal (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-ios18.5-simulator -dynamiclib -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator18.5.sdk -O0 -L/Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Products/Debug-iphonesimulator -F/Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Products/Debug-iphonesimulator -install_name @rpath/ClariFi\ iOS.debug.dylib -dead_strip -rdynamic -Xlinker -no_deduplicate -Xlinker -objc_abi_version -Xlinker 2 -Xlinker -debug_variant -Xlinker -dependency_info -Xlinker /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/Objects-normal/arm64/ClariFi\ iOS_dependency_info.dat -Xlinker -sectcreate -Xlinker __TEXT -Xlinker __entitlements -Xlinker /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/ClariFi\ iOS.app-Simulated.xcent -Xlinker -sectcreate -Xlinker __TEXT -Xlinker __ents_der -Xlinker /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/ClariFi\ iOS.app-Simulated.xcent.der -Xlinker -no_adhoc_codesign -o /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Products/Debug-iphonesimulator/ClariFi\ iOS.app/__preview.dylib
+
+MkDir /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/assetcatalog_output/thinned (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    /bin/mkdir -p /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/assetcatalog_output/thinned
+
+MkDir /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/assetcatalog_output/unthinned (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    /bin/mkdir -p /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/assetcatalog_output/unthinned
+
+GenerateAssetSymbols /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Assets.xcassets (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    /Applications/Xcode.app/Contents/Developer/usr/bin/actool /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Assets.xcassets --compile /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Products/Debug-iphonesimulator/ClariFi\ iOS.app --output-format human-readable-text --notices --warnings --export-dependency-info /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/assetcatalog_dependencies --output-partial-info-plist /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/assetcatalog_generated_info.plist --app-icon AppIcon --accent-color AccentColor --compress-pngs --enable-on-demand-resources YES --development-region en --target-device iphone --target-device ipad --minimum-deployment-target 18.5 --platform iphonesimulator --bundle-identifier com.kentrologia.ClariFi-iOS --generate-swift-asset-symbols /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/DerivedSources/GeneratedAssetSymbols.swift --generate-objc-asset-symbols /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/DerivedSources/GeneratedAssetSymbols.h --generate-asset-symbol-index /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/DerivedSources/GeneratedAssetSymbols-Index.plist
+/* com.apple.actool.compilation-results */
+/Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi iOS.build/Debug-iphonesimulator/ClariFi iOS.build/DerivedSources/GeneratedAssetSymbols-Index.plist
+/Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi iOS.build/Debug-iphonesimulator/ClariFi iOS.build/DerivedSources/GeneratedAssetSymbols.h
+/Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi iOS.build/Debug-iphonesimulator/ClariFi iOS.build/DerivedSources/GeneratedAssetSymbols.swift
+
+
+DataModelCompile /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Products/Debug-iphonesimulator/ClariFi\ iOS.app/ /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/ClariFi_iOS.xcdatamodeld (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    /Applications/Xcode.app/Contents/Developer/usr/bin/momc --sdkroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator18.5.sdk --iphonesimulator-deployment-target 18.5 --module ClariFi_iOS /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/ClariFi_iOS.xcdatamodeld /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Products/Debug-iphonesimulator/ClariFi\ iOS.app/
+ClariFi_iOS.xcdatamodel: note: Model ClariFi_iOS version checksum: kjT5LcQo4vMHPU9H/CTIlFFw01YY+W0Wn3JpokEh4pE=
+
+CpResource /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Products/Debug-iphonesimulator/ClariFi\ iOS.app/test_results.log /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/test_results.log (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/test_results.log /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Products/Debug-iphonesimulator/ClariFi\ iOS.app
+
+CpResource /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Products/Debug-iphonesimulator/ClariFi\ iOS.app/verify_domain_services_di.sh /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/verify_domain_services_di.sh (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/verify_domain_services_di.sh /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Products/Debug-iphonesimulator/ClariFi\ iOS.app
+
+DataModelCodegen /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/ClariFi_iOS.xcdatamodeld (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    /Applications/Xcode.app/Contents/Developer/usr/bin/momc --action generate --swift-version 5.0 --sdkroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator18.5.sdk --iphonesimulator-deployment-target 18.5 --module ClariFi_iOS /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/ClariFi_iOS.xcdatamodeld /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/DerivedSources/CoreDataGenerated/ClariFi_iOS
+
+CpResource /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Products/Debug-iphonesimulator/ClariFi\ iOS.app/test_output.log /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/test_output.log (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/test_output.log /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Products/Debug-iphonesimulator/ClariFi\ iOS.app
+
+CpResource /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Products/Debug-iphonesimulator/ClariFi\ iOS.app/run_security_tests.sh /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/run_security_tests.sh (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/run_security_tests.sh /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Products/Debug-iphonesimulator/ClariFi\ iOS.app
+
+CpResource /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Products/Debug-iphonesimulator/ClariFi\ iOS.app/run_privacy_tests.sh /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/run_privacy_tests.sh (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/run_privacy_tests.sh /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Products/Debug-iphonesimulator/ClariFi\ iOS.app
+
+CpResource /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Products/Debug-iphonesimulator/ClariFi\ iOS.app/run_premium_tests.sh /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/run_premium_tests.sh (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/run_premium_tests.sh /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Products/Debug-iphonesimulator/ClariFi\ iOS.app
+
+CpResource /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Products/Debug-iphonesimulator/ClariFi\ iOS.app/run_navigation_tests.sh /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/run_navigation_tests.sh (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/run_navigation_tests.sh /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Products/Debug-iphonesimulator/ClariFi\ iOS.app
+
+CpResource /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Products/Debug-iphonesimulator/ClariFi\ iOS.app/run_categorization_tests.sh /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/run_categorization_tests.sh (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/run_categorization_tests.sh /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Products/Debug-iphonesimulator/ClariFi\ iOS.app
+
+CpResource /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Products/Debug-iphonesimulator/ClariFi\ iOS.app/.env /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/.env (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/.env /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Products/Debug-iphonesimulator/ClariFi\ iOS.app
+
+Copy /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Products/Debug-iphonesimulator/ClariFi\ iOS.app/Frameworks/libXCTestSwiftSupport.dylib /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib/libXCTestSwiftSupport.dylib (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -exclude Headers -exclude PrivateHeaders -exclude Modules -exclude \*.tbd -resolve-src-symlinks /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib/libXCTestSwiftSupport.dylib /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Products/Debug-iphonesimulator/ClariFi\ iOS.app/Frameworks
+
+Copy /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Products/Debug-iphonesimulator/ClariFi\ iOS.app/Frameworks/libXCTestBundleInject.dylib /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib/libXCTestBundleInject.dylib (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -exclude Headers -exclude PrivateHeaders -exclude Modules -exclude \*.tbd -resolve-src-symlinks /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib/libXCTestBundleInject.dylib /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Products/Debug-iphonesimulator/ClariFi\ iOS.app/Frameworks
+
+Copy /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Products/Debug-iphonesimulator/ClariFi\ iOS.app/Frameworks/XCUnit.framework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/PrivateFrameworks/XCUnit.framework (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -exclude Headers -exclude PrivateHeaders -exclude Modules -exclude \*.tbd -resolve-src-symlinks /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/PrivateFrameworks/XCUnit.framework /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Products/Debug-iphonesimulator/ClariFi\ iOS.app/Frameworks
+
+Copy /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Products/Debug-iphonesimulator/ClariFi\ iOS.app/Frameworks/XCUIAutomation.framework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/XCUIAutomation.framework (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -exclude Headers -exclude PrivateHeaders -exclude Modules -exclude \*.tbd -resolve-src-symlinks /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/XCUIAutomation.framework /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Products/Debug-iphonesimulator/ClariFi\ iOS.app/Frameworks
+
+Copy /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Products/Debug-iphonesimulator/ClariFi\ iOS.app/Frameworks/XCTestSupport.framework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/PrivateFrameworks/XCTestSupport.framework (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -exclude Headers -exclude PrivateHeaders -exclude Modules -exclude \*.tbd -resolve-src-symlinks /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/PrivateFrameworks/XCTestSupport.framework /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Products/Debug-iphonesimulator/ClariFi\ iOS.app/Frameworks
+
+Copy /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Products/Debug-iphonesimulator/ClariFi\ iOS.app/Frameworks/XCTestCore.framework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/PrivateFrameworks/XCTestCore.framework (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -exclude Headers -exclude PrivateHeaders -exclude Modules -exclude \*.tbd -resolve-src-symlinks /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/PrivateFrameworks/XCTestCore.framework /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Products/Debug-iphonesimulator/ClariFi\ iOS.app/Frameworks
+
+Copy /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Products/Debug-iphonesimulator/ClariFi\ iOS.app/Frameworks/XCTest.framework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/XCTest.framework (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -exclude Headers -exclude PrivateHeaders -exclude Modules -exclude \*.tbd -resolve-src-symlinks /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/XCTest.framework /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Products/Debug-iphonesimulator/ClariFi\ iOS.app/Frameworks
+
+Copy /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Products/Debug-iphonesimulator/ClariFi\ iOS.app/Frameworks/XCTAutomationSupport.framework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/PrivateFrameworks/XCTAutomationSupport.framework (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -exclude Headers -exclude PrivateHeaders -exclude Modules -exclude \*.tbd -resolve-src-symlinks /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/PrivateFrameworks/XCTAutomationSupport.framework /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Products/Debug-iphonesimulator/ClariFi\ iOS.app/Frameworks
+
+Copy /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Products/Debug-iphonesimulator/ClariFi\ iOS.app/Frameworks/Testing.framework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/Testing.framework (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -exclude Headers -exclude PrivateHeaders -exclude Modules -exclude \*.tbd -resolve-src-symlinks /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/Testing.framework /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Products/Debug-iphonesimulator/ClariFi\ iOS.app/Frameworks
+
+CompileAssetCatalogVariant thinned /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Products/Debug-iphonesimulator/ClariFi\ iOS.app /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Assets.xcassets (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    /Applications/Xcode.app/Contents/Developer/usr/bin/actool /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Assets.xcassets --compile /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/assetcatalog_output/thinned --output-format human-readable-text --notices --warnings --export-dependency-info /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/assetcatalog_dependencies_thinned --output-partial-info-plist /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/assetcatalog_generated_info.plist_thinned --app-icon AppIcon --accent-color AccentColor --compress-pngs --enable-on-demand-resources YES --filter-for-thinning-device-configuration iPhone17,3 --filter-for-device-os-version 18.6 --development-region en --target-device iphone --target-device ipad --minimum-deployment-target 18.5 --platform iphonesimulator
+/* com.apple.actool.compilation-results */
+/Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi iOS.build/Debug-iphonesimulator/ClariFi iOS.build/assetcatalog_generated_info.plist_thinned
+
+
+LinkAssetCatalog /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Assets.xcassets (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    builtin-linkAssetCatalog --thinned /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/assetcatalog_output/thinned --thinned-dependencies /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/assetcatalog_dependencies_thinned --thinned-info-plist-content /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/assetcatalog_generated_info.plist_thinned --unthinned /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/assetcatalog_output/unthinned --unthinned-dependencies /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/assetcatalog_dependencies_unthinned --unthinned-info-plist-content /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/assetcatalog_generated_info.plist_unthinned --output /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Products/Debug-iphonesimulator/ClariFi\ iOS.app --plist-output /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/assetcatalog_generated_info.plist
+
+ProcessInfoPlistFile /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Products/Debug-iphonesimulator/ClariFi\ iOS.app/Info.plist /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/empty-ClariFi\ iOS.plist (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    builtin-infoPlistUtility /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/empty-ClariFi\ iOS.plist -producttype com.apple.product-type.application -genpkginfo /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Products/Debug-iphonesimulator/ClariFi\ iOS.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -additionalcontentfile /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/assetcatalog_generated_info.plist -o /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Products/Debug-iphonesimulator/ClariFi\ iOS.app/Info.plist
+
+SwiftDriver ClariFi\ iOS normal arm64 com.apple.xcode.tools.swift.compiler (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    builtin-SwiftDriver -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name ClariFi_iOS -Onone -enforce-exclusivity\=checked @/Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/Objects-normal/arm64/ClariFi\ iOS.SwiftFileList -DDEBUG -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator18.5.sdk -target arm64-apple-ios18.5-simulator -g -module-cache-path /Users/aero/Library/Developer/Xcode/DerivedData/ModuleCache.noindex -Xfrontend -serialize-debugging-options -profile-coverage-mapping -profile-generate -enable-testing -index-store-path /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Index.noindex/DataStore -swift-version 5 -I /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Products/Debug-iphonesimulator -F /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Products/Debug-iphonesimulator -emit-localized-strings -emit-localized-strings-path /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/Objects-normal/arm64 -c -j8 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/aero/Library/Developer/Xcode/DerivedData/SDKStatCaches.noindex/iphonesimulator18.5-22F76-d5fc8ad4295d2ef488fb7d0f804ce0c4.sdkstatcache -output-file-map /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/Objects-normal/arm64/ClariFi\ iOS-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/Objects-normal/arm64/ClariFi_iOS.swiftmodule -validate-clang-modules-once -clang-build-session-file /Users/aero/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/Session.modulevalidation -Xcc -I/Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/Objects-normal/arm64/ClariFi\ iOS_const_extract_protocols.json -Xcc -iquote -Xcc /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/ClariFi\ iOS-generated-files.hmap -Xcc -I/Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/ClariFi\ iOS-own-target-headers.hmap -Xcc -I/Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/ClariFi\ iOS-all-target-headers.hmap -Xcc -iquote -Xcc /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/ClariFi\ iOS-project-headers.hmap -Xcc -I/Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Products/Debug-iphonesimulator/include -Xcc -I/Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/DerivedSources-normal/arm64 -Xcc -I/Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/DerivedSources/arm64 -Xcc -I/Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/Objects-normal/arm64/ClariFi_iOS-Swift.h -working-directory /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS -experimental-emit-module-separately -disable-cmo
+
+SwiftCompile normal arm64 Compiling\ TransactionReviewViewModel.swift,\ MainTabView.swift,\ SecurityAuditService.swift,\ BudgetMonitoringService.swift,\ BudgetViewModelTests.swift,\ AnalyticsSettingsView.swift,\ PremiumInsightsView.swift,\ SubscriptionService.swift,\ BudgetCreationView.swift,\ CategoryService.swift,\ InsightsEngineTests.swift,\ RecurringTransactionsListView.swift,\ BudgetViewModel.swift,\ CategorizationRulesView.swift,\ ContentView.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/ViewModels/TransactionReviewViewModel.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/MainTabView.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Services/SecurityAuditService.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Services/BudgetMonitoringService.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Tests/UnitTests/BudgetViewModelTests.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/AnalyticsSettingsView.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/PremiumInsightsView.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Services/SubscriptionService.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/BudgetCreationView.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Services/CategoryService.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Tests/UnitTests/InsightsEngineTests.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/RecurringTransactionsListView.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/ViewModels/BudgetViewModel.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/CategorizationRulesView.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/ContentView.swift (in target 'ClariFi iOS' from project 'ClariFi iOS')
+
+SwiftCompile normal arm64 /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/ViewModels/TransactionReviewViewModel.swift (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    
+
+SwiftCompile normal arm64 /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/MainTabView.swift (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    
+
+SwiftCompile normal arm64 /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Services/SecurityAuditService.swift (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    
+
+SwiftCompile normal arm64 /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Services/BudgetMonitoringService.swift (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    
+
+SwiftCompile normal arm64 /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Tests/UnitTests/BudgetViewModelTests.swift (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    
+
+SwiftCompile normal arm64 /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/AnalyticsSettingsView.swift (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    
+
+SwiftCompile normal arm64 /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/PremiumInsightsView.swift (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    
+
+SwiftCompile normal arm64 /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Services/SubscriptionService.swift (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    
+
+SwiftCompile normal arm64 /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/BudgetCreationView.swift (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    
+
+SwiftCompile normal arm64 /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Services/CategoryService.swift (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    
+
+SwiftCompile normal arm64 /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Tests/UnitTests/InsightsEngineTests.swift (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    
+
+SwiftCompile normal arm64 /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/RecurringTransactionsListView.swift (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    
+
+SwiftCompile normal arm64 /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/ViewModels/BudgetViewModel.swift (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    
+
+SwiftCompile normal arm64 /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/CategorizationRulesView.swift (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    
+
+SwiftCompile normal arm64 /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/ContentView.swift (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    
+
+SwiftCompile normal arm64 Compiling\ CoreDataValidation.swift,\ TransactionEntryView.swift,\ DIContainer+Testing.swift,\ TransactionEntryViewModel.swift,\ View+ErrorAlert+Example.swift,\ LoadingStateView.swift,\ SecureFileManager.swift,\ TransactionsListView.swift,\ BiometricAuthService.swift,\ BudgetTemplateServiceTests.swift,\ AboutView.swift,\ PaywallView.swift,\ StatementPatterns.swift,\ AnalyticsViewModifier.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Models/CoreDataValidation.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/TransactionEntryView.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Tests/TestHelpers/DIContainer+Testing.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/ViewModels/TransactionEntryViewModel.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Core/Extensions/View+ErrorAlert+Example.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/LoadingStateView.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Services/SecureFileManager.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/TransactionsListView.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Services/BiometricAuthService.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Tests/UnitTests/BudgetTemplateServiceTests.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/AboutView.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/PaywallView.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Services/StatementPatterns.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Utilities/AnalyticsViewModifier.swift (in target 'ClariFi iOS' from project 'ClariFi iOS')
+
+SwiftCompile normal arm64 /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Models/CoreDataValidation.swift (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    
+
+SwiftCompile normal arm64 /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/TransactionEntryView.swift (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    
+
+SwiftCompile normal arm64 /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Tests/TestHelpers/DIContainer+Testing.swift (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    
+
+SwiftCompile normal arm64 /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/ViewModels/TransactionEntryViewModel.swift (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    
+
+SwiftCompile normal arm64 /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Core/Extensions/View+ErrorAlert+Example.swift (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    
+
+SwiftCompile normal arm64 /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/LoadingStateView.swift (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    
+
+SwiftCompile normal arm64 /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Services/SecureFileManager.swift (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    
+
+SwiftCompile normal arm64 /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/TransactionsListView.swift (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    
+
+SwiftCompile normal arm64 /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Services/BiometricAuthService.swift (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    
+
+SwiftCompile normal arm64 /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Tests/UnitTests/BudgetTemplateServiceTests.swift (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    
+
+SwiftCompile normal arm64 /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/AboutView.swift (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    
+
+SwiftCompile normal arm64 /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/PaywallView.swift (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    
+
+SwiftCompile normal arm64 /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Services/StatementPatterns.swift (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    
+
+SwiftCompile normal arm64 /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Utilities/AnalyticsViewModifier.swift (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    
+
+SwiftCompile normal arm64 Compiling\ InsightNotificationService.swift,\ RepositoryTests.swift,\ SettingsView.swift,\ CoreDataRepositories.swift,\ OnboardingViewModel.swift,\ DIContainer.swift,\ HelpView.swift,\ PrivacyManager.swift,\ TransactionDetailView.swift,\ SubscriptionViewModel.swift,\ View+ErrorAlert.swift,\ LiquidGlassCard.swift,\ ScenarioPlanningService.swift,\ TransactionRowView.swift,\ AnalyticsService.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Services/InsightNotificationService.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Tests/UnitTests/RepositoryTests.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/SettingsView.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Repositories/CoreDataRepositories.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/ViewModels/OnboardingViewModel.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Core/DependencyInjection/DIContainer.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/HelpView.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Services/PrivacyManager.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/TransactionDetailView.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/ViewModels/SubscriptionViewModel.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Core/Extensions/View+ErrorAlert.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/LiquidGlassCard.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Services/ScenarioPlanningService.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/TransactionRowView.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Services/AnalyticsService.swift (in target 'ClariFi iOS' from project 'ClariFi iOS')
+
+SwiftCompile normal arm64 /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Services/InsightNotificationService.swift (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    
+
+SwiftCompile normal arm64 /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Tests/UnitTests/RepositoryTests.swift (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    
+
+SwiftCompile normal arm64 /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/SettingsView.swift (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    
+
+SwiftCompile normal arm64 /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Repositories/CoreDataRepositories.swift (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    
+
+SwiftCompile normal arm64 /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/ViewModels/OnboardingViewModel.swift (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    
+
+SwiftCompile normal arm64 /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Core/DependencyInjection/DIContainer.swift (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    
+
+SwiftCompile normal arm64 /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/HelpView.swift (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    
+
+SwiftCompile normal arm64 /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Services/PrivacyManager.swift (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    
+
+SwiftCompile normal arm64 /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/TransactionDetailView.swift (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    
+
+SwiftCompile normal arm64 /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/ViewModels/SubscriptionViewModel.swift (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    
+
+SwiftCompile normal arm64 /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Core/Extensions/View+ErrorAlert.swift (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    
+
+SwiftCompile normal arm64 /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/LiquidGlassCard.swift (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    
+
+SwiftCompile normal arm64 /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Services/ScenarioPlanningService.swift (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    
+
+SwiftCompile normal arm64 /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/TransactionRowView.swift (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    
+
+SwiftCompile normal arm64 /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Services/AnalyticsService.swift (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    
+
+SwiftCompile normal arm64 Compiling\ CategorizationRulesViewModel.swift,\ AppDIContainer.swift,\ BaseViewModel.swift,\ DashboardView.swift,\ Persistence.swift,\ InsightsEngine.swift,\ StatementUploadViewModelTests.swift,\ AppError.swift,\ StatementUploadView.swift,\ RepositoryFactory.swift,\ MockRepositories.swift,\ PrivacyDashboardViewModel.swift,\ DIContainer+Environment.swift,\ InsightDetailView.swift,\ RecurringTransactionService.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/ViewModels/CategorizationRulesViewModel.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Core/DependencyInjection/AppDIContainer.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Presentation/ViewModels/Base/BaseViewModel.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/DashboardView.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Persistence.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Services/InsightsEngine.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Tests/UnitTests/StatementUploadViewModelTests.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Models/AppError.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/StatementUploadView.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Repositories/RepositoryFactory.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Tests/Mocks/MockRepositories.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/ViewModels/PrivacyDashboardViewModel.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Core/DependencyInjection/DIContainer+Environment.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/InsightDetailView.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Services/RecurringTransactionService.swift (in target 'ClariFi iOS' from project 'ClariFi iOS')
+
+SwiftCompile normal arm64 /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/ViewModels/CategorizationRulesViewModel.swift (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    
+
+SwiftCompile normal arm64 /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Core/DependencyInjection/AppDIContainer.swift (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    
+
+SwiftCompile normal arm64 /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Presentation/ViewModels/Base/BaseViewModel.swift (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    
+
+SwiftCompile normal arm64 /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/DashboardView.swift (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    
+
+SwiftCompile normal arm64 /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Persistence.swift (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    
+
+SwiftCompile normal arm64 /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Services/InsightsEngine.swift (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    
+
+SwiftCompile normal arm64 /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Tests/UnitTests/StatementUploadViewModelTests.swift (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    
+
+SwiftCompile normal arm64 /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Models/AppError.swift (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    
+
+SwiftCompile normal arm64 /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/StatementUploadView.swift (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    
+
+SwiftCompile normal arm64 /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Repositories/RepositoryFactory.swift (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    
+
+SwiftCompile normal arm64 /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Tests/Mocks/MockRepositories.swift (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    
+
+SwiftCompile normal arm64 /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/ViewModels/PrivacyDashboardViewModel.swift (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    
+
+SwiftCompile normal arm64 /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Core/DependencyInjection/DIContainer+Environment.swift (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    
+
+SwiftCompile normal arm64 /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/InsightDetailView.swift (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    
+
+SwiftCompile normal arm64 /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Services/RecurringTransactionService.swift (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    
+
+SwiftCompile normal arm64 Compiling\ BiometricSettingsView.swift,\ CashflowForecastingService.swift,\ DIContainerTests.swift,\ RecurringTransactionSetupView.swift,\ VisionOCRService.swift,\ BudgetCreationViewModel.swift,\ CashflowForecastView.swift,\ ClariFi_iOSApp.swift,\ EncryptionService.swift,\ MockRepositoriesTests.swift,\ SecurityAuditView.swift,\ WorkflowIntegrationTests.swift,\ InsightsViewModel.swift,\ AppDIContainer+Registration.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/BiometricSettingsView.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Services/CashflowForecastingService.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Tests/UnitTests/DIContainerTests.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/RecurringTransactionSetupView.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Services/VisionOCRService.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/ViewModels/BudgetCreationViewModel.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/CashflowForecastView.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/ClariFi_iOSApp.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Services/EncryptionService.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Tests/UnitTests/MockRepositoriesTests.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/SecurityAuditView.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Tests/IntegrationTests/WorkflowIntegrationTests.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/ViewModels/InsightsViewModel.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Core/DependencyInjection/AppDIContainer+Registration.swift (in target 'ClariFi iOS' from project 'ClariFi iOS')
+
+SwiftCompile normal arm64 /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/BiometricSettingsView.swift (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    
+
+SwiftCompile normal arm64 /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Services/CashflowForecastingService.swift (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    
+
+SwiftCompile normal arm64 /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Tests/UnitTests/DIContainerTests.swift (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    
+
+SwiftCompile normal arm64 /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/RecurringTransactionSetupView.swift (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    
+
+SwiftCompile normal arm64 /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Services/VisionOCRService.swift (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    
+
+SwiftCompile normal arm64 /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/ViewModels/BudgetCreationViewModel.swift (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    
+
+SwiftCompile normal arm64 /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/CashflowForecastView.swift (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    
+
+SwiftCompile normal arm64 /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/ClariFi_iOSApp.swift (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    
+
+SwiftCompile normal arm64 /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Services/EncryptionService.swift (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    
+
+SwiftCompile normal arm64 /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Tests/UnitTests/MockRepositoriesTests.swift (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    
+
+SwiftCompile normal arm64 /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/SecurityAuditView.swift (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    
+
+SwiftCompile normal arm64 /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Tests/IntegrationTests/WorkflowIntegrationTests.swift (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    
+
+SwiftCompile normal arm64 /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/ViewModels/InsightsViewModel.swift (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    
+
+SwiftCompile normal arm64 /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Core/DependencyInjection/AppDIContainer+Registration.swift (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    
+
+SwiftCompile normal arm64 Compiling\ ErrorView.swift,\ OCRService.swift,\ TransactionEntryViewModelTests.swift,\ SuccessView.swift,\ RepositoryProtocols.swift,\ MockServices.swift,\ StatementUploadViewModel.swift,\ InsightsView.swift,\ RuleEngine.swift,\ TransactionReviewView.swift,\ Transaction+CoreDataClass.swift,\ Transaction+CoreDataProperties.swift,\ Account+CoreDataClass.swift,\ Account+CoreDataProperties.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/ErrorView.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Services/OCRService.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Tests/UnitTests/TransactionEntryViewModelTests.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/SuccessView.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Repositories/RepositoryProtocols.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Tests/Mocks/MockServices.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/ViewModels/StatementUploadViewModel.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/InsightsView.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Services/RuleEngine.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/TransactionReviewView.swift /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/DerivedSources/CoreDataGenerated/ClariFi_iOS/Transaction+CoreDataClass.swift /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/DerivedSources/CoreDataGenerated/ClariFi_iOS/Transaction+CoreDataProperties.swift /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/DerivedSources/CoreDataGenerated/ClariFi_iOS/Account+CoreDataClass.swift /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/DerivedSources/CoreDataGenerated/ClariFi_iOS/Account+CoreDataProperties.swift (in target 'ClariFi iOS' from project 'ClariFi iOS')
+SwiftCompile normal arm64 /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/ErrorView.swift (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    
+
+SwiftCompile normal arm64 /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Services/OCRService.swift (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    
+
+SwiftCompile normal arm64 /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Tests/UnitTests/TransactionEntryViewModelTests.swift (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    
+
+SwiftCompile normal arm64 /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/SuccessView.swift (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    
+
+SwiftCompile normal arm64 /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Repositories/RepositoryProtocols.swift (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    
+
+SwiftCompile normal arm64 /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Tests/Mocks/MockServices.swift (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    
+
+SwiftCompile normal arm64 /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/ViewModels/StatementUploadViewModel.swift (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    
+
+SwiftCompile normal arm64 /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/InsightsView.swift (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    
+
+SwiftCompile normal arm64 /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Services/RuleEngine.swift (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    
+
+SwiftCompile normal arm64 /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/TransactionReviewView.swift (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    
+
+SwiftCompile normal arm64 /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/DerivedSources/CoreDataGenerated/ClariFi_iOS/Transaction+CoreDataClass.swift (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    
+
+SwiftCompile normal arm64 /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/DerivedSources/CoreDataGenerated/ClariFi_iOS/Transaction+CoreDataProperties.swift (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    
+
+SwiftCompile normal arm64 /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/DerivedSources/CoreDataGenerated/ClariFi_iOS/Account+CoreDataClass.swift (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    
+
+SwiftCompile normal arm64 /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/DerivedSources/CoreDataGenerated/ClariFi_iOS/Account+CoreDataProperties.swift (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    
+
+SwiftCompile normal arm64 Compiling\ BudgetMonitoringServiceTests.swift,\ OnboardingView.swift,\ SmartTransactionParser.swift,\ AccessibilityHelper.swift,\ ClariFiWidget.swift,\ BudgetTemplateService.swift,\ CategoryServiceTests.swift,\ BatchCategorizationView.swift,\ PrivacyDashboardView.swift,\ TransactionParserService.swift,\ BatchCategorizationViewModel.swift,\ BudgetView.swift,\ ClariFiAppIntents.swift,\ InsightsViewModelTests.swift,\ ScenarioPlanningView.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Tests/UnitTests/BudgetMonitoringServiceTests.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/OnboardingView.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Services/SmartTransactionParser.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Utilities/AccessibilityHelper.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Widgets/ClariFiWidget.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Services/BudgetTemplateService.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Tests/UnitTests/CategoryServiceTests.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/BatchCategorizationView.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/PrivacyDashboardView.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Services/TransactionParserService.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/ViewModels/BatchCategorizationViewModel.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/BudgetView.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Services/ClariFiAppIntents.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Tests/UnitTests/InsightsViewModelTests.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/ScenarioPlanningView.swift (in target 'ClariFi iOS' from project 'ClariFi iOS')
+
+SwiftCompile normal arm64 /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Tests/UnitTests/BudgetMonitoringServiceTests.swift (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    
+
+SwiftCompile normal arm64 /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/OnboardingView.swift (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    
+
+SwiftCompile normal arm64 /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Services/SmartTransactionParser.swift (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    
+
+SwiftCompile normal arm64 /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Utilities/AccessibilityHelper.swift (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    
+
+SwiftCompile normal arm64 /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Widgets/ClariFiWidget.swift (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    
+
+SwiftCompile normal arm64 /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Services/BudgetTemplateService.swift (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    
+
+SwiftCompile normal arm64 /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Tests/UnitTests/CategoryServiceTests.swift (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    
+
+SwiftCompile normal arm64 /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/BatchCategorizationView.swift (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    
+
+SwiftCompile normal arm64 /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/PrivacyDashboardView.swift (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    
+
+SwiftCompile normal arm64 /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Services/TransactionParserService.swift (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    
+
+SwiftCompile normal arm64 /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/ViewModels/BatchCategorizationViewModel.swift (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    
+
+SwiftCompile normal arm64 /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/BudgetView.swift (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    
+
+SwiftCompile normal arm64 /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Services/ClariFiAppIntents.swift (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    
+
+SwiftCompile normal arm64 /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Tests/UnitTests/InsightsViewModelTests.swift (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    
+
+SwiftCompile normal arm64 /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/ScenarioPlanningView.swift (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    
+
+SwiftEmitModule normal arm64 Emitting\ module\ for\ ClariFi_iOS (in target 'ClariFi iOS' from project 'ClariFi iOS')
+Failed frontend command:
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swift-frontend -frontend -emit-module -experimental-skip-non-inlinable-function-bodies-without-types /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/ViewModels/TransactionReviewViewModel.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/MainTabView.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Services/SecurityAuditService.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Services/BudgetMonitoringService.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Tests/UnitTests/BudgetViewModelTests.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/AnalyticsSettingsView.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/PremiumInsightsView.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Services/SubscriptionService.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/BudgetCreationView.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Services/CategoryService.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Tests/UnitTests/InsightsEngineTests.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/RecurringTransactionsListView.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/ViewModels/BudgetViewModel.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/CategorizationRulesView.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/ContentView.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Services/InsightNotificationService.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Tests/UnitTests/RepositoryTests.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/SettingsView.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Repositories/CoreDataRepositories.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/ViewModels/OnboardingViewModel.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Core/DependencyInjection/DIContainer.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/HelpView.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Services/PrivacyManager.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/TransactionDetailView.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/ViewModels/SubscriptionViewModel.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Core/Extensions/View+ErrorAlert.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/LiquidGlassCard.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Services/ScenarioPlanningService.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/TransactionRowView.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Services/AnalyticsService.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Tests/UnitTests/BudgetMonitoringServiceTests.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/OnboardingView.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Services/SmartTransactionParser.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Utilities/AccessibilityHelper.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Widgets/ClariFiWidget.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Services/BudgetTemplateService.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Tests/UnitTests/CategoryServiceTests.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/BatchCategorizationView.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/PrivacyDashboardView.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Services/TransactionParserService.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/ViewModels/BatchCategorizationViewModel.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/BudgetView.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Services/ClariFiAppIntents.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Tests/UnitTests/InsightsViewModelTests.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/ScenarioPlanningView.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/ViewModels/CategorizationRulesViewModel.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Core/DependencyInjection/AppDIContainer.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Presentation/ViewModels/Base/BaseViewModel.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/DashboardView.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Persistence.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Services/InsightsEngine.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Tests/UnitTests/StatementUploadViewModelTests.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Models/AppError.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/StatementUploadView.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Repositories/RepositoryFactory.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Tests/Mocks/MockRepositories.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/ViewModels/PrivacyDashboardViewModel.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Core/DependencyInjection/DIContainer+Environment.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/InsightDetailView.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Services/RecurringTransactionService.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Models/CoreDataValidation.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/TransactionEntryView.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Tests/TestHelpers/DIContainer+Testing.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/ViewModels/TransactionEntryViewModel.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Core/Extensions/View+ErrorAlert+Example.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/LoadingStateView.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Services/SecureFileManager.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/TransactionsListView.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Services/BiometricAuthService.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Tests/UnitTests/BudgetTemplateServiceTests.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/AboutView.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/PaywallView.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Services/StatementPatterns.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Utilities/AnalyticsViewModifier.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/BiometricSettingsView.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Services/CashflowForecastingService.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Tests/UnitTests/DIContainerTests.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/RecurringTransactionSetupView.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Services/VisionOCRService.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/ViewModels/BudgetCreationViewModel.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/CashflowForecastView.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/ClariFi_iOSApp.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Services/EncryptionService.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Tests/UnitTests/MockRepositoriesTests.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/SecurityAuditView.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Tests/IntegrationTests/WorkflowIntegrationTests.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/ViewModels/InsightsViewModel.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Core/DependencyInjection/AppDIContainer+Registration.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/ErrorView.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Services/OCRService.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Tests/UnitTests/TransactionEntryViewModelTests.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/SuccessView.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Repositories/RepositoryProtocols.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Tests/Mocks/MockServices.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/ViewModels/StatementUploadViewModel.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/InsightsView.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Services/RuleEngine.swift /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/TransactionReviewView.swift /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/DerivedSources/CoreDataGenerated/ClariFi_iOS/Transaction+CoreDataClass.swift /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/DerivedSources/CoreDataGenerated/ClariFi_iOS/Transaction+CoreDataProperties.swift /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/DerivedSources/CoreDataGenerated/ClariFi_iOS/Account+CoreDataClass.swift /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/DerivedSources/CoreDataGenerated/ClariFi_iOS/Account+CoreDataProperties.swift /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/DerivedSources/CoreDataGenerated/ClariFi_iOS/Budget+CoreDataClass.swift /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/DerivedSources/CoreDataGenerated/ClariFi_iOS/Budget+CoreDataProperties.swift /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/DerivedSources/CoreDataGenerated/ClariFi_iOS/BudgetCategory+CoreDataClass.swift /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/DerivedSources/CoreDataGenerated/ClariFi_iOS/BudgetCategory+CoreDataProperties.swift /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/DerivedSources/CoreDataGenerated/ClariFi_iOS/Statement+CoreDataClass.swift /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/DerivedSources/CoreDataGenerated/ClariFi_iOS/Statement+CoreDataProperties.swift /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/DerivedSources/CoreDataGenerated/ClariFi_iOS/RecurringTransaction+CoreDataClass.swift /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/DerivedSources/CoreDataGenerated/ClariFi_iOS/RecurringTransaction+CoreDataProperties.swift /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/DerivedSources/CoreDataGenerated/ClariFi_iOS/CategorizationRule+CoreDataClass.swift /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/DerivedSources/CoreDataGenerated/ClariFi_iOS/CategorizationRule+CoreDataProperties.swift /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/DerivedSources/CoreDataGenerated/ClariFi_iOS/MerchantPattern+CoreDataClass.swift /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/DerivedSources/CoreDataGenerated/ClariFi_iOS/MerchantPattern+CoreDataProperties.swift /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/DerivedSources/CoreDataGenerated/ClariFi_iOS/ClariFi_iOS+CoreDataModel.swift /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/DerivedSources/GeneratedAssetSymbols.swift -target arm64-apple-ios18.5-simulator -Xllvm -aarch64-use-tbi -enable-objc-interop -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator18.5.sdk -I /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Products/Debug-iphonesimulator -F /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Products/Debug-iphonesimulator -no-color-diagnostics -enable-testing -g -debug-info-format\=dwarf -dwarf-version\=5 -module-cache-path /Users/aero/Library/Developer/Xcode/DerivedData/ModuleCache.noindex -profile-generate -profile-coverage-mapping -swift-version 5 -enforce-exclusivity\=checked -Onone -D DEBUG -serialize-debugging-options -const-gather-protocols-file /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/Objects-normal/arm64/ClariFi\ iOS_const_extract_protocols.json -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -empty-abi-descriptor -validate-clang-modules-once -clang-build-session-file /Users/aero/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/Session.modulevalidation -Xcc -working-directory -Xcc /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift -enable-anonymous-context-mangled-names -file-compilation-dir /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS -Xcc -ivfsstatcache -Xcc /Users/aero/Library/Developer/Xcode/DerivedData/SDKStatCaches.noindex/iphonesimulator18.5-22F76-d5fc8ad4295d2ef488fb7d0f804ce0c4.sdkstatcache -Xcc -I/Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/swift-overrides.hmap -Xcc -iquote -Xcc /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/ClariFi\ iOS-generated-files.hmap -Xcc -I/Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/ClariFi\ iOS-own-target-headers.hmap -Xcc -I/Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/ClariFi\ iOS-all-target-headers.hmap -Xcc -iquote -Xcc /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/ClariFi\ iOS-project-headers.hmap -Xcc -I/Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Products/Debug-iphonesimulator/include -Xcc -I/Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/DerivedSources-normal/arm64 -Xcc -I/Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/DerivedSources/arm64 -Xcc -I/Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/DerivedSources -Xcc -DDEBUG\=1 -module-name ClariFi_iOS -frontend-parseable-output -disable-clang-spi -target-sdk-version 18.5 -target-sdk-name iphonesimulator18.5 -external-plugin-path /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/lib/swift/host/plugins\#/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/swift-plugin-server -external-plugin-path /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/local/lib/swift/host/plugins\#/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/swift-plugin-server -in-process-plugin-server-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/libSwiftInProcPluginServer.dylib -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/local/lib/swift/host/plugins -emit-module-doc-path /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/Objects-normal/arm64/ClariFi_iOS.swiftdoc -emit-module-source-info-path /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/Objects-normal/arm64/ClariFi_iOS.swiftsourceinfo -emit-objc-header-path /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/Objects-normal/arm64/ClariFi_iOS-Swift.h -serialize-diagnostics-path /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/Objects-normal/arm64/ClariFi\ iOS-master-emit-module.dia -emit-dependencies-path /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/Objects-normal/arm64/ClariFi\ iOS-master-emit-module.d -o /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/Objects-normal/arm64/ClariFi_iOS.swiftmodule -emit-abi-descriptor-path /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/Objects-normal/arm64/ClariFi_iOS.abi.json
+
+EmitSwiftModule normal arm64 (in target 'ClariFi iOS' from project 'ClariFi iOS')
+    cd /Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS
+    
+/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/ClariFi iOS/Tests/UnitTests/BudgetViewModelTests.swift:8:8: error: no such module 'XCTest'
+import XCTest
+       ^
+
+SwiftCompile normal arm64 Compiling\ Budget+CoreDataClass.swift,\ Budget+CoreDataProperties.swift,\ BudgetCategory+CoreDataClass.swift,\ BudgetCategory+CoreDataProperties.swift,\ Statement+CoreDataClass.swift,\ Statement+CoreDataProperties.swift,\ RecurringTransaction+CoreDataClass.swift,\ RecurringTransaction+CoreDataProperties.swift,\ CategorizationRule+CoreDataClass.swift,\ CategorizationRule+CoreDataProperties.swift,\ MerchantPattern+CoreDataClass.swift,\ MerchantPattern+CoreDataProperties.swift,\ ClariFi_iOS+CoreDataModel.swift,\ GeneratedAssetSymbols.swift /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/DerivedSources/CoreDataGenerated/ClariFi_iOS/Budget+CoreDataClass.swift /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/DerivedSources/CoreDataGenerated/ClariFi_iOS/Budget+CoreDataProperties.swift /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/DerivedSources/CoreDataGenerated/ClariFi_iOS/BudgetCategory+CoreDataClass.swift /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/DerivedSources/CoreDataGenerated/ClariFi_iOS/BudgetCategory+CoreDataProperties.swift /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/DerivedSources/CoreDataGenerated/ClariFi_iOS/Statement+CoreDataClass.swift /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/DerivedSources/CoreDataGenerated/ClariFi_iOS/Statement+CoreDataProperties.swift /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/DerivedSources/CoreDataGenerated/ClariFi_iOS/RecurringTransaction+CoreDataClass.swift /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/DerivedSources/CoreDataGenerated/ClariFi_iOS/RecurringTransaction+CoreDataProperties.swift /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/DerivedSources/CoreDataGenerated/ClariFi_iOS/CategorizationRule+CoreDataClass.swift /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/DerivedSources/CoreDataGenerated/ClariFi_iOS/CategorizationRule+CoreDataProperties.swift /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/DerivedSources/CoreDataGenerated/ClariFi_iOS/MerchantPattern+CoreDataClass.swift /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/DerivedSources/CoreDataGenerated/ClariFi_iOS/MerchantPattern+CoreDataProperties.swift /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/DerivedSources/CoreDataGenerated/ClariFi_iOS/ClariFi_iOS+CoreDataModel.swift /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/DerivedSources/GeneratedAssetSymbols.swift (in target 'ClariFi iOS' from project 'ClariFi iOS')
+Command SwiftCompile failed with a nonzero exit code
+
+
+Test session results, code coverage, and logs:
+	/Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Logs/Test/Test-ClariFi iOS-2025.10.12_01-17-05--0400.xcresult
+
+Testing failed:
+	No such module 'XCTest'
+	Command SwiftCompile failed with a nonzero exit code
+	Testing cancelled because the build failed.
+
+** TEST FAILED **
+
+
+The following build commands failed:
+	SwiftEmitModule normal arm64 Emitting\ module\ for\ ClariFi_iOS (in target 'ClariFi iOS' from project 'ClariFi iOS')
+	EmitSwiftModule normal arm64 (in target 'ClariFi iOS' from project 'ClariFi iOS')
+	SwiftCompile normal arm64 Compiling\ Budget+CoreDataClass.swift,\ Budget+CoreDataProperties.swift,\ BudgetCategory+CoreDataClass.swift,\ BudgetCategory+CoreDataProperties.swift,\ Statement+CoreDataClass.swift,\ Statement+CoreDataProperties.swift,\ RecurringTransaction+CoreDataClass.swift,\ RecurringTransaction+CoreDataProperties.swift,\ CategorizationRule+CoreDataClass.swift,\ CategorizationRule+CoreDataProperties.swift,\ MerchantPattern+CoreDataClass.swift,\ MerchantPattern+CoreDataProperties.swift,\ ClariFi_iOS+CoreDataModel.swift,\ GeneratedAssetSymbols.swift /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/DerivedSources/CoreDataGenerated/ClariFi_iOS/Budget+CoreDataClass.swift /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/DerivedSources/CoreDataGenerated/ClariFi_iOS/Budget+CoreDataProperties.swift /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/DerivedSources/CoreDataGenerated/ClariFi_iOS/BudgetCategory+CoreDataClass.swift /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/DerivedSources/CoreDataGenerated/ClariFi_iOS/BudgetCategory+CoreDataProperties.swift /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/DerivedSources/CoreDataGenerated/ClariFi_iOS/Statement+CoreDataClass.swift /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/DerivedSources/CoreDataGenerated/ClariFi_iOS/Statement+CoreDataProperties.swift /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/DerivedSources/CoreDataGenerated/ClariFi_iOS/RecurringTransaction+CoreDataClass.swift /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/DerivedSources/CoreDataGenerated/ClariFi_iOS/RecurringTransaction+CoreDataProperties.swift /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/DerivedSources/CoreDataGenerated/ClariFi_iOS/CategorizationRule+CoreDataClass.swift /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/DerivedSources/CoreDataGenerated/ClariFi_iOS/CategorizationRule+CoreDataProperties.swift /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/DerivedSources/CoreDataGenerated/ClariFi_iOS/MerchantPattern+CoreDataClass.swift /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/DerivedSources/CoreDataGenerated/ClariFi_iOS/MerchantPattern+CoreDataProperties.swift /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/DerivedSources/CoreDataGenerated/ClariFi_iOS/ClariFi_iOS+CoreDataModel.swift /Users/aero/Library/Developer/Xcode/DerivedData/ClariFi_iOS-gmrlhvqnuqrbwdaistjzehzlpfwz/Build/Intermediates.noindex/ClariFi\ iOS.build/Debug-iphonesimulator/ClariFi\ iOS.build/DerivedSources/GeneratedAssetSymbols.swift (in target 'ClariFi iOS' from project 'ClariFi iOS')
+	Testing project ClariFi iOS with scheme ClariFi iOS
+(4 failures)

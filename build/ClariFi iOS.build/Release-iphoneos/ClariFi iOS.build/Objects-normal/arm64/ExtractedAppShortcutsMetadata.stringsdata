@@ -1,0 +1,30 @@
+{
+  "version" : 1,
+  "source" : "\/Users\/mayenikhalo\/Public\/From aEroPartition\/Dev\/ClariFi iOS\/ClariFi iOS\/Services\/ClariFiAppIntents.swift",
+  "tables" : {
+    "AppShortcuts" : [
+      {
+        "key" : "Show my recent transactions in ${applicationName}",
+        "values" : [
+          "Show my recent transactions in ${applicationName}",
+          "Find transactions in ${applicationName}"
+        ],
+        "location" : {
+          "startingLine" : 127,
+          "startingColumn" : 0
+        }
+      },
+      {
+        "key" : "Add a transaction in ${applicationName}",
+        "values" : [
+          "Add a transaction in ${applicationName}",
+          "Log a purchase in ${applicationName}"
+        ],
+        "location" : {
+          "startingColumn" : 0,
+          "startingLine" : 127
+        }
+      }
+    ]
+  }
+}

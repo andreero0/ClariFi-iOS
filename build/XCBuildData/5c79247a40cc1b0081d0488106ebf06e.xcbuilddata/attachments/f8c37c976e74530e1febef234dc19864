@@ -1,0 +1,103 @@
+/Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/AnalyticsSettingsView.swift
+/Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/RecurringTransactionsListView.swift
+/Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/ViewModels/BudgetCreationViewModel.swift
+/Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/ContentView.swift
+/Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Services/RecurringTransactionService.swift
+/Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/BudgetCreationView.swift
+/Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/SettingsView.swift
+/Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/ViewModels/InsightsViewModel.swift
+/Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Persistence.swift
+/Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Services/SecureFileManager.swift
+/Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Models/CoreDataValidation.swift
+/Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/CategorizationRulesView.swift
+/Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/TransactionDetailView.swift
+/Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/ViewModels/StatementUploadViewModel.swift
+/Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Services/CashflowForecastingService.swift
+/Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Core/DependencyInjection/AppDIContainer+Registration.swift
+/Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Services/StatementPatterns.swift
+/Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/HelpView.swift
+/Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/TransactionRowView.swift
+/Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Services/EncryptionService.swift
+/Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/OnboardingView.swift
+/Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Services/VisionOCRService.swift
+/Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/LiquidGlassCard.swift
+/Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Widgets/ClariFiWidget.swift
+/Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Services/OCRService.swift
+/Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/PrivacyDashboardView.swift
+/Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Repositories/RepositoryProtocols.swift
+/Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/BatchCategorizationView.swift
+/Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/ScenarioPlanningView.swift
+/Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/ViewModels/BudgetViewModel.swift
+/Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Services/AnalyticsService.swift
+/Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Services/RuleEngine.swift
+/Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/BudgetView.swift
+/Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/StatementUploadView.swift
+/Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Tests/Mocks/MockRepositories.swift
+/Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/ViewModels/OnboardingViewModel.swift
+/Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Services/BudgetMonitoringService.swift
+/Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Services/SecurityAuditService.swift
+/Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/DashboardView.swift
+/Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/TransactionEntryView.swift
+/Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/ViewModels/SubscriptionViewModel.swift
+/Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Services/CategoryService.swift
+/Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/LoadingStateView.swift
+/Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Core/DependencyInjection/DIContainer.swift
+/Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Services/SubscriptionService.swift
+/Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/InsightDetailView.swift
+/Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/TransactionsListView.swift
+/Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/ViewModels/TransactionReviewViewModel.swift
+/Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Services/InsightNotificationService.swift
+/Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/PaywallView.swift
+/Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Core/Extensions/View+ErrorAlert.swift
+/Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Utilities/AccessibilityHelper.swift
+/Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Repositories/CoreDataRepositories.swift
+/Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/AboutView.swift
+/Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/RecurringTransactionSetupView.swift
+/Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/ViewModels/BatchCategorizationViewModel.swift
+/Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/ClariFi_iOSApp.swift
+/Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Services/PrivacyManager.swift
+/Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/BiometricSettingsView.swift
+/Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/SecurityAuditView.swift
+/Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/ViewModels/CategorizationRulesViewModel.swift
+/Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Services/BiometricAuthService.swift
+/Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Services/ScenarioPlanningService.swift
+/Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Models/AppError.swift
+/Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/CashflowForecastView.swift
+/Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/SuccessView.swift
+/Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Tests/Mocks/MockServices.swift
+/Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/ViewModels/PrivacyDashboardViewModel.swift
+/Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Services/BudgetTemplateService.swift
+/Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Core/DependencyInjection/AppDIContainer.swift
+/Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Services/SmartTransactionParser.swift
+/Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/ErrorView.swift
+/Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/TransactionReviewView.swift
+/Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/ViewModels/TransactionEntryViewModel.swift
+/Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Services/ClariFiAppIntents.swift
+/Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/MainTabView.swift
+/Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Core/DependencyInjection/DIContainer+Environment.swift
+/Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Services/TransactionParserService.swift
+/Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Presentation/ViewModels/Base/BaseViewModel.swift
+/Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/InsightsView.swift
+/Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Services/InsightsEngine.swift
+/Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Views/PremiumInsightsView.swift
+/Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Core/Extensions/View+ErrorAlert+Example.swift
+/Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Utilities/AnalyticsViewModifier.swift
+/Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/ClariFi\ iOS/Repositories/RepositoryFactory.swift
+/Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/build/ClariFi\ iOS.build/Release-iphoneos/ClariFi\ iOS.build/DerivedSources/CoreDataGenerated/ClariFi_iOS/Transaction+CoreDataClass.swift
+/Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/build/ClariFi\ iOS.build/Release-iphoneos/ClariFi\ iOS.build/DerivedSources/CoreDataGenerated/ClariFi_iOS/Transaction+CoreDataProperties.swift
+/Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/build/ClariFi\ iOS.build/Release-iphoneos/ClariFi\ iOS.build/DerivedSources/CoreDataGenerated/ClariFi_iOS/Account+CoreDataClass.swift
+/Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/build/ClariFi\ iOS.build/Release-iphoneos/ClariFi\ iOS.build/DerivedSources/CoreDataGenerated/ClariFi_iOS/Account+CoreDataProperties.swift
+/Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/build/ClariFi\ iOS.build/Release-iphoneos/ClariFi\ iOS.build/DerivedSources/CoreDataGenerated/ClariFi_iOS/Budget+CoreDataClass.swift
+/Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/build/ClariFi\ iOS.build/Release-iphoneos/ClariFi\ iOS.build/DerivedSources/CoreDataGenerated/ClariFi_iOS/Budget+CoreDataProperties.swift
+/Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/build/ClariFi\ iOS.build/Release-iphoneos/ClariFi\ iOS.build/DerivedSources/CoreDataGenerated/ClariFi_iOS/BudgetCategory+CoreDataClass.swift
+/Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/build/ClariFi\ iOS.build/Release-iphoneos/ClariFi\ iOS.build/DerivedSources/CoreDataGenerated/ClariFi_iOS/BudgetCategory+CoreDataProperties.swift
+/Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/build/ClariFi\ iOS.build/Release-iphoneos/ClariFi\ iOS.build/DerivedSources/CoreDataGenerated/ClariFi_iOS/Statement+CoreDataClass.swift
+/Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/build/ClariFi\ iOS.build/Release-iphoneos/ClariFi\ iOS.build/DerivedSources/CoreDataGenerated/ClariFi_iOS/Statement+CoreDataProperties.swift
+/Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/build/ClariFi\ iOS.build/Release-iphoneos/ClariFi\ iOS.build/DerivedSources/CoreDataGenerated/ClariFi_iOS/RecurringTransaction+CoreDataClass.swift
+/Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/build/ClariFi\ iOS.build/Release-iphoneos/ClariFi\ iOS.build/DerivedSources/CoreDataGenerated/ClariFi_iOS/RecurringTransaction+CoreDataProperties.swift
+/Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/build/ClariFi\ iOS.build/Release-iphoneos/ClariFi\ iOS.build/DerivedSources/CoreDataGenerated/ClariFi_iOS/CategorizationRule+CoreDataClass.swift
+/Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/build/ClariFi\ iOS.build/Release-iphoneos/ClariFi\ iOS.build/DerivedSources/CoreDataGenerated/ClariFi_iOS/CategorizationRule+CoreDataProperties.swift
+/Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/build/ClariFi\ iOS.build/Release-iphoneos/ClariFi\ iOS.build/DerivedSources/CoreDataGenerated/ClariFi_iOS/MerchantPattern+CoreDataClass.swift
+/Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/build/ClariFi\ iOS.build/Release-iphoneos/ClariFi\ iOS.build/DerivedSources/CoreDataGenerated/ClariFi_iOS/MerchantPattern+CoreDataProperties.swift
+/Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/build/ClariFi\ iOS.build/Release-iphoneos/ClariFi\ iOS.build/DerivedSources/CoreDataGenerated/ClariFi_iOS/ClariFi_iOS+CoreDataModel.swift
+/Users/mayenikhalo/Public/From\ aEroPartition/Dev/ClariFi\ iOS/build/ClariFi\ iOS.build/Release-iphoneos/ClariFi\ iOS.build/DerivedSources/GeneratedAssetSymbols.swift

@@ -1,0 +1,480 @@
+{
+  "source": "/Users/mayenikhalo/Public/From aEroPartition/Dev/ClariFi iOS/ClariFi iOS/Views/SettingsView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Settings",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 137
+        }
+      },
+      {
+        "comment": "",
+        "key": "General",
+        "location": {
+          "startingColumn": 25,
+          "startingLine": 26
+        }
+      },
+      {
+        "comment": "",
+        "key": "Notifications",
+        "location": {
+          "startingColumn": 25,
+          "startingLine": 43
+        }
+      },
+      {
+        "comment": "",
+        "key": "Security",
+        "location": {
+          "startingColumn": 25,
+          "startingLine": 54
+        }
+      },
+      {
+        "comment": "",
+        "key": "Data",
+        "location": {
+          "startingColumn": 25,
+          "startingLine": 67
+        }
+      },
+      {
+        "comment": "",
+        "key": "Help & Support",
+        "location": {
+          "startingColumn": 25,
+          "startingLine": 82
+        }
+      },
+      {
+        "comment": "",
+        "key": "About",
+        "location": {
+          "startingColumn": 25,
+          "startingLine": 108
+        }
+      },
+      {
+        "comment": "",
+        "key": "Currency",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 27
+        }
+      },
+      {
+        "comment": "",
+        "key": "Appearance",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 35
+        }
+      },
+      {
+        "comment": "",
+        "key": "USD ($)",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 28
+        }
+      },
+      {
+        "comment": "",
+        "key": "EUR (€)",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 29
+        }
+      },
+      {
+        "comment": "",
+        "key": "GBP (£)",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 30
+        }
+      },
+      {
+        "comment": "",
+        "key": "CAD ($)",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 31
+        }
+      },
+      {
+        "comment": "",
+        "key": "AUD ($)",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 32
+        }
+      },
+      {
+        "comment": "",
+        "key": "System",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 36
+        }
+      },
+      {
+        "comment": "",
+        "key": "Light",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 37
+        }
+      },
+      {
+        "comment": "",
+        "key": "Dark",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 38
+        }
+      },
+      {
+        "comment": "",
+        "key": "Enable Notifications",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 44
+        }
+      },
+      {
+        "comment": "",
+        "key": "Notification Preferences",
+        "location": {
+          "startingColumn": 40,
+          "startingLine": 47
+        }
+      },
+      {
+        "comment": "",
+        "key": "Biometric Authentication",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 55
+        }
+      },
+      {
+        "comment": "",
+        "key": "Privacy Settings",
+        "location": {
+          "startingColumn": 36,
+          "startingLine": 57
+        }
+      },
+      {
+        "comment": "",
+        "key": "Analytics & Crash Reporting",
+        "location": {
+          "startingColumn": 36,
+          "startingLine": 61
+        }
+      },
+      {
+        "comment": "",
+        "key": "Manage Categories",
+        "location": {
+          "startingColumn": 36,
+          "startingLine": 68
+        }
+      },
+      {
+        "comment": "",
+        "key": "Manage Accounts",
+        "location": {
+          "startingColumn": 36,
+          "startingLine": 72
+        }
+      },
+      {
+        "comment": "",
+        "key": "Clear Cache",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 76
+        }
+      },
+      {
+        "comment": "",
+        "key": "Replay Onboarding",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 96
+        }
+      },
+      {
+        "comment": "",
+        "key": "Contact Support",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 100
+        }
+      },
+      {
+        "comment": "",
+        "key": "Privacy Policy",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 102
+        }
+      },
+      {
+        "comment": "",
+        "key": "Terms of Service",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 104
+        }
+      },
+      {
+        "comment": "",
+        "key": "Help & Tutorials",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 87
+        }
+      },
+      {
+        "comment": "",
+        "key": "About ClariFi",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 113
+        }
+      },
+      {
+        "comment": "",
+        "key": "Version",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 123
+        }
+      },
+      {
+        "comment": "",
+        "key": "Build",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 130
+        }
+      },
+      {
+        "comment": "",
+        "key": "Notifications",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 191
+        }
+      },
+      {
+        "comment": "",
+        "key": "Alert Types",
+        "location": {
+          "startingColumn": 21,
+          "startingLine": 179
+        }
+      },
+      {
+        "comment": "",
+        "key": "Budget Alerts",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 180
+        }
+      },
+      {
+        "comment": "",
+        "key": "Insights & Recommendations",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 181
+        }
+      },
+      {
+        "comment": "",
+        "key": "Recurring Transactions",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 182
+        }
+      },
+      {
+        "comment": "",
+        "key": "Notifications help you stay on top of your finances. You can customize which alerts you receive.",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 186
+        }
+      },
+      {
+        "comment": "",
+        "key": "Categories",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 229
+        }
+      },
+      {
+        "comment": "",
+        "key": "Add Category",
+        "location": {
+          "startingColumn": 16,
+          "startingLine": 231
+        }
+      },
+      {
+        "comment": "",
+        "key": "Categories",
+        "location": {
+          "startingColumn": 21,
+          "startingLine": 206
+        }
+      },
+      {
+        "comment": "",
+        "key": "Add Custom Category",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 224
+        }
+      },
+      {
+        "comment": "",
+        "key": "Category Name",
+        "location": {
+          "startingColumn": 23,
+          "startingLine": 232
+        }
+      },
+      {
+        "comment": "",
+        "key": "Cancel",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 233
+        }
+      },
+      {
+        "comment": "",
+        "key": "Add",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 236
+        }
+      },
+      {
+        "comment": "",
+        "key": "Accounts",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 293
+        }
+      },
+      {
+        "comment": "",
+        "key": "Accounts",
+        "location": {
+          "startingColumn": 21,
+          "startingLine": 268
+        }
+      },
+      {
+        "comment": "",
+        "key": "•••• %@",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 277
+        }
+      },
+      {
+        "comment": "",
+        "key": "Add Account",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 288
+        }
+      },
+      {
+        "comment": "",
+        "key": "Account Details",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 329
+        }
+      },
+      {
+        "comment": "",
+        "key": "Account Information",
+        "location": {
+          "startingColumn": 21,
+          "startingLine": 321
+        }
+      },
+      {
+        "comment": "",
+        "key": "Add Account",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 367
+        }
+      },
+      {
+        "comment": "",
+        "key": "Account Details",
+        "location": {
+          "startingColumn": 25,
+          "startingLine": 349
+        }
+      },
+      {
+        "comment": "",
+        "key": "Account Name",
+        "location": {
+          "startingColumn": 31,
+          "startingLine": 350
+        }
+      },
+      {
+        "comment": "",
+        "key": "Type",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 352
+        }
+      },
+      {
+        "comment": "",
+        "key": "Last 4 Digits (Optional)",
+        "location": {
+          "startingColumn": 31,
+          "startingLine": 358
+        }
+      },
+      {
+        "comment": "",
+        "key": "Cancel",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 371
+        }
+      },
+      {
+        "comment": "",
+        "key": "Save",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 377
+        }
+      }
+    ]
+  },
+  "version": 1
+}

@@ -29,14 +29,172 @@
 		C3C71BD82E98F84D0071734E /* ClariFi iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ClariFi iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		C347BBF32E99FD9C002062AD /* Exceptions for "ClariFi iOS" folder in "ClariFi iOS" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				".agents/security-analyst-ios.md",
+				Info.plist,
+				".kiro/specs/additional-ux-improvements/design.md",
+				".kiro/specs/additional-ux-improvements/requirements.md",
+				".kiro/specs/additional-ux-improvements/tasks.md",
+				".kiro/specs/architecture-refactoring/design.md",
+				".kiro/specs/architecture-refactoring/requirements.md",
+				".kiro/specs/architecture-refactoring/tasks.md",
+				".kiro/specs/clarifi-core/design.md",
+				".kiro/specs/clarifi-core/requirements.md",
+				".kiro/specs/clarifi-core/tasks.md",
+				".kiro/specs/comprehensive-codebase-cleanup/design.md",
+				".kiro/specs/comprehensive-codebase-cleanup/requirements.md",
+				".kiro/specs/comprehensive-codebase-cleanup/tasks.md",
+				".kiro/specs/critical-runtime-fixes/design.md",
+				".kiro/specs/critical-runtime-fixes/README.md",
+				".kiro/specs/critical-runtime-fixes/requirements.md",
+				".kiro/specs/critical-runtime-fixes/tasks.md",
+				".kiro/specs/critical-ux-fixes/design.md",
+				".kiro/specs/critical-ux-fixes/requirements.md",
+				".kiro/specs/critical-ux-fixes/tasks.md",
+				.kiro/specs/XCODE_BUILD_FIX.md,
+				APP_CRITICAL_ISSUES_AUDIT.md,
+				ARCHITECTURE.md,
+				"ClariFi iOSTests/Concurrency/MainActorIsolationTests.swift",
+				"ClariFi iOSTests/DependencyInjection/DIContainerTests.swift",
+				"ClariFi iOSTests/Integration/CriticalWorkflowsCoverageTests.swift",
+				"ClariFi iOSTests/Integration/CurrencyPreferenceIntegrationTests.swift",
+				"ClariFi iOSTests/Integration/EndToEndFlowTests.swift",
+				"ClariFi iOSTests/Integration/PremiumGatingIntegrationTests.swift",
+				"ClariFi iOSTests/Models/CurrencyFormatterTests.swift",
+				"ClariFi iOSTests/Onboarding/OnboardingCoordinatorTests.swift",
+				"ClariFi iOSTests/Repositories/AccountRepositoryThreadSafetyTests.swift",
+				"ClariFi iOSTests/Repositories/BackgroundContextProviderTests.swift",
+				"ClariFi iOSTests/Repositories/BudgetRepositoryThreadSafetyTests.swift",
+				"ClariFi iOSTests/Repositories/RepositoryThreadSafetyTests.swift",
+				"ClariFi iOSTests/Repositories/StatementRepositoryThreadSafetyTests.swift",
+				"ClariFi iOSTests/Services/AnalyticsTests.swift",
+				"ClariFi iOSTests/Services/LLMCacheThreadSafetyTests.swift",
+				"ClariFi iOSTests/Services/ParserConcurrencyTests.swift",
+				"ClariFi iOSTests/ViewModels/StatementUploadDeduplicationTests.swift",
+				CODEBASE_VALIDATION_REPORT.md,
+				CRITICAL_CURRENCY_FIX_PLAN.md,
+				CURRENCY_FEATURE_PROOF.md,
+				docs/archive/ANALYTICS_IMPLEMENTATION.md,
+				docs/archive/ANALYTICS_QUICK_REFERENCE.md,
+				docs/archive/ANALYTICS_SETUP_GUIDE.md,
+				docs/archive/ANALYTICS_TASK_COMPLETION.md,
+				docs/archive/ANALYTICS_VISUAL_SUMMARY.md,
+				docs/archive/BUDGET_MANAGEMENT_IMPLEMENTATION.md,
+				docs/archive/BUDGET_SYSTEM_TESTS_IMPLEMENTATION.md,
+				docs/archive/BUDGET_TEMPLATES_BEFORE_AFTER.md,
+				docs/archive/BUDGET_TEMPLATES_EXPANSION_COMPLETE.md,
+				docs/archive/BUDGET_TEMPLATES_EXPANSION.md,
+				docs/archive/BUDGET_TEMPLATES_QUICK_REFERENCE_UPDATED.md,
+				docs/archive/BUDGET_TEMPLATES_QUICK_REFERENCE.md,
+				docs/archive/BUDGET_TEMPLATES_USER_GUIDE.md,
+				docs/archive/BUDGET_TEMPLATES_VISUAL_GUIDE.md,
+				docs/archive/BUILD_FIXES_ANALYTICS.md,
+				docs/archive/CANADIAN_BANKS_ADDITION.md,
+				docs/archive/CATEGORIZATION_IMPLEMENTATION.md,
+				docs/archive/CATEGORIZATION_TESTS_IMPLEMENTATION.md,
+				docs/archive/fix_build_issues.md,
+				docs/archive/fix_test_imports.md,
+				docs/archive/IMPLEMENTATION_SUMMARY.md,
+				docs/archive/INSIGHTS_ENGINE_IMPLEMENTATION.md,
+				docs/archive/INSIGHTS_ENGINE_TESTS_IMPLEMENTATION.md,
+				docs/archive/INTEGRATION_COMPLETION.md,
+				docs/archive/INTEGRATION_TESTS_COMPLETION.md,
+				docs/archive/INTEGRATION_TESTS_DOCUMENTATION.md,
+				docs/archive/INTEGRATION_TESTS_FINAL_SUMMARY.md,
+				docs/archive/MANUAL_TRANSACTION_ENTRY_IMPLEMENTATION.md,
+				docs/archive/NAVIGATION_DASHBOARD_IMPLEMENTATION.md,
+				docs/archive/NAVIGATION_TESTS_SUMMARY.md,
+				docs/archive/NAVIGATION_UI_TESTS_IMPLEMENTATION.md,
+				docs/archive/ONBOARDING_IMPLEMENTATION.md,
+				docs/archive/ONBOARDING_TASK_COMPLETION.md,
+				docs/archive/ONBOARDING_VISUAL_GUIDE.md,
+				docs/archive/PREMIUM_FEATURES_IMPLEMENTATION.md,
+				docs/archive/PREMIUM_FEATURES_TESTS_IMPLEMENTATION.md,
+				docs/archive/PREMIUM_TESTS_SUMMARY.md,
+				docs/archive/PRIVACY_CONTROLS_IMPLEMENTATION.md,
+				docs/archive/PRIVACY_CONTROLS_TESTS_IMPLEMENTATION.md,
+				docs/archive/PRIVACY_TESTS_SUMMARY.md,
+				docs/archive/run_ocr_parsing_tests.md,
+				docs/archive/SECURITY_ENCRYPTION_IMPLEMENTATION.md,
+				docs/archive/SECURITY_TESTS_COMPLETION_SUMMARY.md,
+				docs/archive/SECURITY_TESTS_IMPLEMENTATION.md,
+				docs/archive/SECURITY_TESTS_QUICK_START.md,
+				docs/archive/SECURITY_TESTS_SUMMARY.md,
+				docs/archive/SECURITY_TESTS_TASK_11.3_COMPLETION.md,
+				docs/archive/STATE_MANAGEMENT_AUDIT.md,
+				docs/archive/STATEMENT_FORMAT_EXPANSION_TASK_COMPLETE.md,
+				docs/archive/STATEMENT_FORMAT_EXPANSION.md,
+				docs/archive/STATEMENT_FORMAT_UI_ENHANCEMENT.md,
+				docs/archive/STATEMENT_FORMAT_VERIFICATION.md,
+				docs/archive/TASK_7_VIEWMODEL_DI_MIGRATION.md,
+				docs/archive/TASK_8_VIEW_DI_MIGRATION.md,
+				docs/archive/TASK_9_TEST_DI_MIGRATION_COMPLETE.md,
+				docs/archive/TASK_10_REPOSITORY_FACTORY_REMOVAL.md,
+				docs/archive/TASK_11_SERVICE_PROTOCOLS_COMPLETE.md,
+				docs/archive/TASK_12_ANALYTICS_DI_MIGRATION.md,
+				docs/archive/TASK_12_COMPLETION_SUMMARY.md,
+				docs/archive/TASK_13_BUDGET_TEMPLATE_SERVICE_DI.md,
+				docs/archive/TASK_14_DOMAIN_SERVICES_DI_COMPLETE.md,
+				docs/archive/TASK_15_VIEWMODEL_SERVICE_INJECTION.md,
+				docs/archive/TASK_16_SERVICE_LAYER_TESTS_COMPLETE.md,
+				docs/archive/TASK_18_VIEWMODEL_INHERITANCE_COMPLETE.md,
+				docs/archive/TASK_19_ERROR_HANDLING_STANDARDIZATION.md,
+				docs/archive/TASK_20_ERROR_ALERT_IMPLEMENTATION.md,
+				docs/archive/TASK_21_ERROR_ALERT_IMPLEMENTATION.md,
+				docs/archive/TASK_22_STATE_MANAGEMENT_COMPLETION.md,
+				docs/archive/TASK_27_INTEGRATION_TESTS_COMPLETION.md,
+				docs/archive/TASK_28_TEST_COVERAGE_COMPLETION.md,
+				docs/archive/TASK_ADD_MORE_BUDGET_TEMPLATES_COMPLETE.md,
+				docs/archive/TASK_BUDGET_TEMPLATES_COMPLETION.md,
+				docs/archive/TASK_COMPLETE_CANADIAN_BANKS.md,
+				docs/archive/TASK_STATEMENT_FORMAT_EXPANSION_FINAL.md,
+				docs/archive/test_basic_functionality.md,
+				docs/CURRENCY_FEATURE_IMPLEMENTATION_SUMMARY.md,
+				docs/CURRENCY_SUPPORT_GUIDE.md,
+				docs/DOCUMENTATION_CONSOLIDATION_SUMMARY.md,
+				docs/HOW_TO_CHANGE_CURRENCY.md,
+				docs/README.md,
+				docs/reference/STATE_MANAGEMENT_PATTERNS.md,
+				docs/reference/STATEMENT_FORMATS_OVERVIEW.md,
+				docs/reference/SUPPORTED_STATEMENT_FORMATS.md,
+				docs/reference/TEST_COVERAGE_ANALYSIS.md,
+				EMOJI_REMOVAL_SUMMARY.md,
+				FIXES_PROGRESS.md,
+				IMMEDIATE_ACTION_PLAN.md,
+				PHASE1_CURRENCY_FIX_COMPLETE.md,
+				README.md,
+				Utilities/CategoryMigrationREADME.md,
+				WHERE_IS_CURRENCY_SETTING.md,
+				XCODE_BUILD_FIX.md,
+			);
+			target = C3C71BBB2E98F84B0071734E /* ClariFi iOS */;
+		};
+		C347BEA82E9B70A0002062AD /* Exceptions for "ClariFi iOSTests" folder in "ClariFi iOSTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				UI_TESTS_README.md,
+			);
+			target = C3C71BCD2E98F84D0071734E /* ClariFi iOSTests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		C3C71BBE2E98F84B0071734E /* ClariFi iOS */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				C347BBF32E99FD9C002062AD /* Exceptions for "ClariFi iOS" folder in "ClariFi iOS" target */,
+			);
 			path = "ClariFi iOS";
 			sourceTree = "<group>";
 		};
 		C3C71BD12E98F84D0071734E /* ClariFi iOSTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				C347BEA82E9B70A0002062AD /* Exceptions for "ClariFi iOSTests" folder in "ClariFi iOSTests" target */,
+			);
 			path = "ClariFi iOSTests";
 			sourceTree = "<group>";
 		};
@@ -52,6 +210,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			packageProductDependencies = (
+				109BE1EF156A4DD2849C96B8 /* Supabase */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +273,7 @@
 			);
 			name = "ClariFi iOS";
 			packageProductDependencies = (
+				109BE1EF156A4DD2849C96B8 /* Supabase */,
 			);
 			productName = "ClariFi iOS";
 			productReference = C3C71BBC2E98F84B0071734E /* ClariFi iOS.app */;
@@ -134,8 +296,6 @@
 				C3C71BD12E98F84D0071734E /* ClariFi iOSTests */,
 			);
 			name = "ClariFi iOSTests";
-			packageProductDependencies = (
-			);
 			productName = "ClariFi iOSTests";
 			productReference = C3C71BCE2E98F84D0071734E /* ClariFi iOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -157,8 +317,6 @@
 				C3C71BDB2E98F84D0071734E /* ClariFi iOSUITests */,
 			);
 			name = "ClariFi iOSUITests";
-			packageProductDependencies = (
-			);
 			productName = "ClariFi iOSUITests";
 			productReference = C3C71BD82E98F84D0071734E /* ClariFi iOSUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
@@ -171,7 +329,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1640;
-				LastUpgradeCheck = 1640;
+				LastUpgradeCheck = 2600;
 				TargetAttributes = {
 					C3C71BBB2E98F84B0071734E = {
 						CreatedOnToolsVersion = 16.4;
@@ -195,6 +353,9 @@
 			);
 			mainGroup = C3C71BB32E98F84B0071734E;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				65DBED7D4D3E496C8DFDC9FA /* XCRemoteSwiftPackageReference "supabase-swift" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = C3C71BBD2E98F84B0071734E /* Products */;
 			projectDirPath = "";
@@ -328,6 +489,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -385,6 +547,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -399,7 +562,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 32BGC2XP5W;
 				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "ClariFi iOS/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -415,6 +579,9 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				EXCLUDED_SOURCE_FILE_NAMES = (
+					"ClariFi iOSTests/**",
+				);
 			};
 			name = Debug;
 		};
@@ -427,7 +594,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 32BGC2XP5W;
 				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "ClariFi iOS/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -443,6 +611,9 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				EXCLUDED_SOURCE_FILE_NAMES = (
+					"ClariFi iOSTests/**",
+				);
 			};
 			name = Release;
 		};
@@ -558,6 +729,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		65DBED7D4D3E496C8DFDC9FA /* XCRemoteSwiftPackageReference "supabase-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/supabase/supabase-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		109BE1EF156A4DD2849C96B8 /* Supabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 65DBED7D4D3E496C8DFDC9FA /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Supabase;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C3C71BB42E98F84B0071734E /* Project object */;
 }
