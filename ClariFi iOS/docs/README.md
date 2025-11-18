@@ -4,6 +4,58 @@ This directory contains all project documentation organized by purpose.
 
 ## Directory Structure
 
+### `/setup/`
+Setup and configuration guides for getting the project running:
+
+- **AUTHENTICATION_SETUP_GUIDE.md** - Guide for setting up authentication
+- **COMPILATION_FIXES_NEEDED.md** - Compilation fixes and workarounds
+- **TEST_TARGET_FIX_GUIDE.md** - Guide for fixing test target issues
+- **XCODE_BUILD_FIX.md** - Xcode build configuration fixes
+
+### `/reports/`
+Analysis, audit, and verification reports:
+
+- **AUTOMATED_TESTING_AND_VERIFICATION_REPORT.md** - Automated testing verification results
+- **baseline_analysis_report.md** - Baseline codebase analysis
+- **CODEBASE_VALIDATION_REPORT.md** - Codebase validation results
+- **dependency_analysis_report.md** - Dependency analysis
+- **DESIGN_SYSTEM_AUDIT_REPORT.md** - Design system audit findings
+- **documentation_analysis_report.md** - Documentation analysis
+- **LLM_CATEGORIZATION_BUSINESS_LOGIC_REPORT.md** - LLM categorization business logic analysis
+- **SESSION_SUMMARY_REPORT.md** - Development session summaries
+- **UI_VERIFICATION_REPORT.md** - UI verification results
+- **USER_PROFILE_ANALYSIS_REPORT.md** - User profile analysis
+
+### `/features/`
+Feature-specific documentation organized by feature domain:
+
+#### `/features/authentication/`
+- **USER_AUTHENTICATION_ARCHITECTURE.md** - Authentication architecture design
+- **USER_AUTHENTICATION_IMPLEMENTATION_SUMMARY.md** - Implementation summary
+
+#### `/features/backup/`
+- **SUPABASE_CLOUD_BACKUP_ARCHITECTURE.md** - Cloud backup architecture
+
+#### `/features/currency/`
+- **CRITICAL_CURRENCY_FIX_PLAN.md** - Currency fix implementation plan
+- **CURRENCY_FEATURE_IMPLEMENTATION_SUMMARY.md** - Currency feature implementation summary
+- **CURRENCY_FEATURE_PROOF.md** - Currency feature proof of concept
+- **WHERE_IS_CURRENCY_SETTING.md** - Currency setting location guide
+
+### `/guides/`
+User and developer guides:
+
+- **CURRENCY_SUPPORT_GUIDE.md** - How to use currency features
+- **HOW_TO_CHANGE_CURRENCY.md** - Step-by-step currency change guide
+- **TROUBLESHOOTING.md** - Common issues and solutions
+- **USER_GUIDE_UX_FEATURES.md** - UX features user guide
+
+### `/testing/`
+Testing documentation and guides:
+
+- **INTEGRATION_TEST_COVERAGE.md** - Integration test coverage analysis
+- **UI_TESTS_README.md** - UI testing guide
+
 ### `/reference/`
 Technical reference documentation that remains relevant for ongoing development:
 
@@ -16,11 +68,11 @@ Technical reference documentation that remains relevant for ongoing development:
 Historical implementation documentation from completed tasks and features. These documents provide context about past decisions and implementations but are not required for day-to-day development.
 
 Archived documents include:
-- Task completion summaries
-- Implementation guides
-- Feature-specific documentation
-- Build fix documentation
-- Test implementation summaries
+- Task completion summaries (TASK_*.md files)
+- Implementation guides from completed features
+- Historical fix documentation
+- Progress summaries
+- Deprecated documentation
 
 ## Essential Documentation
 
