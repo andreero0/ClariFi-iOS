@@ -52,10 +52,13 @@ class OnboardingCoordinator: ObservableObject {
     @Published var currentStep: OnboardingStep = .welcome {
         didSet {
             guard currentStep != oldValue else { return }
-            
+
+            // Clear validation error when changing steps
+            validationError = nil
+
             // Track step changes
             OnboardingAnalytics.shared.trackStepViewed(currentStep)
-            
+
             // Track completion of previous step
             if oldValue.rawValue < currentStep.rawValue {
                 OnboardingAnalytics.shared.trackStepCompleted(oldValue)
@@ -73,6 +76,7 @@ class OnboardingCoordinator: ObservableObject {
         }
     }
     @Published var isComplete: Bool = false
+    @Published var validationError: String? = nil
     
     // MARK: - Initialization
     
@@ -118,15 +122,17 @@ class OnboardingCoordinator: ObservableObject {
     
     func requestStepChange(to newStep: OnboardingStep) {
         guard newStep != currentStep else { return }
-        
+
         if newStep.rawValue > currentStep.rawValue {
             let validation = validate(currentStep)
             guard validation.allowsAdvance(for: currentStep) else {
+                // Set validation error message to show user feedback
+                validationError = validation.message
                 OnboardingAnalytics.shared.trackStepAbandoned(currentStep, reason: "validation_blocked")
                 return
             }
         }
-        
+
         setCurrentStep(newStep)
     }
     

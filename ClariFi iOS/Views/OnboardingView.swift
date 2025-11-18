@@ -30,35 +30,69 @@ struct OnboardingView: View {
     }
     
     var body: some View {
-        TabView(selection: stepBinding) {
-            WelcomePageView()
-                .tag(OnboardingStep.welcome)
-            
-            PrivacyPageView(selectedMode: $coordinator.selectedProcessingMode)
-                .tag(OnboardingStep.privacy)
-            
-            FeaturesPageView()
-                .tag(OnboardingStep.features)
-            
-            AccountSetupStepView(coordinator: coordinator)
-                .tag(OnboardingStep.accountSetup)
-            
-            BiometricSetupPageView(enableBiometric: $coordinator.enableBiometric)
-                .tag(OnboardingStep.biometric)
-            
-            QuickStartView(coordinator: coordinator)
-                .tag(OnboardingStep.quickStart)
-            
-            FirstActionGuidanceView(coordinator: coordinator)
-                .tag(OnboardingStep.firstAction)
+        VStack(spacing: 0) {
+            // Custom navigation bar at the top
+            OnboardingNavigationBar(coordinator: coordinator)
+
+            // Validation error banner
+            if let errorMessage = coordinator.validationError {
+                HStack {
+                    Image(systemName: "exclamationmark.triangle.fill")
+                        .foregroundColor(.orange)
+                    Text(errorMessage)
+                        .font(.subheadline)
+                        .foregroundColor(.primary)
+                    Spacer()
+                    Button(action: {
+                        coordinator.validationError = nil
+                    }) {
+                        Image(systemName: "xmark.circle.fill")
+                            .foregroundColor(.secondary)
+                    }
+                    .accessibilityLabel("Dismiss validation message")
+                }
+                .padding()
+                .background(Color.orange.opacity(0.15))
+                .transition(.move(edge: .top).combined(with: .opacity))
+                .animation(.easeInOut(duration: 0.3), value: coordinator.validationError)
+                .accessibilityElement(children: .combine)
+                .accessibilityLabel("Validation message: \(errorMessage)")
+            }
+
+            // TabView for onboarding steps
+            TabView(selection: stepBinding) {
+                WelcomePageView()
+                    .tag(OnboardingStep.welcome)
+
+                PrivacyPageView(selectedMode: $coordinator.selectedProcessingMode)
+                    .tag(OnboardingStep.privacy)
+
+                FeaturesPageView()
+                    .tag(OnboardingStep.features)
+
+                AccountSetupStepView(coordinator: coordinator)
+                    .tag(OnboardingStep.accountSetup)
+
+                BiometricSetupPageView(enableBiometric: $coordinator.enableBiometric)
+                    .tag(OnboardingStep.biometric)
+
+                QuickStartView(coordinator: coordinator)
+                    .tag(OnboardingStep.quickStart)
+
+                FirstActionGuidanceView(coordinator: coordinator)
+                    .tag(OnboardingStep.firstAction)
+            }
+            .tabViewStyle(.page(indexDisplayMode: .never))
+            .ignoresSafeArea()
+            .gesture(
+                DragGesture()
+                    .onChanged { _ in }
+            )
+            .accessibilityElement(children: .contain)
+            .accessibilityLabel(AccessibilityLabels.onboardingProgress)
+            .accessibilityValue("Step \(coordinator.currentStepIndex + 1) of \(coordinator.totalSteps)")
+            .accessibilityHint(AccessibilityHints.onboardingNextStep)
         }
-        .tabViewStyle(.page(indexDisplayMode: .always))
-        .indexViewStyle(.page(backgroundDisplayMode: .always))
-        .ignoresSafeArea()
-        .accessibilityElement(children: .contain)
-        .accessibilityLabel(AccessibilityLabels.onboardingProgress)
-        .accessibilityValue("Step \(coordinator.currentStepIndex + 1) of \(coordinator.totalSteps)")
-        .accessibilityHint(AccessibilityHints.onboardingNextStep)
         .onAppear {
             Analytics.track(.onboardingStarted)
             
@@ -171,14 +205,9 @@ struct WelcomePageView: View {
             .padding(.horizontal)
             
             Spacer()
-            
-            Text("Swipe to continue")
-                .font(.subheadline)
-                .foregroundColor(.secondary)
-                .padding(.bottom, 40)
-                .accessibilityHidden(true)
         }
         .padding()
+        .padding(.bottom, 40)
         .accessibilityElement(children: .combine)
         .accessibilityLabel(AccessibilityLabels.onboardingWelcome)
         .accessibilityValue("Take control of your finances with privacy-first budgeting. Features include: Privacy First, Works Offline, and Smart Insights.")
@@ -289,15 +318,11 @@ struct FeaturesPageView: View {
                 )
             }
             .padding(.horizontal)
-            
+
             Spacer()
-            
-            Text("Swipe to continue")
-                .font(.subheadline)
-                .foregroundColor(.secondary)
-                .padding(.bottom, 40)
         }
         .padding()
+        .padding(.bottom, 40)
     }
 }
 

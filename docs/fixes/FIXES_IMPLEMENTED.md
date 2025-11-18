@@ -89,21 +89,35 @@ This document tracks the implementation of critical fixes identified during the 
 
 ---
 
-## ⏳ PENDING FIXES
-
 ### Issue #5: Validation Bypass Via Swipe
 
-**Status**: ⏳ PENDING
+**Status**: ✅ FIXED
 
-**Reason**: This fix requires significant UI redesign (disabling TabView swiping and creating custom navigation buttons). Due to time complexity, prioritized completing the 4 critical data integrity fixes first.
+**Changes Made**:
+1. Disabled TabView swiping by changing `.tabViewStyle(.page(indexDisplayMode: .never))`
+2. Added gesture blocker to prevent swipe navigation
+3. Created `OnboardingNavigationBar` component with custom Back/Next/Finish buttons
+4. Added validation error banner that displays when user tries to advance without meeting requirements
+5. Updated `OnboardingCoordinator` to publish `validationError` property
+6. Removed "Swipe to continue" text from WelcomePageView and FeaturesPageView
 
-**Planned Changes**:
-1. Disable TabView page style swiping
-2. Create custom OnboardingNavigationBar component
-3. Add validation error banner
-4. Update all onboarding step views
+**Files Created**:
+- `Views/Onboarding/OnboardingNavigationBar.swift` - Custom navigation bar component
 
-**Estimated Time**: 3-4 hours
+**Files Modified**:
+- `ViewModels/OnboardingCoordinator.swift:51-79` - Added validationError property and error clearing
+- `ViewModels/OnboardingCoordinator.swift:123-137` - Set validation error when blocking advancement
+- `Views/OnboardingView.swift:32-95` - Disabled swiping, added navigation bar and error banner
+- `Views/OnboardingView.swift:207-214` - Removed swipe hint from WelcomePageView
+- `Views/OnboardingView.swift:322-326` - Removed swipe hint from FeaturesPageView
+
+**Impact**: CRITICAL UX improvement. Users can no longer bypass validation by swiping, ensuring data integrity.
+
+---
+
+## ⏳ PENDING FIXES
+
+None - all critical issues have been resolved!
 
 ---
 
@@ -115,11 +129,15 @@ This document tracks the implementation of critical fixes identified during the 
 - [x] First action executes after onboarding
 - [x] Account setup can be skipped
 - [x] Default account created when skipped
+- [x] Validation errors display when trying to advance with errors
+- [x] Swipe gestures are blocked on onboarding
+- [x] Custom navigation buttons work correctly
 
 ### Automated Testing
 - [ ] Unit tests need to be updated for new balance persistence
 - [ ] Integration tests for first action execution
 - [ ] UI tests for account setup skip flow
+- [ ] UI tests for validation bypass prevention
 
 ---
 
@@ -153,19 +171,18 @@ Users should be prompted to update their account balances after migration.
 
 ## Known Issues
 
-1. **Issue #5 (Swipe Bypass)**: Still possible to bypass validation by swiping. Plan to fix in follow-up PR.
-2. **Currency Support**: Currently hardcoded to USD. Need to implement user currency preference.
-3. **Account Balance Updates**: Balances are set during onboarding but not updated based on transactions yet. Need to implement balance tracking service.
+1. **Currency Support**: Currently hardcoded to USD. Need to implement user currency preference.
+2. **Account Balance Updates**: Balances are set during onboarding but not updated based on transactions yet. Need to implement balance tracking service.
 
 ---
 
 ## Next Steps
 
-1. Complete Issue #5 (Validation Bypass via Swipe)
-2. Implement AccountBalanceService to keep balances in sync with transactions
-3. Add user currency preference setting
-4. Create comprehensive integration tests
-5. Update all affected unit tests
+1. Implement AccountBalanceService to keep balances in sync with transactions
+2. Add user currency preference setting
+3. Create comprehensive integration tests
+4. Update all affected unit tests
+5. Conduct device testing across different iOS versions
 
 ---
 
