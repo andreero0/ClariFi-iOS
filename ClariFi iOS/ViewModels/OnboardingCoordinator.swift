@@ -145,7 +145,7 @@ class OnboardingCoordinator: ObservableObject {
             return .valid
         case .accountSetup:
             if createdAccounts.isEmpty {
-                return .error("Add an account or choose Skip to continue.")
+                return .warning("No accounts added. A default 'General Account' will be created for you.")
             }
             return .valid
         case .quickStart:

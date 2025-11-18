@@ -11,19 +11,22 @@ struct OnboardingView: View {
     @Environment(\.managedObjectContext) private var viewContext
     @StateObject private var viewModel: OnboardingViewModel
     @StateObject private var coordinator = OnboardingCoordinator()
+    @StateObject private var onboardingState: OnboardingStateManager
     @Binding var isPresented: Bool
-    
+
     private var stepBinding: Binding<OnboardingStep> {
         Binding(
             get: { coordinator.currentStep },
             set: { newValue in coordinator.requestStepChange(to: newValue) }
         )
     }
-    
+
     init(isPresented: Binding<Bool>, container: AppDIContainer) {
         self._isPresented = isPresented
         let securityAudit = container.resolve(SecurityAuditService.self)
+        let stateManager = container.resolve(OnboardingStateManager.self)
         _viewModel = StateObject(wrappedValue: OnboardingViewModel(securityAudit: securityAudit))
+        _onboardingState = StateObject(wrappedValue: stateManager)
     }
     
     var body: some View {
@@ -87,15 +90,23 @@ struct OnboardingView: View {
                 Task {
                     await viewModel.completeOnboarding(
                         context: viewContext,
-                        coordinator: coordinator
+                        coordinator: coordinator,
+                        onboardingState: onboardingState
                     )
+
+                    // Small delay to ensure state is propagated
+                    try? await Task.sleep(nanoseconds: 100_000_000)  // 0.1 seconds
+
                     Analytics.track(.onboardingCompleted, properties: [
                         "processing_mode": coordinator.selectedProcessingMode == .localOnly ? "local" : "cloud",
                         "biometric_enabled": coordinator.enableBiometric,
                         "accounts_created": coordinator.createdAccounts.count,
                         "first_action": coordinator.selectedFirstAction?.rawValue ?? "none"
                     ])
-                    isPresented = false
+
+                    await MainActor.run {
+                        isPresented = false
+                    }
                 }
             }
         }
