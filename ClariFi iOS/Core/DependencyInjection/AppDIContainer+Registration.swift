@@ -94,6 +94,12 @@ extension AppDIContainer {
             BiometricAuthService.shared
         }
 
+        container.registerSingleton(OnboardingStateManager.self) { _ in
+            MainActor.assumeIsolated {
+                OnboardingStateManager()
+            }
+        }
+
         container.registerSingleton(SecurityAuditService.self) { c in
             SecurityAuditService(
                 encryptionService: c.resolve(EncryptionService.self),

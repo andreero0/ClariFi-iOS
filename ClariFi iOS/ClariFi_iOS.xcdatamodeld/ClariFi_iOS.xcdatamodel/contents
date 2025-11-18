@@ -81,11 +81,13 @@
         </uniquenessConstraints>
     </entity>
 
-    <!-- Account Entity (UPDATED - Added user relationship) -->
+    <!-- Account Entity (UPDATED - Added user relationship, balance, and currency) -->
     <entity name="Account" representedClassName="Account" syncable="YES" codeGenerationType="class">
         <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
         <attribute name="name" attributeType="String"/>
         <attribute name="type" attributeType="String"/>
+        <attribute name="balance" attributeType="Decimal" defaultValueString="0"/>
+        <attribute name="currency" attributeType="String" defaultValueString="USD"/>
         <attribute name="lastFourDigits" optional="YES" attributeType="String"/>
         <attribute name="isActive" attributeType="Boolean" defaultValueString="YES" usesScalarValueType="YES"/>
         <attribute name="isDefault" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>

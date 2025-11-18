@@ -82,14 +82,13 @@ struct AccountSetupStepView: View {
                 
                 if coordinator.createdAccounts.isEmpty {
                     Button(action: {
-                        coordinator.createDefaultAccount()
                         coordinator.advance()
                     }) {
-                        Text("Skip - Use Default Cash Account")
+                        Text("Skip - I'll Add Accounts Later")
                             .font(.subheadline)
                             .foregroundColor(.blue)
                     }
-                    .accessibilityLabel("Skip account setup and use default cash account")
+                    .accessibilityLabel("Skip account setup")
                 }
             }
             .padding(.horizontal)

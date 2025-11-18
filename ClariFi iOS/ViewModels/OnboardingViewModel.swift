@@ -33,19 +33,23 @@ class OnboardingViewModel: BaseViewModel {
     }
     
     // Complete onboarding and save user preferences
-    func completeOnboarding(context: NSManagedObjectContext, coordinator: OnboardingCoordinator) async {
+    func completeOnboarding(
+        context: NSManagedObjectContext,
+        coordinator: OnboardingCoordinator,
+        onboardingState: OnboardingStateManager
+    ) async {
         await MainActor.run {
             isCreatingAccounts = true
             accountCreationProgress = "Saving preferences..."
         }
-        
+
         // Save processing mode preference
         let privacyManager = PrivacyManager(viewContext: context)
         privacyManager.processingMode = coordinator.selectedProcessingMode
-        
+
         // Small delay for smooth UX
         try? await Task.sleep(nanoseconds: 300_000_000) // 0.3 seconds
-        
+
         // Save biometric preference
         if coordinator.enableBiometric {
             await MainActor.run {
@@ -55,17 +59,34 @@ class OnboardingViewModel: BaseViewModel {
             biometricService.isBiometricEnabled = true
             try? await Task.sleep(nanoseconds: 300_000_000)
         }
-        
+
         // Create accounts in Core Data
-        if !coordinator.createdAccounts.isEmpty {
-            await MainActor.run {
-                accountCreationProgress = "Creating accounts..."
-            }
-            await createAccounts(coordinator.createdAccounts, context: context)
-            try? await Task.sleep(nanoseconds: 300_000_000)
+        await MainActor.run {
+            accountCreationProgress = "Creating accounts..."
         }
-        
-        // Save first action preference
+
+        if !coordinator.createdAccounts.isEmpty {
+            // User created accounts during onboarding
+            await createAccounts(coordinator.createdAccounts, context: context)
+        } else {
+            // User skipped account setup - create a default general account
+            let defaultAccount = AccountSetupData(
+                name: "General Account",
+                type: .checking,
+                initialBalance: 0,
+                isDefault: true
+            )
+            await createAccounts([defaultAccount], context: context)
+        }
+
+        try? await Task.sleep(nanoseconds: 300_000_000)
+
+        // Set pending first action BEFORE dismissing onboarding
+        await MainActor.run {
+            onboardingState.setPendingFirstAction(coordinator.selectedFirstAction)
+        }
+
+        // Save first action preference to UserDefaults as backup
         if let firstAction = coordinator.selectedFirstAction {
             await MainActor.run {
                 accountCreationProgress = "Finalizing setup..."
@@ -74,12 +95,12 @@ class OnboardingViewModel: BaseViewModel {
         } else {
             userDefaults.removeObject(forKey: onboardingFirstActionKey)
         }
-        
+
         // Mark onboarding as completed
         userDefaults.set(true, forKey: onboardingCompletedKey)
         userDefaults.set(Self.currentOnboardingVersion, forKey: onboardingVersionKey)
         userDefaults.synchronize()
-        
+
         // Complete analytics tracking
         OnboardingAnalytics.shared.completeOnboarding(
             accountsCreated: coordinator.createdAccounts.count,
@@ -87,7 +108,7 @@ class OnboardingViewModel: BaseViewModel {
             biometricEnabled: coordinator.enableBiometric,
             processingMode: coordinator.selectedProcessingMode.rawValue
         )
-        
+
         // Log onboarding completion for security audit
         securityAudit.logEvent(SecurityEvent(
             type: .dataAccess,
@@ -101,7 +122,7 @@ class OnboardingViewModel: BaseViewModel {
                 "version": String(Self.currentOnboardingVersion)
             ]
         ))
-        
+
         var notificationInfo: [String: Any] = [
             "processingMode": coordinator.selectedProcessingMode.rawValue,
             "biometricEnabled": coordinator.enableBiometric,
@@ -110,13 +131,13 @@ class OnboardingViewModel: BaseViewModel {
         if let firstAction = coordinator.selectedFirstAction?.rawValue {
             notificationInfo["firstAction"] = firstAction
         }
-        
+
         NotificationCenter.default.post(
             name: .onboardingCompleted,
             object: nil,
             userInfo: notificationInfo
         )
-        
+
         await MainActor.run {
             isCreatingAccounts = false
         }
@@ -125,24 +146,26 @@ class OnboardingViewModel: BaseViewModel {
     // Create accounts from onboarding data
     private func createAccounts(_ accountsData: [AccountSetupData], context: NSManagedObjectContext) async {
         guard !accountsData.isEmpty else { return }
-        
+
         await context.perform {
             for accountData in accountsData {
                 let account = Account(context: context)
                 account.id = accountData.id
                 account.name = accountData.displayName
                 account.type = accountData.type.rawValue
-                // Note: balance, createdDate, lastModifiedDate properties not available in Account entity
-                // account.balance = accountData.initialBalance as NSDecimalNumber
+                account.balance = accountData.initialBalance as NSDecimalNumber
+                account.currency = "USD"  // TODO: Use user's preferred currency setting
                 account.isDefault = accountData.isDefault
-                // account.createdDate = Date()
-                // account.lastModifiedDate = Date()
+                account.isActive = true
+                account.createdAt = Date()
+                account.updatedAt = Date()
             }
-            
+
             do {
                 try context.save()
             } catch {
                 print("Error saving accounts: \(error)")
+                Analytics.captureException(error, context: ["action": "createAccounts", "accountCount": accountsData.count])
             }
         }
     }

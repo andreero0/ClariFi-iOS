@@ -12,17 +12,17 @@ struct HomeView: View {
     @Environment(\.managedObjectContext) private var viewContext
     @Environment(\.diContainer) private var container
     @EnvironmentObject private var appState: AppState
-    
+
     @FetchRequest(
         sortDescriptors: [NSSortDescriptor(keyPath: \Transaction.date, ascending: false)],
         animation: .default)
     private var allTransactions: FetchedResults<Transaction>
-    
+
     @FetchRequest(
         sortDescriptors: [NSSortDescriptor(keyPath: \Account.createdAt, ascending: true)],
         animation: .default)
     private var allAccounts: FetchedResults<Account>
-    
+
     @State private var showingStatementUpload = false
     @State private var showingTransactionEntry = false
     @State private var statementUploadViewModel: StatementUploadViewModel?
@@ -33,6 +33,7 @@ struct HomeView: View {
     @State private var isLoading = false
     @State private var totalAccountBalance: Decimal = 0
     @State private var balanceChangePercentage: Double = 0
+    @State private var onboardingState: OnboardingStateManager?
     
     var body: some View {
         NavigationView {
@@ -83,13 +84,23 @@ struct HomeView: View {
             .onAppear {
                 calculateSpendingSummary()
                 calculateAccountBalance()
-                
+
+                // Initialize onboarding state manager
+                if onboardingState == nil {
+                    onboardingState = container.resolveOptional(OnboardingStateManager.self)
+                }
+
+                // Execute pending first action from onboarding
+                if onboardingState?.shouldExecuteFirstAction == true {
+                    executePendingFirstAction()
+                }
+
                 if appState.showingStatementUpload {
                     statementUploadViewModel = createStatementUploadViewModel()
                     showingStatementUpload = true
                     appState.showingStatementUpload = false
                 }
-                
+
                 if appState.showingTransactionEntry {
                     showingTransactionEntry = true
                     appState.showingTransactionEntry = false
@@ -521,26 +532,62 @@ struct HomeView: View {
     }
     
     private func calculateAccountBalance() {
-        // Calculate total balance from all accounts
-        // For now, we'll simulate this since accounts don't have balance fields
-        // In a real app, you'd calculate this from account balances or transaction history
-        
-        if allAccounts.isEmpty {
+        guard !allAccounts.isEmpty else {
             totalAccountBalance = 0
             balanceChangePercentage = 0
             return
         }
-        
-        // Simulate account balance calculation
-        // In a real implementation, you'd sum up account balances or calculate from transaction history
-        let baseBalance: Decimal = 1000 // Starting balance for demo
-        let accountCount = allAccounts.count
-        totalAccountBalance = baseBalance * Decimal(accountCount)
-        
-        // Calculate percentage change from last month
-        // For demo purposes, we'll use a simple calculation
-        let lastMonthBalance = totalAccountBalance * 0.976 // Simulate 2.4% increase
-        balanceChangePercentage = Double(truncating: ((totalAccountBalance - lastMonthBalance) / lastMonthBalance * 100) as NSDecimalNumber)
+
+        // Calculate total from actual account balances
+        totalAccountBalance = allAccounts.reduce(0) { total, account in
+            total + (account.balance?.decimalValue ?? 0)
+        }
+
+        // Calculate actual percentage change from transaction history
+        calculateBalanceChangePercentage()
+    }
+
+    private func calculateBalanceChangePercentage() {
+        let calendar = Calendar.current
+        let now = Date()
+
+        // Get start of current month
+        guard let startOfThisMonth = calendar.dateInterval(of: .month, for: now)?.start else {
+            balanceChangePercentage = 0
+            return
+        }
+
+        // Calculate balance at start of this month
+        let balanceLastMonth = calculateBalanceAtDate(startOfThisMonth)
+
+        guard balanceLastMonth > 0 else {
+            balanceChangePercentage = 0
+            return
+        }
+
+        // Calculate percentage change
+        let change = totalAccountBalance - balanceLastMonth
+        balanceChangePercentage = Double(truncating: (change / balanceLastMonth * 100) as NSDecimalNumber)
+    }
+
+    private func calculateBalanceAtDate(_ date: Date) -> Decimal {
+        // Start with current balances
+        var balanceAtDate = totalAccountBalance
+
+        // Subtract all transactions that occurred after the target date
+        // (to get historical balance, we reverse recent transactions)
+        let transactionsAfterDate = allTransactions.filter { transaction in
+            guard let transactionDate = transaction.date else { return false }
+            return transactionDate >= date
+        }
+
+        for transaction in transactionsAfterDate {
+            let amount = transaction.amount?.decimalValue ?? 0
+            // Reverse the transaction to get historical balance
+            balanceAtDate -= amount
+        }
+
+        return balanceAtDate
     }
     
     private func createStatementUploadViewModel() -> StatementUploadViewModel {
@@ -622,6 +669,27 @@ struct HomeView: View {
             context: viewContext,
             recurringService: recurringService
         )
+    }
+
+    private func executePendingFirstAction() {
+        guard let action = onboardingState?.pendingFirstAction else { return }
+
+        // Small delay for UI to settle after onboarding dismissal
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
+            switch action {
+            case .uploadStatement:
+                statementUploadViewModel = createStatementUploadViewModel()
+                showingStatementUpload = true
+            case .manualEntry:
+                showingTransactionEntry = true
+            case .createBudget:
+                appState.selectedTab = 2
+                appState.shouldPresentBudgetCreation = true
+            }
+
+            // Clear the action after execution
+            onboardingState?.clearFirstAction()
+        }
     }
 }
 
